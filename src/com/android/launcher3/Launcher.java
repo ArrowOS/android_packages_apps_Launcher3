@@ -2494,5 +2494,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                 mLauncherTab.getClient().onDestroy();
             }
         }
+        if ("pref_iconPackPackage".equals(key)) {
+            mModel.clearIconCache();
+            mModel.forceReload();
+        }
     }
 }
