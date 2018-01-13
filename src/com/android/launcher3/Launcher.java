@@ -253,6 +253,10 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     private final Handler mHandler = new Handler();
     private final Runnable mLogOnDelayedResume = this::logOnDelayedResume;
 
+    // Feed integration
+    private LauncherTab mLauncherTab;
+    private boolean mFeedIntegrationEnabled;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (DEBUG_STRICT_MODE) {
@@ -334,6 +338,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
         // For handling default keys
         setDefaultKeyMode(DEFAULT_KEYS_SEARCH_LOCAL);
+
+        mFeedIntegrationEnabled = isFeedIntegrationEnabled();
+        mLauncherTab = new LauncherTab(this, mFeedIntegrationEnabled);
 
         setContentView(mLauncherView);
         getRootView().dispatchInsets();
@@ -790,6 +797,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         // Refresh shortcuts if the permission changed.
         mModel.refreshShortcutsIfRequired();
 
+
         DiscoveryBounce.showForHomeIfNeeded(this);
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onResume();
@@ -807,7 +815,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         super.onPause();
         mDragController.cancelDrag();
         mDragController.resetLastGestureUpTime();
-
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onPause();
         }
@@ -1131,6 +1138,11 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         super.onAttachedToWindow();
 
         FirstFrameAnimatorHelper.initializeDrawListener(getWindow().getDecorView());
+
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onAttachedToWindow();
+        }
+
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onAttachedToWindow();
         }
@@ -1139,6 +1151,11 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     @Override
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
+
+
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onDetachedFromWindow();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onDetachedFromWindow();
@@ -1260,6 +1277,14 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                 UiThreadHelper.hideKeyboardAsync(this, v.getWindowToken());
             }
 
+            if (mFeedIntegrationEnabled) {
+                mLauncherTab.getClient().hideOverlay(true);
+            }
+
+            if (mFeedIntegrationEnabled) {
+                mLauncherTab.getClient().hideOverlay(true);
+            }
+
             if (mLauncherCallbacks != null) {
                 mLauncherCallbacks.onHomeIntent(internalStateHandled);
             }
@@ -1340,6 +1365,10 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         LauncherAnimUtils.onDestroyActivity();
 
         clearPendingBinds();
+
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onDestroy();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onDestroy();
@@ -2395,6 +2424,10 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         return super.onKeyShortcut(keyCode, event);
     }
 
+    private boolean isFeedIntegrationEnabled() {
+        return Utilities.hasFeedIntegration(this);
+    }
+
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_MENU) {
@@ -2404,7 +2437,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                     isInState(NORMAL)) {
                 // Close any open floating views.
                 AbstractFloatingView.closeAllOpenViews(this);
-
                 // Setting the touch point to (-1, -1) will show the options popup in the center of
                 // the screen.
                 OptionsPopupView.showDefaultOptions(this, -1, -1);
@@ -2436,6 +2468,19 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
             if (themeStyle != mThemeStyle) {
                 mThemeStyle = themeStyle;
                 recreate();
+            }
+            if (SettingsActivity.KEY_FEED_INTEGRATION.equals(key)) {
+                if (mLauncherTab == null) {
+                    return;
+                }
+
+                mFeedIntegrationEnabled = isFeedIntegrationEnabled();
+                mLauncherTab.updateLauncherTab(mFeedIntegrationEnabled);
+                if (mFeedIntegrationEnabled) {
+                    mLauncherTab.getClient().onAttachedToWindow();
+                } else {
+                    mLauncherTab.getClient().onDestroy();
+                }
             }
         }
     }
