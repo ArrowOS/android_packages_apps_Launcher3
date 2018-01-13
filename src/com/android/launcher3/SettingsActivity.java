@@ -36,6 +36,9 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.preference.ListPreference;
@@ -43,6 +46,7 @@ import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.View;
@@ -78,6 +82,7 @@ public class SettingsActivity extends Activity {
     private static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
     private static final long WAIT_BEFORE_RESTART = 250;
     public static final String PREF_THEME_STYLE_KEY = "pref_theme_style";
+    static final String KEY_FEED_INTEGRATION = "pref_feed_integration";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,6 +137,12 @@ public class SettingsActivity extends Activity {
                 mIconBadgingObserver = new IconBadgingObserver(
                         iconBadgingPref, resolver, getFragmentManager());
                 mIconBadgingObserver.register(NOTIFICATION_BADGING, NOTIFICATION_ENABLED_LISTENERS);
+            }
+
+            SwitchPreference feedIntegration = (SwitchPreference)
+                    findPreference(KEY_FEED_INTEGRATION);
+            if (!hasPackageInstalled(LauncherTab.SEARCH_PACKAGE)) {
+                getPreferenceScreen().removePreference(feedIntegration);
             }
 
             Preference iconShapeOverride = findPreference(IconShapeOverride.KEY_PREFERENCE);
@@ -214,6 +225,16 @@ public class SettingsActivity extends Activity {
             mPreferenceKey = intent.getStringExtra(EXTRA_FRAGMENT_ARG_KEY);
             if (isAdded() && !mPreferenceHighlighted && !TextUtils.isEmpty(mPreferenceKey)) {
                 getView().postDelayed(this::highlightPreference, DELAY_HIGHLIGHT_DURATION_MILLIS);
+            }
+        }
+
+        private boolean hasPackageInstalled(String pkgName) {
+            try {
+                ApplicationInfo ai = getContext().getPackageManager()
+                        .getApplicationInfo(pkgName, 0);
+                return ai.enabled;
+            } catch (PackageManager.NameNotFoundException e) {
+                return false;
             }
         }
 
