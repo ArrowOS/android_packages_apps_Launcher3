@@ -22,6 +22,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.WorkspaceItemInfo;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.model.AppLaunchTracker;
+import com.android.launcher3.Utilities;
 import com.android.launcher3.model.WidgetItem;
 import com.android.launcher3.userevent.nano.LauncherLogProto.Action;
 import com.android.launcher3.userevent.nano.LauncherLogProto.ContainerType;
@@ -135,6 +136,7 @@ public abstract class SystemShortcut<T extends BaseDraggingActivity>
         @Override
         public View.OnClickListener getOnClickListener(final Launcher launcher,
                 final ItemInfo itemInfo) {
+            if (!Utilities.isWorkspaceEditAllowed(launcher.getApplicationContext())) return null;
             if (itemInfo.getTargetComponent() == null) return null;
             final List<WidgetItem> widgets =
                     launcher.getPopupDataProvider().getWidgetsForPackageUser(new PackageUserKey(
