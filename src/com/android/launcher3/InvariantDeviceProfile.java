@@ -80,6 +80,7 @@ public class InvariantDeviceProfile {
     public static final int CHANGE_FLAG_ICON_PARAMS = 1 << 1;
 
     public static final String KEY_ICON_PATH_REF = "pref_icon_shape_path";
+    public static final String KEY_WORKSPACE_EDIT = "pref_workspace_edit";
 
     // Constants that affects the interpolation curve between statically defined device profile
     // buckets.
