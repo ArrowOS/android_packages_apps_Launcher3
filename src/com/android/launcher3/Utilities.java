@@ -74,6 +74,7 @@ import com.android.launcher3.icons.LauncherIcons;
 import com.android.launcher3.shortcuts.DeepShortcutManager;
 import com.android.launcher3.shortcuts.ShortcutKey;
 import com.android.launcher3.util.IntArray;
+import com.android.launcher3.util.LooperExecutor;
 import com.android.launcher3.util.PackageManagerHelper;
 import com.android.launcher3.views.Transposable;
 import com.android.launcher3.widget.PendingAddShortcutInfo;
@@ -122,6 +123,8 @@ public final class Utilities {
 
     public static final int SINGLE_FRAME_MS = 16;
 
+    private static final long WAIT_BEFORE_RESTART = 250;
+
     /**
      * Set on a motion event dispatched from the nav bar. See {@link MotionEvent#setEdgeFlags(int)}.
      */
@@ -159,6 +162,10 @@ public final class Utilities {
     private static final int CORE_POOL_SIZE = CPU_COUNT + 1;
     private static final int MAXIMUM_POOL_SIZE = CPU_COUNT * 2 + 1;
     private static final int KEEP_ALIVE = 1;
+
+    public static final String GRID_COLUMNS = "pref_grid_columns";
+    public static final String GRID_ROWS = "pref_grid_rows";
+    public static final String HOTSEAT_ICONS = "pref_hotseat_icons";
     /**
      * An {@link Executor} to be used with async task with no limit on the queue size.
      */
@@ -181,6 +188,31 @@ public final class Utilities {
         ResolveInfo ri = context.getPackageManager().resolveActivity(
                 PackageManagerHelper.getStyleWallpapersIntent(context), 0);
         return ri != null;
+    }
+
+    public static int getGridColumns(Context context, int fallback) {
+        return getIconCount(context, GRID_COLUMNS, fallback);
+    }
+
+    public static int getGridRows(Context context, int fallback) {
+        return getIconCount(context, GRID_ROWS, fallback);
+    }
+
+    public static int getHotseatIcons(Context context, int fallback) {
+        return getIconCount(context, HOTSEAT_ICONS, fallback);
+    }
+
+    private static int getIconCount(Context context, String preferenceName, int preferenceFallback) {
+        String saved = getPrefs(context).getString(preferenceName, "-1");
+        try {
+            int num = Integer.valueOf(saved);
+            if (num == -1) {
+                return preferenceFallback;
+            }
+            return num;
+        } catch (Exception e) {
+            return preferenceFallback;
+        }
     }
 
     /**
@@ -779,5 +811,16 @@ public final class Utilities {
         public int getIntrinsicWidth() {
             return mSize;
         }
+    }
+
+    public static void restart(final Context context) {
+        //ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
+        new LooperExecutor(LauncherModel.getWorkerLooper()).execute(() -> {
+            try {
+                Thread.sleep(WAIT_BEFORE_RESTART);
+            } catch (Exception ignored) {
+            }
+            android.os.Process.killProcess(android.os.Process.myPid());
+        });
     }
 }
