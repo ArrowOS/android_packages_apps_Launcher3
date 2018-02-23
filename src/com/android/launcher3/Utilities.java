@@ -17,6 +17,7 @@
 package com.android.launcher3;
 
 import static com.android.launcher3.ItemInfoWithIcon.FLAG_ICON_BADGED;
+import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
 
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
@@ -108,6 +109,8 @@ public final class Utilities {
     public static final boolean ATLEAST_OREO =
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.O;
 
+    private static final long WAIT_BEFORE_RESTART = 250;
+
     /**
      * Set on a motion event dispatched from the nav bar. See {@link MotionEvent#setEdgeFlags(int)}.
      */
@@ -128,6 +131,10 @@ public final class Utilities {
     public static final String EXTRA_WALLPAPER_OFFSET = "com.android.launcher3.WALLPAPER_OFFSET";
     public static final String EXTRA_WALLPAPER_FLAVOR = "com.android.launcher3.WALLPAPER_FLAVOR";
 
+    public static final String GRID_COLUMNS = "pref_grid_columns";
+    public static final String GRID_ROWS = "pref_grid_rows";
+    public static final String HOTSEAT_ICONS = "pref_hotseat_icons";
+
     public static boolean IS_RUNNING_IN_TEST_HARNESS =
                     ActivityManager.isRunningInTestHarness();
 
@@ -143,6 +150,31 @@ public final class Utilities {
         ResolveInfo ri = context.getPackageManager().resolveActivity(
                 PackageManagerHelper.getStyleWallpapersIntent(context), 0);
         return ri != null;
+    }
+
+    public static int getGridColumns(Context context, int fallback) {
+        return getIconCount(context, GRID_COLUMNS, fallback);
+    }
+
+    public static int getGridRows(Context context, int fallback) {
+        return getIconCount(context, GRID_ROWS, fallback);
+    }
+
+    public static int getHotseatIcons(Context context, int fallback) {
+        return getIconCount(context, HOTSEAT_ICONS, fallback);
+    }
+
+    private static int getIconCount(Context context, String preferenceName, int preferenceFallback) {
+        String saved = getPrefs(context).getString(preferenceName, "-1");
+        try {
+            int num = Integer.valueOf(saved);
+            if (num == -1) {
+                return preferenceFallback;
+            }
+            return num;
+        } catch (Exception e) {
+            return preferenceFallback;
+        }
     }
 
     /**
@@ -621,5 +653,16 @@ public final class Utilities {
         public int getIntrinsicWidth() {
             return mSize;
         }
+    }
+
+    public static void restart(final Context context) {
+        //ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
+        MODEL_EXECUTOR.execute(() -> {
+            try {
+                Thread.sleep(WAIT_BEFORE_RESTART);
+            } catch (Exception ignored) {
+            }
+            android.os.Process.killProcess(android.os.Process.myPid());
+        });
     }
 }
