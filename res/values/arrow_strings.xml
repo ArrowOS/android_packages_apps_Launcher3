@@ -21,6 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="theme_style_auto">Wallpaper based</string>
     <string name="theme_style_light">Light style</string>
     <string name="theme_style_dark">Dark style</string>
+    
     <!-- grid -->
     <string name="num_default">Default</string>
     <string name="grid_category_title">Columns and rows</string>
@@ -32,6 +33,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
     <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+
+    <!-- Show labels on icon -->
+    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
+    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
+    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
+    <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
 
     <string name="settings_feed">Enable Google feed integration</string>
 
