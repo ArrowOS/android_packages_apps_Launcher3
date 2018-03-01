@@ -72,6 +72,7 @@ public class BubbleTextView extends TextView implements ItemInfoUpdateReceiver, 
 
     private static final int[] STATE_PRESSED = new int[] {android.R.attr.state_pressed};
 
+    private final int display;
 
     private static final Property<BubbleTextView, Float> DOT_SCALE_PROPERTY
             = new Property<BubbleTextView, Float>(Float.TYPE, "dotScale") {
@@ -152,18 +153,35 @@ public class BubbleTextView extends TextView implements ItemInfoUpdateReceiver, 
                 R.styleable.BubbleTextView, defStyle, 0);
         mLayoutHorizontal = a.getBoolean(R.styleable.BubbleTextView_layoutHorizontal, false);
 
-        int display = a.getInteger(R.styleable.BubbleTextView_iconDisplay, DISPLAY_WORKSPACE);
+        display = a.getInteger(R.styleable.BubbleTextView_iconDisplay, DISPLAY_WORKSPACE);
         final int defaultIconSize;
         if (display == DISPLAY_WORKSPACE) {
             DeviceProfile grid = mActivity.getWallpaperDeviceProfile();
-            setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.iconTextSizePx);
-            setCompoundDrawablePadding(grid.iconDrawablePaddingPx);
+            if(Utilities.showDesktopLabel(context)) {
+                setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.iconTextSizePx);
+                setCompoundDrawablePadding(grid.iconDrawablePaddingPx);
+            } else {
+                setTextSize(TypedValue.COMPLEX_UNIT_PX, 0);
+                setCompoundDrawablePadding(0);
+            }
             defaultIconSize = grid.iconSizePx;
         } else if (display == DISPLAY_ALL_APPS) {
             DeviceProfile grid = mActivity.getDeviceProfile();
-            setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.allAppsIconTextSizePx);
-            setCompoundDrawablePadding(grid.allAppsIconDrawablePaddingPx);
+            if(Utilities.showAllAppsLabel(context)) {
+                setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.allAppsIconTextSizePx);
+                setCompoundDrawablePadding(grid.allAppsIconDrawablePaddingPx);
+            } else {
+                setTextSize(0);
+                setCompoundDrawablePadding(0);
+            }
             defaultIconSize = grid.allAppsIconSizePx;
+            if(Utilities.showAllAppsLabel(context)) {
+                setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.iconTextSizePx);
+                setCompoundDrawablePadding(grid.iconDrawablePaddingPx);
+            } else {
+                setTextSize(0);
+                setCompoundDrawablePadding(0);
+            }
         } else if (display == DISPLAY_FOLDER) {
             DeviceProfile grid = mActivity.getDeviceProfile();
             setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.folderChildTextSizePx);
@@ -281,7 +299,19 @@ public class BubbleTextView extends TextView implements ItemInfoUpdateReceiver, 
         mDotParams.color = IconPalette.getMutedColor(info.iconColor, 0.54f);
 
         setIcon(iconDrawable);
-        setText(info.title);
+
+        if(display == DISPLAY_WORKSPACE) {
+            setText(Utilities.showDesktopLabel(getContext()) ? info.title : "");
+        } else {
+            setText(info.title);
+        }
+
+        if(display == DISPLAY_ALL_APPS) {
+            setText(Utilities.showAllAppsLabel(getContext()) ? info.title : "");
+        } else {
+            setText(info.title);
+        }
+
         if (info.contentDescription != null) {
             setContentDescription(info.isDisabled()
                     ? getContext().getString(R.string.disabled_app_label, info.contentDescription)
