@@ -166,6 +166,11 @@ public final class Utilities {
     public static final String GRID_COLUMNS = "pref_grid_columns";
     public static final String GRID_ROWS = "pref_grid_rows";
     public static final String HOTSEAT_ICONS = "pref_hotseat_icons";
+    public static final String DESKTOP_SHOW_LABEL = "pref_desktop_show_label";
+    public static final String ALLAPPS_SHOW_LABEL = "pref_allapps_show_label";
+
+    public static final String PACKAGE_NAME = "com.google.android.googlequicksearchbox";
+
     /**
      * An {@link Executor} to be used with async task with no limit on the queue size.
      */
@@ -213,6 +218,14 @@ public final class Utilities {
         } catch (Exception e) {
             return preferenceFallback;
         }
+    }
+
+    public static boolean showDesktopLabel(Context context) {
+        return getPrefs(context).getBoolean(DESKTOP_SHOW_LABEL, true);
+    }
+
+    public static boolean showAllAppsLabel(Context context) {
+         return getPrefs(context).getBoolean(ALLAPPS_SHOW_LABEL, true);
     }
 
     /**
