@@ -19,6 +19,9 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Application name -->
+    <string name="arrow_app_name" translatable="false">Arrow Launcher</string>
+
     <!-- Settings Categories -->
     <string name="category_general">General</string>
     <string name="category_google">Google</string>
