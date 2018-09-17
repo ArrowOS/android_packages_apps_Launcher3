@@ -206,6 +206,16 @@ public class QsbContainerView extends FrameLayout {
             boolean isWidgetBound = (widgetInfo != null) &&
                     widgetInfo.provider.equals(mWidgetInfo.provider);
 
+            if (mWidgetInfo.provider.getClassName().equals("com.google.android.googlequicksearchbox.SearchWidgetProvider")) {
+                try {
+                    int resId = getActivity().getPackageManager().getReceiverInfo(mWidgetInfo.provider, 128).metaData.getInt("com.google.android.gsa.searchwidget.alt_initial_layout_cqsb", -1);
+                    if (resId != -1) {
+                        mWidgetInfo.initialLayout = resId;
+                    }
+                } catch (Exception e) {
+                }
+            }
+
             int oldWidgetId = widgetId;
             if (!isWidgetBound && !isInPreviewMode()) {
                 if (widgetId > -1) {
@@ -300,6 +310,8 @@ public class QsbContainerView extends FrameLayout {
             opts.putInt(AppWidgetManager.OPTION_APPWIDGET_MIN_HEIGHT, size.top);
             opts.putInt(AppWidgetManager.OPTION_APPWIDGET_MAX_WIDTH, size.right);
             opts.putInt(AppWidgetManager.OPTION_APPWIDGET_MAX_HEIGHT, size.bottom);
+            opts.putString("attached-launcher-identifier", getActivity().getPackageName());
+            opts.putString("requested-widget-style", "cqsb");
             return opts;
         }
 
