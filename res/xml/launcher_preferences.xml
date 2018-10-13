@@ -30,7 +30,7 @@
     </com.android.launcher3.views.ButtonPreference>
 
     <SwitchPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:key="pref_feed_integration"
         android:persistent="true"
         android:title="@string/settings_feed" />
