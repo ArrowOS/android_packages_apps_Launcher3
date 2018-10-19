@@ -61,7 +61,7 @@ public abstract class BaseDraggingActivity extends BaseActivity
 
     private OnStartCallback mOnStartCallback;
 
-    private int mThemeRes = R.style.LauncherTheme;
+    private int mThemeRes = R.style.AppTheme;
 
     private DisplayRotationListener mRotationListener;
 
@@ -94,14 +94,14 @@ public abstract class BaseDraggingActivity extends BaseActivity
         if (mThemeStyle == 1) {
             return R.style.LauncherTheme;
         } else if (mThemeStyle == 2) {
-            return R.style.LauncherThemeDark;
+            return R.style.AppTheme_Dark;
         } else {
             if (wallpaperColorInfo.isDark()) {
                 return wallpaperColorInfo.supportsDarkText() ?
-                        R.style.LauncherThemeDark_DarKText : R.style.LauncherThemeDark;
+                        R.style.AppTheme_Dark_DarkText : R.style.AppTheme_Dark;
             } else {
                 return wallpaperColorInfo.supportsDarkText() ?
-                        R.style.LauncherTheme_DarkText : R.style.LauncherTheme;
+                        R.style.AppTheme_DarkText : R.style.AppTheme;
             }
         }
     }
