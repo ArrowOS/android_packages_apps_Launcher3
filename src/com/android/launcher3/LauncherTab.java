@@ -26,12 +26,14 @@ import com.google.android.libraries.launcherclient.LauncherClientCallbacksAdapte
 public class LauncherTab {
 
     private Launcher mLauncher;
-
     private LauncherClient mLauncherClient;
+    private Workspace mWorkspace;
 
     public LauncherTab(Launcher launcher) {
         mLauncher = launcher;
         mLauncherClient = new LauncherClient(launcher, new LauncherClientCallbacks(), Utilities.PACKAGE_NAME, true);
+
+        mWorkspace = launcher.getWorkspace();
 
         launcher.setLauncherOverlay(new LauncherOverlays());
     }
@@ -58,6 +60,13 @@ public class LauncherTab {
 
         @Override
         public void setOverlayCallbacks(LauncherOverlayCallbacks callbacks) {
+        }
+    }
+
+    private class LauncherClientCallbacks extends LauncherClientCallbacksAdapter {
+        @Override
+        public void onOverlayScrollChanged(float progress) {
+            mWorkspace.onOverlayScrollChanged(progress);
         }
     }
 }
