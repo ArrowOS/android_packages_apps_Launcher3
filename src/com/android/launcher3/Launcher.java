@@ -287,6 +287,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
     // Feed integration
     private LauncherTab mLauncherTab;
+    private boolean mFeedIntegrationEnabled;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -372,7 +373,8 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         // For handling default keys
         setDefaultKeyMode(DEFAULT_KEYS_SEARCH_LOCAL);
 
-        mLauncherTab = new LauncherTab(this);
+        mFeedIntegrationEnabled = isFeedIntegrationEnabled();
+        mLauncherTab = new LauncherTab(this, mFeedIntegrationEnabled);
 
         setContentView(mLauncherView);
         getRootView().dispatchInsets();
@@ -966,7 +968,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
             resumeCallbacks.clear();
         }
 
-        mLauncherTab.getClient().onResume();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onResume();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onResume();
@@ -986,7 +990,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         mDragController.resetLastGestureUpTime();
         mDropTargetBar.animateToVisibility(false);
 
-        mLauncherTab.getClient().onPause();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onPause();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onPause();
@@ -1291,7 +1297,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
 
-        mLauncherTab.getClient().onAttachedToWindow();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onAttachedToWindow();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onAttachedToWindow();
@@ -1302,7 +1310,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
 
-        mLauncherTab.getClient().onDetachedFromWindow();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onDetachedFromWindow();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onDetachedFromWindow();
@@ -1410,7 +1420,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                 UiThreadHelper.hideKeyboardAsync(this, v.getWindowToken());
             }
 
-            mLauncherTab.getClient().hideOverlay(true);
+            if (mFeedIntegrationEnabled) {
+                mLauncherTab.getClient().hideOverlay(true);
+            }
 
             if (mLauncherCallbacks != null) {
                 mLauncherCallbacks.onHomeIntent(internalStateHandled);
@@ -1496,7 +1508,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         clearPendingBinds();
         LauncherAppState.getIDP(this).removeOnChangeListener(this);
 
-        mLauncherTab.getClient().onDestroy();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onDestroy();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onDestroy();
@@ -2568,6 +2582,10 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
             }
         }
         return super.onKeyShortcut(keyCode, event);
+    }
+
+    private boolean isFeedIntegrationEnabled() {
+        return Utilities.hasFeedIntegration(this);
     }
 
     @Override

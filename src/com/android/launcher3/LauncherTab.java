@@ -29,13 +29,26 @@ public class LauncherTab {
     private LauncherClient mLauncherClient;
     private Workspace mWorkspace;
 
-    public LauncherTab(Launcher launcher) {
+    public LauncherTab(Launcher launcher, boolean enabled) {
         mLauncher = launcher;
         mLauncherClient = new LauncherClient(launcher, new LauncherClientCallbacks(), Utilities.PACKAGE_NAME, true);
 
         mWorkspace = launcher.getWorkspace();
 
-        launcher.setLauncherOverlay(new LauncherOverlays());
+        updateLauncherTab(enabled);
+        if (enabled && mLauncherClient.isConnected()) {
+            launcher.setLauncherOverlay(new LauncherOverlays());
+        }
+    }
+
+    protected void updateLauncherTab(boolean enabled) {
+        if (enabled) {
+            mLauncherClient = new LauncherClient(mLauncher,
+                    new LauncherClientCallbacks(), Utilities.PACKAGE_NAME, true);
+            mLauncher.setLauncherOverlay(new LauncherOverlays());
+        } else {
+            mLauncher.setLauncherOverlay(null);
+        }
     }
 
     protected LauncherClient getClient() {
