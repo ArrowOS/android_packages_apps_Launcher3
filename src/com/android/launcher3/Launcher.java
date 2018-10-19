@@ -343,6 +343,9 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
 
     private SafeCloseable mUserChangedCallbackCloseable;
 
+    // Feed integration
+    private LauncherTab mLauncherTab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Object traceToken = TraceHelper.INSTANCE.beginSection(ON_CREATE_EVT,
@@ -424,7 +427,10 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         // For handling default keys
         setDefaultKeyMode(DEFAULT_KEYS_SEARCH_LOCAL);
 
+        mLauncherTab = new LauncherTab(this);
+
         setContentView(getRootView());
+
         getRootView().dispatchInsets();
 
         // Listen for broadcasts
@@ -1052,6 +1058,8 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
             resumeCallbacks.clear();
         }
 
+        mLauncherTab.getClient().onResume();
+
         if (mDeferOverlayCallbacks) {
             scheduleDeferredCheck();
         } else {
@@ -1070,6 +1078,8 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         mDragController.cancelDrag();
         mLastTouchUpTime = -1;
         mDropTargetBar.animateToVisibility(false);
+
+        mLauncherTab.getClient().onPause();
 
         if (!mDeferOverlayCallbacks) {
             mOverlayManager.onActivityPaused(this);
@@ -1328,12 +1338,18 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
+
+        mLauncherTab.getClient().onAttachedToWindow();
+
         mOverlayManager.onAttachedToWindow();
     }
 
     @Override
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
+
+        mLauncherTab.getClient().onDetachedFromWindow();
+
         mOverlayManager.onDetachedFromWindow();
         closeContextMenu();
     }
@@ -1444,6 +1460,8 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
                     newContainerTarget(ContainerType.WORKSPACE));
             hideKeyboard();
 
+            mLauncherTab.getClient().hideOverlay(true);
+
             if (mLauncherCallbacks != null) {
                 mLauncherCallbacks.onHomeIntent(internalStateHandled);
             }
@@ -1529,6 +1547,8 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         TextKeyListener.getInstance().release();
         clearPendingBinds();
         LauncherAppState.getIDP(this).removeOnChangeListener(this);
+
+        mLauncherTab.getClient().onDestroy();
 
         mOverlayManager.onActivityDestroyed(this);
         mAppTransitionManager.unregisterRemoteAnimations();
