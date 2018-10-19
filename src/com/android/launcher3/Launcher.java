@@ -65,6 +65,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.IntentSender;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
@@ -138,6 +139,8 @@ import com.android.launcher3.statemanager.StateManager;
 import com.android.launcher3.statemanager.StateManager.StateHandler;
 import com.android.launcher3.statemanager.StateManager.StateListener;
 import com.android.launcher3.statemanager.StatefulActivity;
+import com.android.launcher3.settings.SettingsActivity;
+import com.android.launcher3.shortcuts.DeepShortcutManager;
 import com.android.launcher3.states.RotationHelper;
 import com.android.launcher3.testing.TestLogging;
 import com.android.launcher3.testing.TestProtocol;
@@ -202,7 +205,7 @@ import java.util.stream.Stream;
  * Default launcher application.
  */
 public class Launcher extends StatefulActivity<LauncherState> implements LauncherExterns,
-        Callbacks, InvariantDeviceProfile.OnIDPChangeListener, PluginListener<OverlayPlugin> {
+        Callbacks, InvariantDeviceProfile.OnIDPChangeListener, PluginListener<OverlayPlugin>, OnSharedPreferenceChangeListener {
     public static final String TAG = "Launcher";
 
     public static final ActivityTracker<Launcher> ACTIVITY_TRACKER = new ActivityTracker<>();
@@ -345,6 +348,7 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
 
     // Feed integration
     private LauncherTab mLauncherTab;
+    private boolean mFeedIntegrationEnabled;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -364,6 +368,7 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
                     .penaltyDeath()
                     .build());
         }
+        mSharedPrefs = Utilities.getPrefs(this);
 
         super.onCreate(savedInstanceState);
 
@@ -375,7 +380,6 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         InvariantDeviceProfile idp = app.getInvariantDeviceProfile();
         initDeviceProfile(idp);
         idp.addOnChangeListener(this);
-        mSharedPrefs = Utilities.getPrefs(this);
         mIconCache = app.getIconCache();
         mAccessibilityDelegate = new LauncherAccessibilityDelegate(this);
 
@@ -427,7 +431,8 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         // For handling default keys
         setDefaultKeyMode(DEFAULT_KEYS_SEARCH_LOCAL);
 
-        mLauncherTab = new LauncherTab(this);
+        mFeedIntegrationEnabled = isFeedIntegrationEnabled();
+        mLauncherTab = new LauncherTab(this, mFeedIntegrationEnabled);
 
         setContentView(getRootView());
 
@@ -447,6 +452,8 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
                 OverlayPlugin.class, false /* allowedMultiple */);
 
         mRotationHelper.initialize();
+
+        mSharedPrefs.registerOnSharedPreferenceChangeListener(this);
 
         mStateManager.addStateListener(new StateListener<LauncherState>() {
 
@@ -1058,7 +1065,9 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
             resumeCallbacks.clear();
         }
 
-        mLauncherTab.getClient().onResume();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onResume();
+        }
 
         if (mDeferOverlayCallbacks) {
             scheduleDeferredCheck();
@@ -1079,7 +1088,9 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         mLastTouchUpTime = -1;
         mDropTargetBar.animateToVisibility(false);
 
-        mLauncherTab.getClient().onPause();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onPause();
+        }
 
         if (!mDeferOverlayCallbacks) {
             mOverlayManager.onActivityPaused(this);
@@ -1339,7 +1350,9 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
 
-        mLauncherTab.getClient().onAttachedToWindow();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onAttachedToWindow();
+        }
 
         mOverlayManager.onAttachedToWindow();
     }
@@ -1348,7 +1361,9 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
 
-        mLauncherTab.getClient().onDetachedFromWindow();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onDetachedFromWindow();
+        }
 
         mOverlayManager.onDetachedFromWindow();
         closeContextMenu();
@@ -1460,7 +1475,9 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
                     newContainerTarget(ContainerType.WORKSPACE));
             hideKeyboard();
 
-            mLauncherTab.getClient().hideOverlay(true);
+            if (mFeedIntegrationEnabled) {
+                mLauncherTab.getClient().hideOverlay(true);
+            }
 
             if (mLauncherCallbacks != null) {
                 mLauncherCallbacks.onHomeIntent(internalStateHandled);
@@ -1548,12 +1565,16 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         clearPendingBinds();
         LauncherAppState.getIDP(this).removeOnChangeListener(this);
 
-        mLauncherTab.getClient().onDestroy();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onDestroy();
+        }
 
         mOverlayManager.onActivityDestroyed(this);
         mAppTransitionManager.unregisterRemoteAnimations();
         mUserChangedCallbackCloseable.close();
         mAllAppsController.onActivityDestroyed();
+
+        mSharedPrefs.unregisterOnSharedPreferenceChangeListener(this);
     }
 
     public LauncherAccessibilityDelegate getAccessibilityDelegate() {
@@ -2668,6 +2689,10 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         return super.onKeyShortcut(keyCode, event);
     }
 
+    private boolean isFeedIntegrationEnabled() {
+        return Utilities.hasFeedIntegration(this);
+    }
+
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_MENU) {
@@ -2746,5 +2771,22 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
     public interface OnResumeCallback {
 
         void onLauncherResume();
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (SettingsActivity.KEY_FEED_INTEGRATION.equals(key)) {
+            if (mLauncherTab == null) {
+                    return;
+            }
+
+            mFeedIntegrationEnabled = isFeedIntegrationEnabled();
+            mLauncherTab.updateLauncherTab(mFeedIntegrationEnabled);
+            if (mFeedIntegrationEnabled) {
+                mLauncherTab.getClient().onAttachedToWindow();
+            } else {
+                mLauncherTab.getClient().onDestroy();
+            }
+        }
     }
 }

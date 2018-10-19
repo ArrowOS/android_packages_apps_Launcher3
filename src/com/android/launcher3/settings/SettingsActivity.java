@@ -24,6 +24,8 @@ import static com.android.launcher3.states.RotationHelper.getAllowRotationDefaul
 import static com.android.launcher3.util.SecureSettingsObserver.newNotificationSettingsObserver;
 
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -34,14 +36,18 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartFragmentCallback;
 import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartScreenCallback;
+
 import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.launcher3.LauncherFiles;
+import com.android.launcher3.LauncherTab;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
@@ -66,6 +72,8 @@ public class SettingsActivity extends FragmentActivity
     public static final String EXTRA_SHOW_FRAGMENT_ARGS = ":settings:show_fragment_args";
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
+
+    public static final String KEY_FEED_INTEGRATION = "pref_feed_integration";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,6 +161,13 @@ public class SettingsActivity extends FragmentActivity
                     screen.removePreference(preference);
                 }
             }
+
+            SwitchPreference feedIntegration = (SwitchPreference)
+                    findPreference(KEY_FEED_INTEGRATION);
+
+            if (!hasPackageInstalled(LauncherTab.SEARCH_PACKAGE)) {
+                getPreferenceScreen().removePreference(feedIntegration);
+            }
         }
 
         @Override
@@ -225,6 +240,16 @@ public class SettingsActivity extends FragmentActivity
                 } else {
                     requestAccessibilityFocus(getListView());
                 }
+            }
+        }
+
+        private boolean hasPackageInstalled(String pkgName) {
+            try {
+                ApplicationInfo ai = getContext().getPackageManager()
+                        .getApplicationInfo(pkgName, 0);
+                return ai.enabled;
+            } catch (PackageManager.NameNotFoundException e) {
+                return false;
             }
         }
 
