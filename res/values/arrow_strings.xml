@@ -33,4 +33,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- QSB -->
     <string name="desktop_show_qsb_title">Quick Search Bar</string>
     <string name="desktop_show_qsb_summary">Show quick searchbar on homescreen</string>
+    
+    <!-- Google Feed -->
+    <string name="settings_feed">Enable Google feed integration</string>
+
 </resources>
