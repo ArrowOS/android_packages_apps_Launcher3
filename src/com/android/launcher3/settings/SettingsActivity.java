@@ -244,6 +244,20 @@ public class SettingsActivity extends Activity
                     return true;
                 }
             });
+
+            SwitchPreference feedIntegration = (SwitchPreference)
+                    findPreference(Utilities.KEY_FEED_INTEGRATION);
+            if (!hasPackageInstalled(Utilities.PACKAGE_NAME)) {
+                getPreferenceScreen().removePreference(feedIntegration);
+            } else {
+                feedIntegration.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+                        Utilities.restart(getActivity());
+                        return true;
+                    }
+                });
+            }
+
         }
 
         private boolean hasPackageInstalled(String pkgName) {
