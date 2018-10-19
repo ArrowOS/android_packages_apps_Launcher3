@@ -90,6 +90,7 @@ public class InvariantDeviceProfile {
      */
     public int numRows;
     public int numColumns;
+    public int numAllAppColumns;
 
     /**
      * Number of icons per row and column in the folder.
@@ -129,6 +130,7 @@ public class InvariantDeviceProfile {
     private InvariantDeviceProfile(InvariantDeviceProfile p) {
         numRows = p.numRows;
         numColumns = p.numColumns;
+        numAllAppColumns = p.numAllAppColumns;
         numFolderRows = p.numFolderRows;
         numFolderColumns = p.numFolderColumns;
         iconSize = p.iconSize;
@@ -195,6 +197,7 @@ public class InvariantDeviceProfile {
         GridOption closestProfile = allOptions.get(0).grid;
         numRows = Utilities.getGridRows(context, closestProfile.numRows);
         numColumns = Utilities.getGridColumns(context, closestProfile.numColumns);
+        numAllAppColumns = closestProfile.numColumns;
         numHotseatIcons = Utilities.getHotseatIcons(context, closestProfile.numHotseatIcons);
         defaultLayoutId = closestProfile.defaultLayoutId;
         demoModeLayoutId = closestProfile.demoModeLayoutId;
