@@ -51,6 +51,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.IntentSender;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
@@ -113,6 +114,7 @@ import com.android.launcher3.notification.NotificationListener;
 import com.android.launcher3.popup.PopupContainerWithArrow;
 import com.android.launcher3.popup.PopupDataProvider;
 import com.android.launcher3.qsb.QsbContainerView;
+import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.states.InternalStateHandler;
 import com.android.launcher3.states.RotationHelper;
 import com.android.launcher3.touch.ItemClickHandler;
@@ -165,7 +167,7 @@ import java.util.function.Predicate;
  */
 public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         Callbacks, LauncherProviderChangeListener, UserEventDelegate,
-        InvariantDeviceProfile.OnIDPChangeListener {
+        InvariantDeviceProfile.OnIDPChangeListener, OnSharedPreferenceChangeListener {
     public static final String TAG = "Launcher";
     static final boolean LOGD = false;
 
@@ -296,6 +298,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
     // Feed integration
     private LauncherTab mLauncherTab;
+    private boolean mFeedIntegrationEnabled;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -315,6 +318,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                     .build());
         }
         TraceHelper.beginSection("Launcher-onCreate");
+        mSharedPrefs = Utilities.getPrefs(this);
 
         super.onCreate(savedInstanceState);
         TraceHelper.partitionSection("Launcher-onCreate", "super call");
@@ -326,7 +330,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         InvariantDeviceProfile idp = app.getInvariantDeviceProfile();
         initDeviceProfile(idp);
         idp.addOnChangeListener(this);
-        mSharedPrefs = Utilities.getPrefs(this);
         mIconCache = app.getIconCache();
         mAccessibilityDelegate = new LauncherAccessibilityDelegate(this);
 
@@ -381,7 +384,8 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         // For handling default keys
         setDefaultKeyMode(DEFAULT_KEYS_SEARCH_LOCAL);
 
-        mLauncherTab = new LauncherTab(this);
+        mFeedIntegrationEnabled = isFeedIntegrationEnabled();
+        mLauncherTab = new LauncherTab(this, mFeedIntegrationEnabled);
 
         setContentView(mLauncherView);
         getRootView().dispatchInsets();
@@ -396,6 +400,8 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
             mLauncherCallbacks.onCreate(savedInstanceState);
         }
         mRotationHelper.initialize();
+
+        mSharedPrefs.registerOnSharedPreferenceChangeListener(this);
 
         TraceHelper.endSection("Launcher-onCreate");
         RaceConditionTracker.onEvent(ON_CREATE_EVT, EXIT);
@@ -993,7 +999,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
             resumeCallbacks.clear();
         }
 
-        mLauncherTab.getClient().onResume();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onResume();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onResume();
@@ -1013,7 +1021,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         mDragController.resetLastGestureUpTime();
         mDropTargetBar.animateToVisibility(false);
 
-        mLauncherTab.getClient().onPause();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onPause();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onPause();
@@ -1319,7 +1329,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
 
-        mLauncherTab.getClient().onAttachedToWindow();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onAttachedToWindow();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onAttachedToWindow();
@@ -1330,7 +1342,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
 
-        mLauncherTab.getClient().onDetachedFromWindow();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onDetachedFromWindow();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onDetachedFromWindow();
@@ -1440,7 +1454,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
                 UiThreadHelper.hideKeyboardAsync(this, v.getWindowToken());
             }
 
-            mLauncherTab.getClient().hideOverlay(true);
+            if (mFeedIntegrationEnabled) {
+                mLauncherTab.getClient().hideOverlay(true);
+            }
 
             if (mLauncherCallbacks != null) {
                 mLauncherCallbacks.onHomeIntent(internalStateHandled);
@@ -1527,11 +1543,15 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         clearPendingBinds();
         LauncherAppState.getIDP(this).removeOnChangeListener(this);
 
-        mLauncherTab.getClient().onDestroy();
+        if (mFeedIntegrationEnabled) {
+            mLauncherTab.getClient().onDestroy();
+        }
 
         if (mLauncherCallbacks != null) {
             mLauncherCallbacks.onDestroy();
         }
+
+        mSharedPrefs.unregisterOnSharedPreferenceChangeListener(this);
     }
 
     public LauncherAccessibilityDelegate getAccessibilityDelegate() {
@@ -2597,6 +2617,10 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         return super.onKeyShortcut(keyCode, event);
     }
 
+    private boolean isFeedIntegrationEnabled() {
+        return Utilities.hasFeedIntegration(this);
+    }
+
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_MENU) {
@@ -2639,5 +2663,22 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     public interface OnResumeCallback {
 
         void onLauncherResume();
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (SettingsActivity.KEY_FEED_INTEGRATION.equals(key)) {
+            if (mLauncherTab == null) {
+                    return;
+            }
+
+            mFeedIntegrationEnabled = isFeedIntegrationEnabled();
+            mLauncherTab.updateLauncherTab(mFeedIntegrationEnabled);
+            if (mFeedIntegrationEnabled) {
+                mLauncherTab.getClient().onAttachedToWindow();
+            } else {
+                mLauncherTab.getClient().onDestroy();
+            }
+        }
     }
 }
