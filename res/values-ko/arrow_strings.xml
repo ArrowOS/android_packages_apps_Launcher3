@@ -16,19 +16,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="theme_style_title">Theme style</string>
-  <string name="theme_style_auto">Wallpaper based</string>
-  <string name="theme_style_light">Light style</string>
-  <string name="theme_style_dark">Dark style</string>
+  <string name="theme_style_title">테마 스타일</string>
+  <string name="theme_style_auto">배경화면 기반</string>
+  <string name="theme_style_light">밝은 테마</string>
+  <string name="theme_style_dark">어두운 테마</string>
   <!-- grid -->
-  <string name="num_default">Default</string>
-  <string name="grid_category_title">Columns and rows</string>
-  <string name="number_of_columns_title">Grid and app drawer columns</string>
-  <string name="number_of_rows_title">Grid and app drawer rows</string>
-  <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
-  <string name="state_loading">Applying\u2026</string>
-  <string name="app_drawer_category_title">App drawer</string>
-  <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
-  <string name="allow_swipe_down_clearall_desc">Doesn\'t works if P navbar gestures are enabled</string>
-  <string name="settings_feed">Enable Google feed integration</string>
+  <string name="num_default">기본값</string>
+  <string name="grid_category_title">열 및 행</string>
+  <string name="number_of_columns_title">앱 서랍 열</string>
+  <string name="number_of_rows_title">앱 서랍 행</string>
+  <string name="number_of_hotseat_title">홈 화면 빠른 실행 아이콘</string>
+  <string name="state_loading">적용 중\u2026</string>
+  <string name="app_drawer_category_title">앱 서랍</string>
+  <string name="allow_swipe_down_clearall_title">아래로 스와이프해 최근 항목을 비우기</string>
+  <string name="allow_swipe_down_clearall_desc">P 네비게이션 바 제스처를 사용하는 경우 작동하지 않습니다</string>
+  <string name="settings_feed">구글 통합 피드 사용</string>
 </resources>
