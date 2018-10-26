@@ -49,4 +49,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon packs -->
     <string name="icon_pack">Icon pack</string>
     <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_shape_rounded_square">Rounded square</string>
 </resources>
