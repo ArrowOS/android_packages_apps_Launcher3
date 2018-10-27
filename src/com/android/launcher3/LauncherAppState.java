@@ -38,6 +38,7 @@ import com.android.launcher3.notification.NotificationListener;
 import com.android.launcher3.pm.InstallSessionHelper;
 import com.android.launcher3.pm.InstallSessionTracker;
 import com.android.launcher3.pm.UserCache;
+import com.android.launcher3.settings.HomeKeyWatcher;
 import com.android.launcher3.util.MainThreadInitializedObject;
 import com.android.launcher3.util.Preconditions;
 import com.android.launcher3.util.SafeCloseable;
@@ -69,6 +70,8 @@ public class LauncherAppState {
     private SafeCloseable mUserChangeListener;
 
     private boolean mIsSearchAppAvailable;
+    private HomeKeyWatcher mHomeKeyListener = null;
+    private boolean mNeedsRestart;
 
     public static LauncherAppState getInstance(final Context context) {
         return INSTANCE.get(context);
@@ -141,6 +144,31 @@ public class LauncherAppState {
         if (areNotificationDotsEnabled) {
             NotificationListener.requestRebind(new ComponentName(
                     mContext, NotificationListener.class));
+        }
+
+        mHomeKeyListener = new HomeKeyWatcher(mContext);
+    }
+
+    public void setNeedsRestart() {
+        if (mNeedsRestart) {
+            // another pref change already called a restart
+            return;
+        }
+        mNeedsRestart = true;
+        mHomeKeyListener.startWatch();
+        mHomeKeyListener.setOnHomePressedListener(() -> {
+            mHomeKeyListener.stopWatch();
+            Utilities.restart(mContext);
+            // we're killing the whole process so no need to set mNeedsRestart to false again
+        });
+    }
+
+    public void checkIfRestartNeeded() {
+        // we destroyed Settings activity with the back button
+        // so we force a restart now if needed without waiting for home button press
+        if (mNeedsRestart) {
+            mHomeKeyListener.stopWatch();
+            Utilities.restart(mContext);
         }
     }
 
