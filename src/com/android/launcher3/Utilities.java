@@ -136,6 +136,11 @@ public final class Utilities {
     public static final String HOTSEAT_ICONS = "pref_hotseat_icons";
     public static final String DESKTOP_SHOW_LABEL = "pref_desktop_show_label";
     public static final String ALLAPPS_SHOW_LABEL = "pref_allapps_show_label";
+    public static final String PREF_NOTIFICATIONS_GESTURE = "pref_notifications_gesture";
+
+    public static boolean useNotificationsGesture(Context context) {
+        return getPrefs(context).getBoolean(PREF_NOTIFICATIONS_GESTURE, true);
+    }
 
     public static boolean showDesktopLabel(Context context) {
         return getPrefs(context).getBoolean(DESKTOP_SHOW_LABEL, true);
