@@ -16,19 +16,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="theme_style_title">Estilo del tema</string>
-  <string name="theme_style_auto">Basado en el fondo de pantalla</string>
-  <string name="theme_style_light">Estilo claro</string>
-  <string name="theme_style_dark">Estilo oscuro</string>
-  <!-- grid -->
-  <string name="num_default">Predeterminado</string>
-  <string name="grid_category_title">Columnas y filas</string>
-  <string name="number_of_columns_title">Columnas de la cuadricula y cajón de aplicaciones</string>
-  <string name="number_of_rows_title">Filas de la cuadricula y cajón de aplicaciones</string>
-  <string name="number_of_hotseat_title">Iconos de acceso rápido de pantalla de inicio</string>
-  <string name="state_loading">Aplicando\u2026</string>
-  <string name="app_drawer_category_title">Cajón de aplicaciones</string>
-  <string name="allow_swipe_down_clearall_title">Limpiar todos al deslizar desde la lista de apps recientes</string>
-  <string name="allow_swipe_down_clearall_desc">No funciona si los gestos de la barra de navegación P están activados</string>
-  <string name="settings_feed">Activar la integración con el feed de Google</string>
+    <string name="theme_style_title">Estilo del tema</string>
+    <string name="theme_style_auto">Basado en el fondo de pantalla</string>
+    <string name="theme_style_light">Estilo claro</string>
+    <string name="theme_style_dark">Estilo oscuro</string>
+    <!-- grid -->
+    <string name="num_default">Predeterminado</string>
+    <string name="grid_category_title">Columnas y filas</string>
+    <string name="number_of_columns_title">Columnas de la cuadricula y cajón de aplicaciones</string>
+    <string name="number_of_rows_title">Filas de la cuadricula y cajón de aplicaciones</string>
+    <string name="number_of_hotseat_title">Iconos de acceso rápido de pantalla de inicio</string>
+    <string name="state_loading">Aplicando\u2026</string>
+    <string name="app_drawer_category_title">Cajón de aplicaciones</string>
+    <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
+    <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+    <string name="settings_feed">Activar la integración con el feed de Google</string>
 </resources>

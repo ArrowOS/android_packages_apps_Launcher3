@@ -16,19 +16,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="theme_style_title">Téma stílusa</string>
-  <string name="theme_style_auto">Háttérképhez igazodó</string>
-  <string name="theme_style_light">Világos stílus</string>
-  <string name="theme_style_dark">Sötét stílus</string>
-  <!-- grid -->
-  <string name="num_default">Alapértelmezett</string>
-  <string name="grid_category_title">Oszlopok és sorok</string>
-  <string name="number_of_columns_title">Rács és alkalmazásindító oszlopai</string>
-  <string name="number_of_rows_title">Rács és alkalmazásindító sorai</string>
-  <string name="number_of_hotseat_title">Homescreen gyorsindító ikonjai</string>
-  <string name="state_loading">Alkalmazás\u2026</string>
-  <string name="app_drawer_category_title">Alkalmazásindító</string>
-  <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
-  <string name="allow_swipe_down_clearall_desc">Doesn\'t works if P navbar gestures are enabled</string>
-  <string name="settings_feed">Enable Google feed integration</string>
+    <string name="theme_style_title">Téma stílusa</string>
+    <string name="theme_style_auto">Háttérképhez igazodó</string>
+    <string name="theme_style_light">Világos stílus</string>
+    <string name="theme_style_dark">Sötét stílus</string>
+    <!-- grid -->
+    <string name="num_default">Alapértelmezett</string>
+    <string name="grid_category_title">Oszlopok és sorok</string>
+    <string name="number_of_columns_title">Rács és alkalmazásindító oszlopai</string>
+    <string name="number_of_rows_title">Rács és alkalmazásindító sorai</string>
+    <string name="number_of_hotseat_title">Homescreen gyorsindító ikonjai</string>
+    <string name="state_loading">Alkalmazás\u2026</string>
+    <string name="app_drawer_category_title">Alkalmazásindító</string>
+    <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
+    <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+    <string name="settings_feed">Enable Google feed integration</string>
 </resources>
