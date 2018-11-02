@@ -17,6 +17,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Show searchbar -->
+    <string name="show_searchbar_title">Show search bar</string>
+    <string name="show_searchbar_summary">Show the search bar on the home screen</string>
+
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
     <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
