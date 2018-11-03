@@ -16,19 +16,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="theme_style_title">نوع السمة</string>
-  <string name="theme_style_auto">على أساس الخلفية</string>
-  <string name="theme_style_light">النمط الفاتح</string>
-  <string name="theme_style_dark">النمط الداكن</string>
-  <!-- grid -->
-  <string name="num_default">الافتراضي</string>
-  <string name="grid_category_title">الأعمدة والصفوف</string>
-  <string name="number_of_columns_title">أعمدة درج التطبيق والشبكة</string>
-  <string name="number_of_rows_title">صفوف درج التطبيق والشبكة</string>
-  <string name="number_of_hotseat_title">رموز التشغيل السريع للشاشة الرئيسية</string>
-  <string name="state_loading">تطبيق..</string>
-  <string name="app_drawer_category_title">درج التطبيق</string>
-  <string name="allow_swipe_down_clearall_title">مسح الكل عند التمرير الى اسفل من أخر المعروضات</string>
-  <string name="allow_swipe_down_clearall_desc">لا يعمل إذا كان شريط تنقل اندرويد P فعال</string>
-  <string name="settings_feed">تمكين دمج تغزيه جوجل</string>
+    <string name="theme_style_title">نوع السمة</string>
+    <string name="theme_style_auto">على أساس الخلفية</string>
+    <string name="theme_style_light">النمط الفاتح</string>
+    <string name="theme_style_dark">النمط الداكن</string>
+    <!-- grid -->
+    <string name="num_default">الافتراضي</string>
+    <string name="grid_category_title">الأعمدة والصفوف</string>
+    <string name="number_of_columns_title">أعمدة درج التطبيق والشبكة</string>
+    <string name="number_of_rows_title">صفوف درج التطبيق والشبكة</string>
+    <string name="number_of_hotseat_title">رموز التشغيل السريع للشاشة الرئيسية</string>
+    <string name="state_loading">تطبيق..</string>
+    <string name="app_drawer_category_title">درج التطبيق</string>
+    <string name="allow_swipe_down_clearall_title">مسح جميع التطبيقات مع إيماءة السحب لأسفل</string>
+    <string name="allow_swipe_down_clearall_desc">سيؤدي هذا إلى محو جميع التطبيقات من خلال التمرير السريع لأسفل في شاشة التطبيقات الاخيرة لاندرويد P.</string>
+    <string name="settings_feed">تمكين دمج تغزيه جوجل</string>
 </resources>
