@@ -26,9 +26,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="number_of_columns_title">Griglia e colonne dell\'App Drawer</string>
     <string name="number_of_rows_title">Griglia e righe dell\'App Drawer</string>
     <string name="number_of_hotseat_title">Icone di avvio rapido della schermata iniziale</string>
-    <string name="state_loading">Applicando\u2026</string>
+    <string name="state_loading">Applico\u2026</string>
     <string name="app_drawer_category_title">App drawer</string>
-    <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
-    <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+    <string name="allow_swipe_down_clearall_title">Rimuovi tutte le app recenti con uno swipe verso il basso</string>
+    <string name="allow_swipe_down_clearall_desc">Rimuovi tutte le app recenti facendo uno swipe verso il basso nella schermata delle app recenti di Pie.</string>
     <string name="settings_feed">Attiva integrazione Google feed</string>
 </resources>

@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="number_of_hotseat_title">رموز التشغيل السريع للشاشة الرئيسية</string>
     <string name="state_loading">تطبيق..</string>
     <string name="app_drawer_category_title">درج التطبيق</string>
-    <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
-    <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+    <string name="allow_swipe_down_clearall_title">مسح جميع التطبيقات مع إيماءة السحب لأسفل</string>
+    <string name="allow_swipe_down_clearall_desc">سيؤدي هذا إلى محو جميع التطبيقات من خلال التمرير السريع لأسفل في شاشة التطبيقات الاخيرة لاندرويد P.</string>
     <string name="settings_feed">تمكين دمج تغزيه جوجل</string>
 </resources>
