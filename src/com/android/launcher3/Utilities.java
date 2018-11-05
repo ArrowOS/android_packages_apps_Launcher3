@@ -23,6 +23,7 @@ import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
 import android.app.Person;
+import android.app.ProgressDialog;
 import android.app.WallpaperManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -46,6 +47,7 @@ import android.os.DeadObjectException;
 import android.os.Handler;
 import android.os.Message;
 import android.os.PowerManager;
+import android.os.SystemClock;
 import android.os.TransactionTooLargeException;
 import android.provider.Settings;
 import android.text.Spannable;
@@ -62,6 +64,7 @@ import android.view.animation.Interpolator;
 
 import com.android.launcher3.compat.LauncherAppsCompat;
 import com.android.launcher3.compat.ShortcutConfigActivityInfo;
+import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.dragndrop.FolderAdaptiveIcon;
 import com.android.launcher3.graphics.RotationMode;
 import com.android.launcher3.graphics.TintedDrawableSpan;
@@ -135,6 +138,7 @@ public final class Utilities {
     public static final String GRID_COLUMNS = "pref_grid_columns";
     public static final String GRID_ROWS = "pref_grid_rows";
     public static final String HOTSEAT_ICONS = "pref_hotseat_icons";
+    public static final String DESKTOP_SHOW_QSB = "pref_qsb_show";
 
     public static boolean IS_RUNNING_IN_TEST_HARNESS =
                     ActivityManager.isRunningInTestHarness();
@@ -176,6 +180,10 @@ public final class Utilities {
         } catch (Exception e) {
             return preferenceFallback;
         }
+    }
+
+    public static boolean showQsbWidget(Context context) {
+         return getPrefs(context).getBoolean(DESKTOP_SHOW_QSB, FeatureFlags.QSB_ON_FIRST_SCREEN);
     }
 
     /**
@@ -657,7 +665,7 @@ public final class Utilities {
     }
 
     public static void restart(final Context context) {
-        //ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
+        ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
         MODEL_EXECUTOR.execute(() -> {
             try {
                 Thread.sleep(WAIT_BEFORE_RESTART);
