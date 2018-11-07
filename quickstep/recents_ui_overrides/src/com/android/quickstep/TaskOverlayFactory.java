@@ -43,7 +43,8 @@ public class TaskOverlayFactory implements ResourceBasedOverride {
             new TaskSystemShortcut.SplitScreen(),
             new TaskSystemShortcut.Pin(),
             new TaskSystemShortcut.Install(),
-            new TaskSystemShortcut.Freeform()
+            new TaskSystemShortcut.Freeform(),
+            new TaskSystemShortcut.KillApp()
     };
 
     public static final MainThreadInitializedObject<TaskOverlayFactory> INSTANCE =
