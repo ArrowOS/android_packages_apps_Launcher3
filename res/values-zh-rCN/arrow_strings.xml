@@ -21,14 +21,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="theme_style_light">明亮样式</string>
     <string name="theme_style_dark">深色样式</string>
     <!-- grid -->
-    <string name="num_default">默认</string>
+    <string name="num_default">默认 </string>
     <string name="grid_category_title">列和行</string>
     <string name="number_of_columns_title">网格和应用抽屉专栏</string>
     <string name="number_of_rows_title">网格和应用程序抽屉行</string>
     <string name="number_of_hotseat_title">桌面快速启动图标</string>
     <string name="state_loading">正在应用\u2026</string>
     <string name="app_drawer_category_title">应用抽屉</string>
-    <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
-    <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+    <string name="allow_swipe_down_clearall_title">向下滑动以清除最近任务</string>
+    <string name="allow_swipe_down_clearall_desc">如果启用了 P 导航栏样式, 则不起作用</string>
     <string name="settings_feed">启用 Google 资讯卡 支持</string>
 </resources>

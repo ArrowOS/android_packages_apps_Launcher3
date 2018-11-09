@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="number_of_hotseat_title">Ikony rychlého spuštění na domovské obrazovce</string>
     <string name="state_loading">Aplikuje se\u2026</string>
     <string name="app_drawer_category_title">Seznam aplikací</string>
-    <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
-    <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+    <string name="allow_swipe_down_clearall_title">Vymazat všechny aplikace gestem potažení dolů</string>
+    <string name="allow_swipe_down_clearall_desc">Vymaže všechny aplikace pomocí gesta přejetí dolů na obrazovce nedávných aplikací Pie.</string>
     <string name="settings_feed">Povolit integraci kanálu Google</string>
 </resources>

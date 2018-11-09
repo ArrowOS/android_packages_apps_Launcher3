@@ -16,19 +16,19 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="theme_style_title">Theme style</string>
-    <string name="theme_style_auto">Wallpaper based</string>
-    <string name="theme_style_light">Light style</string>
-    <string name="theme_style_dark">Dark style</string>
+    <string name="theme_style_title">主題風格</string>
+    <string name="theme_style_auto">根據桌布</string>
+    <string name="theme_style_light">淺色風格</string>
+    <string name="theme_style_dark">深色風格</string>
     <!-- grid -->
     <string name="num_default">預設</string>
-    <string name="grid_category_title">Columns and rows</string>
-    <string name="number_of_columns_title">Grid and app drawer columns</string>
-    <string name="number_of_rows_title">Grid and app drawer rows</string>
-    <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
+    <string name="grid_category_title">欄與列</string>
+    <string name="number_of_columns_title">網格和應用程式抽屜列</string>
+    <string name="number_of_rows_title">網格和應用程式抽屜列</string>
+    <string name="number_of_hotseat_title">主畫面快速啟動圖示</string>
     <string name="state_loading">套用中\u2026</string>
-    <string name="app_drawer_category_title">App drawer</string>
-    <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
+    <string name="app_drawer_category_title">應用程式清單</string>
+    <string name="allow_swipe_down_clearall_title">通過向下滑動手勢清除所有應用</string>
     <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
-    <string name="settings_feed">Enable Google feed integration</string>
+    <string name="settings_feed">啟用Google Feed整合</string>
 </resources>
