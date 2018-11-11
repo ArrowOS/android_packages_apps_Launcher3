@@ -2496,6 +2496,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         }
         if ("pref_iconPackPackage".equals(key)) {
             mModel.clearIconCache();
+            mModel.setIconPack();
             mModel.forceReload();
         }
     }
