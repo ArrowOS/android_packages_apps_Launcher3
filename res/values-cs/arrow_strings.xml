@@ -30,5 +30,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">Seznam aplikací</string>
     <string name="allow_swipe_down_clearall_title">Vymazat všechny aplikace gestem potažení dolů</string>
     <string name="allow_swipe_down_clearall_desc">Vymaže všechny aplikace pomocí gesta přejetí dolů na obrazovce nedávných aplikací Pie.</string>
+    <!-- Show labels on icon -->
+    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
+    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
+    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
+    <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
+    <!-- Gestures -->
+    <string name="pref_notifications_gesture_title">Notifications gesture</string>
+    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
     <string name="settings_feed">Povolit integraci kanálu Google</string>
+    <!-- Icon packs -->
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_pack_summary">Select a custom icon pack</string>
 </resources>

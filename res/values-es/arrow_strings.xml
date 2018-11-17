@@ -28,7 +28,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="number_of_hotseat_title">Iconos de acceso rápido de pantalla de inicio</string>
     <string name="state_loading">Aplicando\u2026</string>
     <string name="app_drawer_category_title">Cajón de aplicaciones</string>
-    <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
-    <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+    <string name="allow_swipe_down_clearall_title">Limpiar todas las apps recientes con deslizamiento hacia abajo</string>
+    <string name="allow_swipe_down_clearall_desc">Se limpiará todas las aplicaciones con gesto de deslizamiento abajo en el menú de recientes de Pie.</string>
+    <!-- Show labels on icon -->
+    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
+    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
+    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
+    <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
+    <!-- Gestures -->
+    <string name="pref_notifications_gesture_title">Notifications gesture</string>
+    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
     <string name="settings_feed">Activar la integración con el feed de Google</string>
+    <!-- Icon packs -->
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_pack_summary">Select a custom icon pack</string>
 </resources>
