@@ -31,15 +31,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_title">Tüm uygulamaları aşağı kaydırma hareketi ile temizle</string>
     <string name="allow_swipe_down_clearall_desc">Tüm uygulamaları Pie son uygulamalar görünümünde hızlıca kaydırma hareketiyle temizler.</string>
     <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
-    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
-    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
-    <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
+    <string name="desktop_show_label_title">Ana ekran uygulama etiketleri</string>
+    <string name="desktop_show_label_summary">Masa üstü simgelerin altında etiket göster</string>
+    <string name="allapps_show_label_title">Uygulama çekmecesi</string>
+    <string name="allapps_show_label_summary">Uygulama çekmecesi altında simge etiketlerini göster</string>
     <!-- Gestures -->
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
+    <string name="pref_notifications_gesture_title">Bildirim hareketleri</string>
+    <string name="pref_notifications_gesture_summary">Bildirim panelini göstermek için ana ekranda dikey olarak aşağı doğru hızlıca kaydırın</string>
     <string name="settings_feed">Google now entegrasyonunu etkinleştir</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_pack">Simge paketi</string>
+    <string name="icon_pack_summary">Özel simge paketi seçin</string>
 </resources>

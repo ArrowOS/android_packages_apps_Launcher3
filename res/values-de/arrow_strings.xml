@@ -36,10 +36,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
     <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
     <!-- Gestures -->
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
+    <string name="pref_notifications_gesture_title">Benachrichtigungsgeste</string>
+    <string name="pref_notifications_gesture_summary">Nach unten wischen um Benachrichtigungen anzuzeigen</string>
     <string name="settings_feed">Google Feed integrieren</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_pack">Icon-Paket</string>
+    <string name="icon_pack_summary">Wähle ein Icon-Pack</string>
 </resources>

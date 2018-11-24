@@ -31,15 +31,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_title">向下滑动以清除最近任务</string>
     <string name="allow_swipe_down_clearall_desc">如果启用了 P 导航栏样式, 则不起作用</string>
     <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
-    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
+    <string name="desktop_show_label_title">主屏幕应用程序标签</string>
+    <string name="desktop_show_label_summary">显示桌面图标下方的标签</string>
     <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
     <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
+    <string name="pref_notifications_gesture_summary">在主屏幕上垂直向下滑动以显示通知面板</string>
     <string name="settings_feed">启用 Google 资讯卡 支持</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_pack">图标包</string>
+    <string name="icon_pack_summary">选择一个自定义图标包</string>
 </resources>

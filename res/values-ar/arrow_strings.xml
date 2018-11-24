@@ -31,15 +31,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_title">مسح جميع التطبيقات مع إيماءة السحب لأسفل</string>
     <string name="allow_swipe_down_clearall_desc">سيؤدي هذا إلى محو جميع التطبيقات من خلال التمرير السريع لأسفل في شاشة التطبيقات الاخيرة لاندرويد P.</string>
     <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
-    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
-    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
-    <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
+    <string name="desktop_show_label_title">تسميات تطبيقات الشاشة الرئيسية</string>
+    <string name="desktop_show_label_summary">عرض التسميات أسفل الرموز على سطح المكتب</string>
+    <string name="allapps_show_label_title">تسميات تطبيقات درج التطبيق</string>
+    <string name="allapps_show_label_summary">عرض التسميات أسفل الرموز في درج التطبيق</string>
     <!-- Gestures -->
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
+    <string name="pref_notifications_gesture_title">إيماءة الإشعارات</string>
+    <string name="pref_notifications_gesture_summary">مرّر سريعاً عمودياً لأسفل على الشاشة الرئيسية لعرض لوحة الإشعارات</string>
     <string name="settings_feed">تمكين دمج تغزيه جوجل</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_pack">حزم الإيقونات</string>
+    <string name="icon_pack_summary">اختر حزمة أيقونات مخصصة</string>
 </resources>

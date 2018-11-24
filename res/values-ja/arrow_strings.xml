@@ -31,15 +31,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_title">下スワイプジェスチャーで全てのアプリを消去する</string>
     <string name="allow_swipe_down_clearall_desc">Pieのアプリ履歴画面での下スワイプジェスチャーで全てのアプリを消去する</string>
     <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
-    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
-    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
-    <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
+    <string name="desktop_show_label_title">ホーム画面のアプリのラベル</string>
+    <string name="desktop_show_label_summary">デスクトップのアイコンの下にラベルを表示する</string>
+    <string name="allapps_show_label_title">アプリドロワーのアプリラベル</string>
+    <string name="allapps_show_label_summary">アプリドロワーのアイコンの下にラベルを表示する</string>
     <!-- Gestures -->
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
+    <string name="pref_notifications_gesture_title">通知ジェスチャー</string>
     <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
     <string name="settings_feed">Googleフィードの統合を有効にする</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_pack">アイコンパック</string>
+    <string name="icon_pack_summary">カスタムアイコンパックを選択</string>
 </resources>

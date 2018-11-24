@@ -31,7 +31,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_title">Очистить все приложения свайпом вниз</string>
     <string name="allow_swipe_down_clearall_desc">Это очистит все приложения с помощью свайпа вниз в новом виде «Недавних приложений» Pie.</string>
     <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
+    <string name="desktop_show_label_title">Ярлыки приложений домашнего экрана</string>
     <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
     <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
     <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
@@ -40,6 +40,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
     <string name="settings_feed">Включить интеграцию с лентой Google</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_pack">Набор значков</string>
+    <string name="icon_pack_summary">Выберите набор значков</string>
 </resources>
