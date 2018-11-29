@@ -42,4 +42,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon packs -->
     <string name="icon_pack">Набор значков</string>
     <string name="icon_pack_summary">Выберите набор значков</string>
+    <string name="icon_shape_rounded_square">Rounded square</string>
 </resources>
