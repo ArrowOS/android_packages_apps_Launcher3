@@ -42,5 +42,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon packs -->
     <string name="icon_pack">Pacchetto icone</string>
     <string name="icon_pack_summary">Seleziona un pacchetto di icone personalizzato</string>
-    <string name="icon_shape_rounded_square">Rounded square</string>
+    <string name="icon_shape_rounded_square">Quadrato arrotondato</string>
 </resources>
