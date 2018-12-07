@@ -33,7 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show labels on icon -->
     <string name="desktop_show_label_title">Etiquetas de aplicaciones de la pantalla de inicio</string>
     <string name="desktop_show_label_summary">Mostrar etiquetas debajo de los iconos en el escritorio</string>
-    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
+    <string name="allapps_show_label_title">Etiquetas de aplicaciones del cajón de aplicaciones</string>
     <string name="allapps_show_label_summary">Mostrar etiquetas debajo de los iconos en el cajón de aplicaciones</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Gesto de notificaciones</string>
