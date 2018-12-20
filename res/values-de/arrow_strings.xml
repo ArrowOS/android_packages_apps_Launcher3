@@ -32,8 +32,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_desc">Alle Apps werden mit einer Wischbewegung in der Pie-Ansicht gelöscht.</string>
     <!-- Show labels on icon -->
     <string name="desktop_show_label_title">Startbildschirm App Beschriftungen</string>
-    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
-    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
+    <string name="desktop_show_label_summary">Zeige die Bezeichnung unter den Symbolen auf dem Desktop an</string>
+    <string name="allapps_show_label_title">App-Drawer App Bezeichnung</string>
     <string name="allapps_show_label_summary">Zeige Beschriftung in der App Übersicht unterhalb der Symbole an</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Benachrichtigungsgeste</string>
@@ -42,5 +42,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon packs -->
     <string name="icon_pack">Icon-Paket</string>
     <string name="icon_pack_summary">Wähle ein Icon-Pack</string>
-    <string name="icon_shape_rounded_square">Rounded square</string>
+    <string name="icon_shape_rounded_square">Abgerundetes Quadrat</string>
 </resources>

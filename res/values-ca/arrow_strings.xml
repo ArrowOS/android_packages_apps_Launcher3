@@ -16,31 +16,31 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="theme_style_title">Theme style</string>
-    <string name="theme_style_auto">Wallpaper based</string>
-    <string name="theme_style_light">Light style</string>
-    <string name="theme_style_dark">Dark style</string>
+    <string name="theme_style_title">Estil del tema</string>
+    <string name="theme_style_auto">Basat en el fons de pantalla</string>
+    <string name="theme_style_light">Estil clar</string>
+    <string name="theme_style_dark">Estil fosc</string>
     <!-- grid -->
-    <string name="num_default">Default</string>
-    <string name="grid_category_title">Columns and rows</string>
-    <string name="number_of_columns_title">Grid and app drawer columns</string>
-    <string name="number_of_rows_title">Grid and app drawer rows</string>
-    <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
-    <string name="state_loading">Applying\u2026</string>
-    <string name="app_drawer_category_title">App drawer</string>
-    <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
-    <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+    <string name="num_default">Per defecte</string>
+    <string name="grid_category_title">Columnes i files</string>
+    <string name="number_of_columns_title">Columnes de la quadrícula i calaix d\'aplicacions</string>
+    <string name="number_of_rows_title">Files de la quadrícula i calaix d\'aplicacions</string>
+    <string name="number_of_hotseat_title">Icones d\'accés ràpid de la pantalla d\'inici</string>
+    <string name="state_loading">S\'està aplicant\u2026</string>
+    <string name="app_drawer_category_title">Calaix d\'aplicacions</string>
+    <string name="allow_swipe_down_clearall_title">Elimina totes les aplicacions amb el gest de lliscar cap avall</string>
+    <string name="allow_swipe_down_clearall_desc">S\'eliminaran totes les aplicacions amb amb el gest de lliscar cap avall al menú recents de Pie.</string>
     <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
-    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
-    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
-    <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
+    <string name="desktop_show_label_title">Etiquetes de les aplicacions de la pantalla d\'inici</string>
+    <string name="desktop_show_label_summary">Mostra les etiquetes sota de les icones de l\'escriptori</string>
+    <string name="allapps_show_label_title">Etiquetes de les aplicacions del calaix d\'aplicacions</string>
+    <string name="allapps_show_label_summary">Mostra les etiquetes sota les icones del calaix d\'aplicacions</string>
     <!-- Gestures -->
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
-    <string name="settings_feed">Enable Google feed integration</string>
+    <string name="pref_notifications_gesture_title">Gest de notificacions</string>
+    <string name="pref_notifications_gesture_summary">Llisqueu verticalment cap avall a la pantalla d\'inici per mostrar el panell de notificacions</string>
+    <string name="settings_feed">Activa la integració amb el mur de Google</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
-    <string name="icon_shape_rounded_square">Rounded square</string>
+    <string name="icon_pack">Paquet d\'icones</string>
+    <string name="icon_pack_summary">Seleccioneu un paquet d\'icones</string>
+    <string name="icon_shape_rounded_square">Quadrat arrodonit</string>
 </resources>
