@@ -23,6 +23,13 @@
           LAUNCHER_HOME_SCREEN_ROTATION_DISABLED(616)
         -->
 
+    <!--
+      LAUNCHER_HOME_SCREEN_ROTATION_ENABLED(615)
+      LAUNCHER_HOME_SCREEN_ROTATION_DISABLED(616)
+    -->  
+	<Preference
+        android:key="pref_trust_apps"
+        android:title="@string/trust_apps_manager_name" />
     <SwitchPreference
         android:key="pref_allowRotation"
         android:title="@string/allow_rotation_title"
