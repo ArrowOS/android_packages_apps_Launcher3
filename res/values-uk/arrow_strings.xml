@@ -17,7 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="theme_style_title">Стиль теми</string>
-    <string name="theme_style_auto">Основні шпалери</string>
+    <string name="theme_style_auto">На основі шпалер</string>
     <string name="theme_style_light">Світлий стиль</string>
     <string name="theme_style_dark">Темний стиль</string>
     <!-- grid -->
@@ -42,5 +42,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon packs -->
     <string name="icon_pack">Набір значків</string>
     <string name="icon_pack_summary">Вибрати набір значків</string>
-    <string name="icon_shape_rounded_square">Заокруглений квадрат</string>
+    <string name="icon_shape_rounded_square">Квадрат із закругленими кутами</string>
 </resources>

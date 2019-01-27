@@ -25,22 +25,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="grid_category_title">欄與列</string>
     <string name="number_of_columns_title">網格和應用程式抽屜列</string>
     <string name="number_of_rows_title">網格和應用程式抽屜列</string>
-    <string name="number_of_hotseat_title">主畫面快速啟動圖示</string>
+    <string name="number_of_hotseat_title">首頁快速啟動圖示</string>
     <string name="state_loading">套用中\u2026</string>
     <string name="app_drawer_category_title">應用程式清單</string>
-    <string name="allow_swipe_down_clearall_title">通過向下滑動手勢清除所有應用</string>
-    <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
+    <string name="allow_swipe_down_clearall_title">向下滑動手勢清除所有應用程式</string>
+    <string name="allow_swipe_down_clearall_desc">這將會在 Android P 上透過向下滑動手勢清除所有應用程式。</string>
     <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Homescreen Apps Labels</string>
-    <string name="desktop_show_label_summary">Show labels below the icons on desktop</string>
-    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
-    <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
+    <string name="desktop_show_label_title">首頁應用程式標籤</string>
+    <string name="desktop_show_label_summary">在桌面上的圖示下方顯示標籤</string>
+    <string name="allapps_show_label_title">應用程式清單標籤</string>
+    <string name="allapps_show_label_summary">在應用程式清單內顯示標籤</string>
     <!-- Gestures -->
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
+    <string name="pref_notifications_gesture_title">狀態列手勢</string>
+    <string name="pref_notifications_gesture_summary">在首頁垂直向下滑動來顯示快速設定面板</string>
     <string name="settings_feed">啟用Google Feed整合</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
-    <string name="icon_shape_rounded_square">Rounded square</string>
+    <string name="icon_pack">圖示包</string>
+    <string name="icon_pack_summary">選擇一個自訂的圖示包</string>
+    <string name="icon_shape_rounded_square">圓角正方形</string>
 </resources>
