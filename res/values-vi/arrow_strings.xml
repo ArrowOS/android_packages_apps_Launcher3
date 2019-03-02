@@ -30,11 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">Ngăn chứa ứng dụng</string>
     <string name="allow_swipe_down_clearall_title">Xoá tất cả ứng dụng với cử chỉ vuốt xuống</string>
     <string name="allow_swipe_down_clearall_desc">Nó sẽ xóa tất cả ứng dụng bằng cử chỉ vuốt xuống trên giao diện gần đây Pie.</string>
-    <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Nhãn ứng dụng trên màn hình chính</string>
-    <string name="desktop_show_label_summary">Hiển thị nhãn bên dưới biểu tượng trên màn hình chính</string>
-    <string name="allapps_show_label_title">Nhãn ứng dụng trong ngăn chứa</string>
-    <string name="allapps_show_label_summary">Hiển thị nhãn bên dưới biểu tượng trong ngăn chứa ứng dụng</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Cử chỉ thông báo</string>
     <string name="pref_notifications_gesture_summary">Vuốt xuống trên màn hình chính để hiển thị bảng thông báo</string>

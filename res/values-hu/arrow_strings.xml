@@ -30,11 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">Alkalmazásindító</string>
     <string name="allow_swipe_down_clearall_title">Öszzes alkamazás bezárása a lehúzás mozdulattal</string>
     <string name="allow_swipe_down_clearall_desc">Öszzes mostanában megtekintett alkamazás bezárása a lehúzás mozdulattal.</string>
-    <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Kezdőképernyő alkamazásai</string>
-    <string name="desktop_show_label_summary">Alkalmazások nevének kiírása az asztalon az ikon alatt</string>
-    <string name="allapps_show_label_title">AppDrawer Alkalmazás Címkék</string>
-    <string name="allapps_show_label_summary">Alkalmazás címkék mutatása az ikonok alatt az app drawer-ben</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Értesítés a mozdulat vezérléshez</string>
     <string name="pref_notifications_gesture_summary">Az értesítési panel megjelenítéséhez húzza lefelé az újait a kezdőképernyőn</string>

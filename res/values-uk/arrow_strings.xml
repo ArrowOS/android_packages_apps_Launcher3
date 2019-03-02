@@ -30,11 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">Меню додатків</string>
     <string name="allow_swipe_down_clearall_title">Очистити всі програми свайпом вниз</string>
     <string name="allow_swipe_down_clearall_desc">Жест вниз закриє всі програми у меню недавніх застосунків.</string>
-    <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Значки програм домашнього екрана</string>
-    <string name="desktop_show_label_summary">Показати ярлики під піктограмами на робочому столі</string>
-    <string name="allapps_show_label_title">Мітки додатків AppDrawer</string>
-    <string name="allapps_show_label_summary">Показати ярлики під піктограмами в AppDrawer</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Жести сповіщень</string>
     <string name="pref_notifications_gesture_summary">Проведіть пальцем по вертикалі вниз на головному екрані, щоб відобразити панель сповіщень</string>

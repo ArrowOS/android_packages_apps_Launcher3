@@ -30,11 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">Συρτάρι εφαρμογών</string>
     <string name="allow_swipe_down_clearall_title">Απαλοιφή όλων των εφαρμογών με χειρονομία σάρωσης προς τα κάτω</string>
     <string name="allow_swipe_down_clearall_desc">Αυτό θα απαλείψει όλες τις εφαρμογές στην προβολή της πίτας των πρόσφατων, με μια χειρονομία σάρωσης προς τα κάτω.</string>
-    <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Ετικέτες εφαρμογών της αρχικής οθόνης</string>
-    <string name="desktop_show_label_summary">Εμφάνιση ετικετών κάτω από τα εικονίδια στην επιφάνεια εργασίας</string>
-    <string name="allapps_show_label_title">Ετικέτες εφαρμογών του συρταριού εφαρμογών</string>
-    <string name="allapps_show_label_summary">Εμφάνιση ετικετών κάτω από τα εικονίδια στο συρτάρι εφαρμογών</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Χειρονομία ειδοποιήσεων</string>
     <string name="pref_notifications_gesture_summary">Σαρώστε προς τα κάτω κάθετα στην αρχική οθόνη για να δείξει τον πίνακα ειδοποιήσεων</string>

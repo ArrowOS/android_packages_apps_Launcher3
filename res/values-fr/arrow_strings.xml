@@ -30,11 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">Menu applications</string>
     <string name="allow_swipe_down_clearall_title">Désactivez toutes les applications avec un glissement vers le bas</string>
     <string name="allow_swipe_down_clearall_desc">Efface toutes les applications en glissant vers le bas dans la vue \"récente\" Pie.</string>
-    <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Labels des applications de l\'écran d\'accueil</string>
-    <string name="desktop_show_label_summary">Afficher les labels sous les icônes sur le bureau</string>
-    <string name="allapps_show_label_title">Libellés des applications dans la grille d\'applications</string>
-    <string name="allapps_show_label_summary">Afficher les labels sous les icônes dans le tiroir d\'applications</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Gestes pour les notifications</string>
     <string name="pref_notifications_gesture_summary">Faites glisser le doigt vers le bas sur l\'écran d\'accueil pour montrer le panneau de notifications</string>

@@ -30,11 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">Applåda</string>
     <string name="allow_swipe_down_clearall_title">Rensa alla appar genom att svepa nedåt</string>
     <string name="allow_swipe_down_clearall_desc">Detta kommer att rensa alla appar när du sveper nedåt i senaste-vyn i Pie.</string>
-    <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Appetiketter på startskärmen</string>
-    <string name="desktop_show_label_summary">Visa etiketter under ikonerna på skrivbordet</string>
-    <string name="allapps_show_label_title">Appetiketter i applådan</string>
-    <string name="allapps_show_label_summary">Visa etiketter under ikonerna i applådan</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Aviseringsrörelse</string>
     <string name="pref_notifications_gesture_summary">Svep lodrätt nedåt på startskärmen för att visa aviseringspanelen</string>

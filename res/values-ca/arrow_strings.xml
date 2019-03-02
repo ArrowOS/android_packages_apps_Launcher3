@@ -30,11 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">Calaix d\'aplicacions</string>
     <string name="allow_swipe_down_clearall_title">Elimina totes les aplicacions amb el gest de lliscar cap avall</string>
     <string name="allow_swipe_down_clearall_desc">S\'eliminaran totes les aplicacions amb amb el gest de lliscar cap avall al menú recents de Pie.</string>
-    <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Etiquetes de les aplicacions de la pantalla d\'inici</string>
-    <string name="desktop_show_label_summary">Mostra les etiquetes sota de les icones de l\'escriptori</string>
-    <string name="allapps_show_label_title">Etiquetes de les aplicacions del calaix d\'aplicacions</string>
-    <string name="allapps_show_label_summary">Mostra les etiquetes sota les icones del calaix d\'aplicacions</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Gest de notificacions</string>
     <string name="pref_notifications_gesture_summary">Llisqueu verticalment cap avall a la pantalla d\'inici per mostrar el panell de notificacions</string>

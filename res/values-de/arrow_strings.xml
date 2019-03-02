@@ -30,11 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">App-Drawer</string>
     <string name="allow_swipe_down_clearall_title">Wischen sie nach unten um alle Apps zu schließen</string>
     <string name="allow_swipe_down_clearall_desc">Alle Apps werden mit einer Wischbewegung in der Pie-Ansicht gelöscht.</string>
-    <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">Startbildschirm App Beschriftungen</string>
-    <string name="desktop_show_label_summary">Zeige die Bezeichnung unter den Symbolen auf dem Desktop an</string>
-    <string name="allapps_show_label_title">App-Drawer App Bezeichnung</string>
-    <string name="allapps_show_label_summary">Zeige Beschriftung in der App Übersicht unterhalb der Symbole an</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Benachrichtigungsgeste</string>
     <string name="pref_notifications_gesture_summary">Nach unten wischen um Benachrichtigungen anzuzeigen</string>

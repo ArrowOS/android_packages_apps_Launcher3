@@ -30,11 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">பயன்பாட்டு அலமாரி</string>
     <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
     <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
-    <!-- Show labels on icon -->
-    <string name="desktop_show_label_title">முகப்புத்திரை பயன்பாடுகள் லேபல்கள்</string>
-    <string name="desktop_show_label_summary">திரைப்பலகத்தில் படவுரு கீழ் லேபல்களைக் காட்டு</string>
-    <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
-    <string name="allapps_show_label_summary">அலமாரியில் படவுரு கீழ் லேபல்களைக் காட்டு</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">Notifications gesture</string>
     <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
