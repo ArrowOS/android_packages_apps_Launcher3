@@ -31,11 +31,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_title">Clear all apps with a swipe down gesture</string>
     <string name="allow_swipe_down_clearall_desc">It will clear all Apps with a swipe down gesture on the Pie recents view.</string>
     <!-- Gestures -->
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the notification panel</string>
+    <string name="pref_notifications_gesture_title">알림 제스처</string>
+    <string name="pref_notifications_gesture_summary">알림 패널을 보려면 홈 화면에서 아래로 밀기</string>
     <string name="settings_feed">구글 통합 피드 사용</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
+    <string name="icon_pack">아이콘 팩</string>
     <string name="icon_pack_summary">Select a custom icon pack</string>
-    <string name="icon_shape_rounded_square">Rounded square</string>
+    <string name="icon_shape_rounded_square">모서리가 둥근 사각형</string>
 </resources>
