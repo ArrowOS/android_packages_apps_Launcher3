@@ -39,7 +39,9 @@ public class SystemShortcutFactory implements ResourceBasedOverride {
     @SuppressWarnings("unused")
     public SystemShortcutFactory() {
         this(new SystemShortcut.AppInfo(),
-                new SystemShortcut.Widgets(), new SystemShortcut.Install());
+                new SystemShortcut.Widgets(),
+                new SystemShortcut.Install(),
+                new SystemShortcut.Uninstall());
     }
 
     protected SystemShortcutFactory(SystemShortcut... shortcuts) {
