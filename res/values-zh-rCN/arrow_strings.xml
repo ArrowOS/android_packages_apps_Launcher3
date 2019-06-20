@@ -23,19 +23,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- grid -->
     <string name="num_default">默认 </string>
     <string name="grid_category_title">列和行</string>
-    <string name="number_of_columns_title">网格和应用抽屉专栏</string>
-    <string name="number_of_rows_title">网格和应用程序抽屉行</string>
+    <string name="number_of_columns_title">网格和应用抽屉列数</string>
+    <string name="number_of_rows_title">网格和应用抽屉行数</string>
     <string name="number_of_hotseat_title">桌面快速启动图标</string>
     <string name="state_loading">正在应用\u2026</string>
     <string name="app_drawer_category_title">应用抽屉</string>
     <string name="allow_swipe_down_clearall_title">向下滑动以清除最近任务</string>
-    <string name="allow_swipe_down_clearall_desc">如果启用了 P 导航栏样式, 则不起作用</string>
+    <string name="allow_swipe_down_clearall_desc">将在 Pie 最近任务视图上用向下滑动的手势清除所有应用。</string>
     <!-- Gestures -->
     <string name="pref_notifications_gesture_title">通知手势</string>
-    <string name="pref_notifications_gesture_summary">在主屏幕上垂直向下滑动以显示通知面板</string>
-    <string name="settings_feed">启用 Google 资讯卡 支持</string>
+    <string name="pref_notifications_gesture_summary">在主屏幕上垂直向下滑动以显示快速设置面板</string>
+    <string name="settings_feed">启用资讯集成</string>
     <!-- Icon packs -->
     <string name="icon_pack">图标包</string>
     <string name="icon_pack_summary">选择一个自定义图标包</string>
-    <string name="icon_shape_rounded_square">圆角正方形</string>
+    <string name="icon_shape_rounded_square">圆角方形</string>
 </resources>
