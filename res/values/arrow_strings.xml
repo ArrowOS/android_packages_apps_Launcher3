@@ -21,6 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Show search bar</string>
     <string name="show_searchbar_summary">Show the search bar on the home screen</string>
 
+    <string name="state_loading">Applying\u2026</string>
+
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
     <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
