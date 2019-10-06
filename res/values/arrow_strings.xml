@@ -56,4 +56,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Suggestions</string>
     <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
 
+    <!-- Folder titles -->
+    <string name="google_folder_title" translatable="false">Google</string>
+
 </resources>
