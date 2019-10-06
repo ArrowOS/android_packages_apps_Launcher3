@@ -19,6 +19,9 @@
 
 <resources>
 
+    <!-- Folder titles -->
+    <string name="google_folder_title" translatable="false">Google</string>
+
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Swipe to access Google app</string>
 
