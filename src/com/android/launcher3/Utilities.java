@@ -17,6 +17,7 @@
 package com.android.launcher3;
 
 import static com.android.launcher3.model.data.ItemInfoWithIcon.FLAG_ICON_BADGED;
+import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
 
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
@@ -79,6 +80,7 @@ import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.shortcuts.ShortcutKey;
 import com.android.launcher3.shortcuts.ShortcutRequest;
 import com.android.launcher3.util.IntArray;
+import com.android.launcher3.util.LooperExecutor;
 import com.android.launcher3.util.PackageManagerHelper;
 import com.android.launcher3.widget.PendingAddShortcutInfo;
 
@@ -119,6 +121,8 @@ public final class Utilities {
 
     public static final boolean ATLEAST_OREO =
             Build.VERSION.SDK_INT >= Build.VERSION_CODES.O;
+
+    private static final long WAIT_BEFORE_RESTART = 250;
 
     /**
      * Set on a motion event dispatched from the nav bar. See {@link MotionEvent#setEdgeFlags(int)}.
@@ -695,4 +699,15 @@ public final class Utilities {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
         return prefs.getBoolean(SettingsActivity.KEY_FEED_INTEGRATION, true);
     }
+
+    public static void restart(final Context context) {
+        new LooperExecutor(MODEL_EXECUTOR.getLooper()).execute(() -> {
+            try {
+                Thread.sleep(WAIT_BEFORE_RESTART);
+            } catch (Exception ignored) {
+            }
+            android.os.Process.killProcess(android.os.Process.myPid());
+        });
+    }
+
 }

@@ -46,6 +46,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherFiles;
 import com.android.launcher3.LauncherTab;
 import com.android.launcher3.R;
@@ -280,6 +281,7 @@ public class SettingsActivity extends FragmentActivity
 
         @Override
         public void onDestroy() {
+            LauncherAppState.getInstanceNoCreate().checkIfRestartNeeded();
             if (mNotificationDotsObserver != null) {
                 mNotificationDotsObserver.unregister();
                 mNotificationDotsObserver = null;
