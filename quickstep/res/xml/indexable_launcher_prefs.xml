@@ -36,4 +36,10 @@
         android:defaultValue="@bool/allow_swipe_down_clearall"
         android:persistent="true" />
 
+    <com.android.launcher3.settings.IconPackPreference
+        android:key="pref_iconPackPackage"
+        android:title="@string/icon_pack"
+        android:summary="@string/icon_pack_summary"
+        android:persistent="true" />
+
 </PreferenceScreen>
