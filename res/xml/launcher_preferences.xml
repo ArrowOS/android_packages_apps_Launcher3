@@ -37,6 +37,12 @@
         android:defaultValue="true"
         android:persistent="true" />
 
+    <com.android.launcher3.settings.IconPackPreference
+        android:key="pref_iconPackPackage"
+        android:title="@string/icon_pack"
+        android:summary="@string/icon_pack_summary"
+        android:persistent="true" />
+
     <SwitchPreference
         android:defaultValue="true"
         android:key="pref_enable_minus_one"
@@ -80,5 +86,4 @@
         android:persistent="false"
         android:title="Developer Options"
         android:fragment="com.android.launcher3.settings.DeveloperOptionsFragment"/>
-
 </androidx.preference.PreferenceScreen>
