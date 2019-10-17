@@ -20,6 +20,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Point;
 import android.hardware.display.DisplayManager;
@@ -30,14 +31,17 @@ import android.view.Display;
 import android.view.WindowManager;
 
 import com.android.launcher3.MainThreadExecutor;
+import com.android.launcher3.Utilities;
 
 import java.util.function.Consumer;
+
+import static com.android.launcher3.IconPackProvider.PREF_ICON_PACK;
 
 /**
  * {@link BroadcastReceiver} which watches configuration changes and
  * notifies the callback in case changes which affect the device profile occur.
  */
-public class ConfigMonitor extends BroadcastReceiver implements DisplayListener {
+public class ConfigMonitor extends BroadcastReceiver implements DisplayListener, SharedPreferences.OnSharedPreferenceChangeListener {
 
     private static final String TAG = "ConfigMonitor";
 
@@ -79,6 +83,8 @@ public class ConfigMonitor extends BroadcastReceiver implements DisplayListener 
         // Listen for display manager change
         mContext.getSystemService(DisplayManager.class)
                 .registerDisplayListener(this, new Handler(UiThreadHelper.getBackgroundLooper()));
+
+        Utilities.getPrefs(mContext).registerOnSharedPreferenceChangeListener(this);
     }
 
     @Override
@@ -118,6 +124,13 @@ public class ConfigMonitor extends BroadcastReceiver implements DisplayListener 
         }
     }
 
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (PREF_ICON_PACK.equals(key)) {
+            notifyChange();
+        }
+    }
+
     private synchronized void notifyChange() {
         if (mCallback != null) {
             Consumer<Context> callback = mCallback;
@@ -134,6 +147,7 @@ public class ConfigMonitor extends BroadcastReceiver implements DisplayListener 
         try {
             mContext.unregisterReceiver(this);
             mContext.getSystemService(DisplayManager.class).unregisterDisplayListener(this);
+            Utilities.getPrefs(mContext).unregisterOnSharedPreferenceChangeListener(this);
         } catch (Exception e) {
             Log.e(TAG, "Failed to unregister config monitor", e);
         }
