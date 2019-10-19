@@ -35,4 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allapps_show_label_title">AppDrawer Apps Labels</string>
     <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
 
+    <!-- Show labels on icon -->
+    <string name="desktop_show_qsb_title">Quick Search Bar</string>
+    <string name="desktop_show_qsb_summary">Show quick searchbar on homescreen</string>
 </resources>
