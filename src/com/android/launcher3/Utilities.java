@@ -168,6 +168,7 @@ public final class Utilities {
     public static final String HOTSEAT_ICONS = "pref_hotseat_icons";
     public static final String DESKTOP_SHOW_LABEL = "pref_desktop_show_label";
     public static final String ALLAPPS_SHOW_LABEL = "pref_allapps_show_label";
+    public static final String DESKTOP_SHOW_QSB = "pref_desktop_show_qsb";
 
     public static final String PACKAGE_NAME = "com.google.android.googlequicksearchbox";
 
@@ -226,6 +227,10 @@ public final class Utilities {
 
     public static boolean showAllAppsLabel(Context context) {
          return getPrefs(context).getBoolean(ALLAPPS_SHOW_LABEL, true);
+    }
+
+    public static boolean showDesktopQsb(Context context) {
+        return getPrefs(context).getBoolean(DESKTOP_SHOW_QSB, true);
     }
 
     /**
