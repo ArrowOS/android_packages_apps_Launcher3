@@ -576,6 +576,9 @@ public class CellLayout extends ViewGroup implements Transposable {
             boolean markCells) {
         final LayoutParams lp = params;
 
+        // If qsb is hidden on homescreen and is set to null
+        // dont add it
+        if (child == null) return false;
         // Hotseat icons - remove text
         if (child instanceof BubbleTextView) {
             BubbleTextView bubbleChild = (BubbleTextView) child;

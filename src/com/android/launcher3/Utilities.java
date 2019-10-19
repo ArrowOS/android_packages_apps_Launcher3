@@ -160,6 +160,8 @@ public final class Utilities {
     public static final String GRID_COLUMNS = "pref_grid_columns";
     public static final String GRID_ROWS = "pref_grid_rows";
     public static final String HOTSEAT_ICONS = "pref_hotseat_icons";
+    public static final String DESKTOP_SHOW_QSB = "pref_desktop_show_qsb";
+
     /**
      * An {@link Executor} to be used with async task with no limit on the queue size.
      */
@@ -207,6 +209,10 @@ public final class Utilities {
         } catch (Exception e) {
             return preferenceFallback;
         }
+    }
+
+    public static boolean showDesktopQsb(Context context) {
+        return getPrefs(context).getBoolean(DESKTOP_SHOW_QSB, true);
     }
 
     /**
