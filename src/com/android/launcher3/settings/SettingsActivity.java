@@ -30,6 +30,8 @@ import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -54,6 +56,7 @@ import androidx.preference.PreferenceFragment.OnPreferenceStartFragmentCallback;
 import androidx.preference.PreferenceFragment.OnPreferenceStartScreenCallback;
 import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
@@ -215,6 +218,13 @@ public class SettingsActivity extends Activity
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     int index = hotseatColumns.findIndexOfValue((String) newValue);
                     hotseatColumns.setSummary(hotseatColumns.getEntries()[index]);
+                    Utilities.restart(getActivity());
+                    return true;
+                }
+            });
+            SwitchPreference desktopShowQsb = (SwitchPreference) findPreference(Utilities.DESKTOP_SHOW_QSB);
+            desktopShowQsb.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
                     Utilities.restart(getActivity());
                     return true;
                 }

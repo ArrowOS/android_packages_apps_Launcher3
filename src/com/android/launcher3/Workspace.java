@@ -502,8 +502,9 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
         }
         // Add the first page
         CellLayout firstPage = insertNewWorkspaceScreen(Workspace.FIRST_SCREEN_ID, 0);
-        // Always add a QSB on the first screen.
-        if (qsb == null) {
+        // Always add a QSB on the first screen
+        // if enabled by the user.
+        if (qsb == null && Utilities.showDesktopQsb(getContext())) {
             // In transposed layout, we add the QSB in the Grid. As workspace does not touch the
             // edges, we do not need a full width QSB.
             qsb = LayoutInflater.from(getContext())
