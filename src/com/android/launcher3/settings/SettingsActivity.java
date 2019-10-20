@@ -358,7 +358,7 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
         private Drawable getPackageIcon(String pkgName) {
             Drawable icon = getContext().getResources().
-                              getDrawable(R.drawable.ic_launcher_home);
+                              getDrawable(R.mipmap.ic_launcher);
             try {
                  icon = getContext().getPackageManager().
                               getApplicationIcon(pkgName);
