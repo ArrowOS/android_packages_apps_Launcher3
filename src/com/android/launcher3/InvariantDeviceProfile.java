@@ -19,7 +19,6 @@ package com.android.launcher3;
 import static com.android.launcher3.Utilities.getDevicePrefs;
 import static com.android.launcher3.config.FeatureFlags.APPLY_CONFIG_AT_RUNTIME;
 import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
-import static com.android.launcher3.settings.SettingsActivity.GRID_OPTIONS_PREFERENCE_KEY;
 import static com.android.launcher3.util.PackageManagerHelper.getPackageFilter;
 
 import android.annotation.TargetApi;
@@ -158,9 +157,7 @@ public class InvariantDeviceProfile {
 
     @TargetApi(23)
     private InvariantDeviceProfile(Context context) {
-        String gridName = Utilities.getPrefs(context).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, false)
-                ? Utilities.getPrefs(context).getString(KEY_IDP_GRID_NAME, null)
-                : null;
+        String gridName = Utilities.getPrefs(context).getString(KEY_IDP_GRID_NAME, null);
         initGrid(context, gridName);
         mConfigMonitor = new ConfigMonitor(context,
                 APPLY_CONFIG_AT_RUNTIME.get() ? this::onConfigChanged : this::killProcess);
@@ -351,9 +348,7 @@ public class InvariantDeviceProfile {
         InvariantDeviceProfile oldProfile = new InvariantDeviceProfile(this);
 
         // Re-init grid
-        String gridName = Utilities.getPrefs(context).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, false)
-                ? Utilities.getPrefs(context).getString(KEY_IDP_GRID_NAME, null)
-                : null;
+        String gridName = Utilities.getPrefs(context).getString(KEY_IDP_GRID_NAME, null);
         initGrid(context, gridName);
 
         int changeFlags = 0;
