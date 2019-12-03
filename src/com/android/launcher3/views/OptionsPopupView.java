@@ -33,6 +33,9 @@ import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
+
 import com.android.launcher3.Launcher;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
@@ -46,7 +49,6 @@ import com.android.launcher3.widget.WidgetsFullSheet;
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.annotation.VisibleForTesting;
 
 /**
  * Popup shown on long pressing an empty space in launcher
@@ -152,9 +154,9 @@ public class OptionsPopupView extends ArrowPopup
         RectF target = new RectF(x - halfSize, y - halfSize, x + halfSize, y + halfSize);
 
         ArrayList<OptionItem> options = new ArrayList<>();
-        int resString = Utilities.existsStyleWallpapers(launcher) ?
+        int resString = existsStyleWallpapers(launcher) ?
                 R.string.styles_wallpaper_button_text : R.string.wallpaper_button_text;
-        int resDrawable = Utilities.existsStyleWallpapers(launcher) ?
+        int resDrawable = existsStyleWallpapers(launcher) ?
                 R.drawable.ic_palette : R.drawable.ic_wallpaper;
         options.add(new OptionItem(resString, resDrawable,
                 ControlType.WALLPAPER_BUTTON, OptionsPopupView::startWallpaperPicker));
@@ -168,17 +170,26 @@ public class OptionsPopupView extends ArrowPopup
         show(launcher, target, options);
     }
 
-    public static boolean onWidgetsClicked(View view) {
-        return openWidgets(Launcher.getLauncher(view.getContext()));
+    private static boolean existsStyleWallpapers(Launcher launcher) {
+        Intent intent = new Intent(Intent.ACTION_SET_WALLPAPER);
+        intent.setComponent(new ComponentName(launcher.getString(R.string.wallpaper_picker_package),
+                "com.android.customization.picker.CustomizationPickerActivity"));
+        ResolveInfo ri = launcher.getPackageManager().resolveActivity(intent, 0);
+        return ri != null;
     }
 
-    public static boolean openWidgets(Launcher launcher) {
+    public static boolean onWidgetsClicked(View view) {
+        return openWidgets(Launcher.getLauncher(view.getContext())) != null;
+    }
+
+    /** Returns WidgetsFullSheet that was opened, or null if nothing was opened. */
+    @Nullable
+    public static WidgetsFullSheet openWidgets(Launcher launcher) {
         if (launcher.getPackageManager().isSafeMode()) {
             Toast.makeText(launcher, R.string.safemode_widget_error, Toast.LENGTH_SHORT).show();
-            return false;
+            return null;
         } else {
-            WidgetsFullSheet.show(launcher, true /* animated */);
-            return true;
+            return WidgetsFullSheet.show(launcher, true /* animated */);
         }
     }
 
@@ -204,10 +215,12 @@ public class OptionsPopupView extends ArrowPopup
                 .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 .putExtra(EXTRA_WALLPAPER_OFFSET,
                         launcher.getWorkspace().getWallpaperOffsetForCenterPage());
-        if (!Utilities.existsStyleWallpapers(launcher)) {
+        if (!existsStyleWallpapers(launcher)) {
             intent.putExtra(EXTRA_WALLPAPER_FLAVOR, "wallpaper_only");
         } else {
             intent.putExtra(EXTRA_WALLPAPER_FLAVOR, "focus_wallpaper");
+            intent.setComponent(new ComponentName(launcher.getString(R.string.wallpaper_picker_package),
+                    "com.android.customization.picker.CustomizationPickerActivity"));
         }
         String pickerPackage = launcher.getString(R.string.wallpaper_picker_package);
         if (!TextUtils.isEmpty(pickerPackage)) {
