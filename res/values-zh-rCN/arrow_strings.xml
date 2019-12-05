@@ -16,8 +16,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
-    <string name="allow_swipe_down_clearall_desc">Will work only on newer Recents App view (i.e Android Pie)</string>
+    <string name="allow_swipe_down_clearall_title">向下滑动以清除最近任务</string>
+    <string name="allow_swipe_down_clearall_desc">仅适用于更新后的最近应用视图（即Android Pie）</string>
     <!-- Grid -->
     <string name="num_default">默认 </string>
     <string name="grid_category_title">列和行</string>
@@ -26,8 +26,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="number_of_hotseat_title">桌面快速启动图标</string>
     <string name="state_loading">正在应用\u2026</string>
     <string name="app_drawer_category_title">应用抽屉</string>
-    <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
+    <string name="allapps_show_label_summary">在应用抽屉中的图标下方显示名称</string>
     <!-- QSB -->
-    <string name="desktop_show_qsb_title">Quick Search Bar</string>
-    <string name="desktop_show_qsb_summary">Show quick searchbar on homescreen</string>
+    <string name="desktop_show_qsb_title">快速搜索栏</string>
+    <string name="desktop_show_qsb_summary">在主屏幕上显示快速搜索栏</string>
+    <!-- Google Feed -->
+    <string name="settings_feed">Enable Google feed integration</string>
 </resources>

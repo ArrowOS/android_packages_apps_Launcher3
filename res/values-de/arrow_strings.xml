@@ -28,6 +28,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">App-Drawer</string>
     <string name="allapps_show_label_summary">Show labels below the icons in app drawer</string>
     <!-- QSB -->
-    <string name="desktop_show_qsb_title">Quick Search Bar</string>
+    <string name="desktop_show_qsb_title">Schnellsuchleiste</string>
     <string name="desktop_show_qsb_summary">Show quick searchbar on homescreen</string>
+    <!-- Google Feed -->
+    <string name="settings_feed">Enable Google feed integration</string>
 </resources>
