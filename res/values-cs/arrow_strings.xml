@@ -30,4 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- QSB -->
     <string name="desktop_show_qsb_title">Lišta rychlého vyhledávání</string>
     <string name="desktop_show_qsb_summary">Zobrazit lištu rychlého vyhledávání na domovské obrazovce</string>
+    <!-- Google Feed -->
+    <string name="settings_feed">Povolit integraci kanálu Google</string>
 </resources>

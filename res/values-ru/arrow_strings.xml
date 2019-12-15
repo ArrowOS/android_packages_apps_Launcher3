@@ -30,4 +30,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- QSB -->
     <string name="desktop_show_qsb_title">Панель быстрого поиска</string>
     <string name="desktop_show_qsb_summary">Показывать панель быстрого поиска на домашнем экране</string>
+    <!-- Google Feed -->
+    <string name="settings_feed">Enable Google feed integration</string>
 </resources>
