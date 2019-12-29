@@ -206,7 +206,7 @@ public class AppsDividerView extends View implements LauncherStateManager.StateL
     private Layout getAllAppsLabelLayout() {
         if (mAllAppsLabelLayout == null) {
             mPaint.setAntiAlias(true);
-            mPaint.setTypeface(Typeface.create("sans-serif-medium", Typeface.NORMAL));
+            mPaint.setTypeface(Typeface.create("@*android:string/config_headlineFontFamilyMedium", Typeface.NORMAL));
             mPaint.setTextSize(
                     getResources().getDimensionPixelSize(R.dimen.all_apps_label_text_size));
 
