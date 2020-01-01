@@ -31,5 +31,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="desktop_show_qsb_title">Recherche rapide</string>
     <string name="desktop_show_qsb_summary">Afficher la barre de recherche rapide sur l\'écran d\'accueil</string>
     <!-- Google Feed -->
-    <string name="settings_feed">Enable Google feed integration</string>
+    <string name="settings_feed">Activer l\'intégration de flux Google</string>
 </resources>

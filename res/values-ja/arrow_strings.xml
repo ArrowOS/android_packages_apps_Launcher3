@@ -31,5 +31,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="desktop_show_qsb_title">クイック検索バー</string>
     <string name="desktop_show_qsb_summary">ホーム画面にクイック検索バーを表示する</string>
     <!-- Google Feed -->
-    <string name="settings_feed">Enable Google feed integration</string>
+    <string name="settings_feed">Google フィードの統合を有効化</string>
 </resources>
