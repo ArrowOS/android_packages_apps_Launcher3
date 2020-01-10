@@ -29,7 +29,7 @@
         android:id="@+id/section"
         android:layout_width="match_parent"
         android:layout_height="@dimen/widget_section_height"
-        android:background="?android:attr/colorPrimary"
+        android:background="@*android:color/notification_material_background_color"
         android:drawablePadding="@dimen/widget_section_horizontal_padding"
         android:focusable="true"
         android:gravity="start|center_vertical"
