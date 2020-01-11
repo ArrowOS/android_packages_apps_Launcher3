@@ -21,6 +21,7 @@ import static androidx.core.view.accessibility.AccessibilityNodeInfoCompat.ACTIO
 import static com.android.launcher3.OverlayCallbackImpl.KEY_ENABLE_MINUS_ONE;
 import static com.android.launcher3.Utilities.GSA_PACKAGE;
 import static com.android.launcher3.Utilities.KEY_HOTSEAT_QSB;
+import static com.android.launcher3.Utilities.KEY_ICON_PACK;
 import static com.android.launcher3.config.FeatureFlags.IS_STUDIO_BUILD;
 import static com.android.launcher3.states.RotationHelper.ALLOW_ROTATION_PREFERENCE_KEY;
 
@@ -30,6 +31,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.ResolveInfoFlags;
 import android.content.pm.ResolveInfo;
 import android.content.SharedPreferences;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -57,10 +59,14 @@ import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
+import com.android.launcher3.customization.IconDatabase;
 import com.android.launcher3.model.WidgetsModel;
+import com.android.launcher3.settings.preference.IconPackPrefSetter;
+import com.android.launcher3.settings.preference.ReloadingListPreference;
 import com.android.launcher3.states.RotationHelper;
 import com.android.launcher3.uioverrides.flags.DeveloperOptionsFragment;
 import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
+import com.android.launcher3.util.AppReloader;
 import com.android.launcher3.util.DisplayController;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
@@ -320,6 +326,18 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                     mHotseatQsbPref = preference;
                     updateIsQsbAvailable();
                     return true;
+
+                case KEY_ICON_PACK:
+                    ReloadingListPreference icons = (ReloadingListPreference) preference;
+                    icons.setValue(IconDatabase.getGlobal(getActivity()));
+                    icons.setOnReloadListener(IconPackPrefSetter::new);
+                    icons.setOnPreferenceChangeListener((pref, val) -> {
+                        IconDatabase.clearAll(getActivity());
+                        IconDatabase.setGlobal(getActivity(), (String) val);
+                        AppReloader.get(getActivity()).reload();
+                        return true;
+                    });
+                    return true;
             }
 
             return true;
@@ -427,4 +445,9 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
             return !resolvedIntents.isEmpty();
         }
     }
+
+    public interface OnResumePreferenceCallback {
+        void onResume();
+    }
+
 }
