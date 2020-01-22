@@ -2,6 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
+    <string name="trust_apps_manager_name_dialog">Protected app</string>
     <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
     <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
     <string name="trust_apps_loading">Loading\u2026</string>
