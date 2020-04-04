@@ -74,7 +74,8 @@ public class TrustAppsActivity extends Activity implements
         mLoadingView.setVisibility(View.VISIBLE);
         mProgressBar = findViewById(R.id.hidden_apps_progress_bar);
 
-        mAdapter = new TrustAppsAdapter(this);
+        final boolean hasSecureKeyguard = Utilities.hasSecureKeyguard(this);
+        mAdapter = new TrustAppsAdapter(this, hasSecureKeyguard);
         mDbHelper = TrustDatabaseHelper.getInstance(this);
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
