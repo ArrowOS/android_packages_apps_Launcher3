@@ -27,8 +27,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_drawer_category_title">பயன்பாட்டு அலமாரி</string>
     <!-- Google Feed -->
     <string name="google_feed_title">Google பயன்பாட்டைக் காட்டு</string>
-    <string name="google_feed_summary">To the left of the main home screen</string>
+    <string name="google_feed_summary">முதன்மை முகப்புத் திரையின் இடப்புறம்</string>
     <!-- Show QSB on homescreen -->
-    <string name="pref_qsb_show_title">Quick Search Bar</string>
-    <string name="pref_qsb_show_summary">Show quick searchbar on homescreen</string>
+    <string name="pref_qsb_show_title">விரைவு தேடல் பட்டி</string>
+    <string name="pref_qsb_show_summary">முகப்புத்திரையில் தேடல் பட்டியைக் காண்பி</string>
 </resources>
