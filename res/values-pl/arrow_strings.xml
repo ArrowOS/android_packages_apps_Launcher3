@@ -15,8 +15,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
-    <string name="allow_swipe_down_clearall_desc">Will work only on newer Recents App view (i.e Android Pie)</string>
+    <string name="allow_swipe_down_clearall_title">Zamknij wszystkie po przesunięciu palcem w dół z widoku ostatnich aplikacji</string>
+    <string name="allow_swipe_down_clearall_desc">Będzie działać tylko w nowszym widoku ostatnich aplikacji (tzn. Android Pie)</string>
     <!-- Grid -->
     <string name="num_default">Domyślny</string>
     <string name="grid_category_title">Kolumny i wiersze</string>
@@ -26,9 +26,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="state_loading">Ustawianie\u2026</string>
     <string name="app_drawer_category_title">Szuflada aplikacji</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">Display Google app</string>
-    <string name="google_feed_summary">To the left of the main home screen</string>
+    <string name="google_feed_title">Wyświetl aplikację Google</string>
+    <string name="google_feed_summary">Po lewej stronie ekranu głównego</string>
     <!-- Show QSB on homescreen -->
-    <string name="pref_qsb_show_title">Quick Search Bar</string>
-    <string name="pref_qsb_show_summary">Show quick searchbar on homescreen</string>
+    <string name="pref_qsb_show_title">Pasek szybkiego wyszukiwania</string>
+    <string name="pref_qsb_show_summary">Pokaż pasek wyszukiwania na ekranie głównym</string>
 </resources>
