@@ -15,8 +15,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
-    <string name="allow_swipe_down_clearall_desc">Will work only on newer Recents App view (i.e Android Pie)</string>
+    <string name="allow_swipe_down_clearall_title">Neteja-ho tot de vistes recents al lliscar avall</string>
+    <string name="allow_swipe_down_clearall_desc">Funcionarà només en noves Aplicacions Recents (per exenple Android Pie)</string>
     <!-- Grid -->
     <string name="num_default">Per defecte</string>
     <string name="grid_category_title">Columnes i files</string>
@@ -26,9 +26,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="state_loading">S\'està aplicant\u2026</string>
     <string name="app_drawer_category_title">Calaix d\'aplicacions</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">Display Google app</string>
-    <string name="google_feed_summary">To the left of the main home screen</string>
+    <string name="google_feed_title">Mostrar l\'aplicació de Google</string>
+    <string name="google_feed_summary">A l\'esquerra de la pantalla d\'inici principal</string>
     <!-- Show QSB on homescreen -->
-    <string name="pref_qsb_show_title">Quick Search Bar</string>
-    <string name="pref_qsb_show_summary">Show quick searchbar on homescreen</string>
+    <string name="pref_qsb_show_title">Barra de cerca ràpida</string>
+    <string name="pref_qsb_show_summary">Mostra la barra de cerca ràpida a pàgina d\'inici</string>
 </resources>
