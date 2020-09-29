@@ -31,4 +31,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show QSB on homescreen -->
     <string name="pref_qsb_show_title">Lišta rychlého vyhledávání</string>
     <string name="pref_qsb_show_summary">Zobrazit lištu rychlého vyhledávání na domovské obrazovce</string>
+    <!-- Edit workspace -->
+    <string name="settings_edit_allow_title">Povolit úpravy</string>
+    <string name="settings_edit_allow_summary_on">Ikony a widgety lze přidat, odebrat a přesunout na domovské obrazovce</string>
+    <string name="settings_edit_allow_summary_off">Ikony a widgety nelze přidat, odebrat a přesunout na domovské obrazovce</string>
+    <string name="settings_edit_widgets_error">Nelze přidat widgety na domovskou obrazovku</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Skryté a chráněné aplikace</string>
+    <string name="trust_apps_manager_name_dialog">Chráněné aplikace</string>
+    <string name="trust_apps_auth_manager">Pro správu skrytých a zabezpečených aplikací nejdříve odemkněte obrazovku</string>
+    <string name="trust_apps_auth_open_app">Povolte otevření %1$s</string>
+    <string name="trust_apps_loading">Načítání\u2026</string>
+    <string name="trust_apps_no_lock_error">Pro omezení přístupu k aplikaci prosím nastavte zabezpečenou obrazovku uzamčení</string>
+    <string name="trust_apps_help">Nápověda</string>
+    <string name="trust_apps_info_hidden">Takto označené aplikace jsou skryty, včetně jejich widgetů, ze seznamu aplikací</string>
+    <string name="trust_apps_info_protected">Takto jsou označeny zabezpečené aplikace. Před jejich spuštěním je vyžadováno zadání bezpečnostního ověření</string>
 </resources>

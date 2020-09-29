@@ -15,7 +15,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="allow_swipe_down_clearall_title">Cancella tutto quando scorri verso il basso dalle recenti</string>
+    <string name="allow_swipe_down_clearall_title">Cancella tutto quando scorri verso il basso dalla visualizzazione recenti</string>
     <string name="allow_swipe_down_clearall_desc">Funzionerà solo nelle ultime versioni di app recenti (da Android Pie)</string>
     <!-- Grid -->
     <string name="num_default">Predefinito</string>
@@ -30,5 +30,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="google_feed_summary">A sinistra della schermata home principale</string>
     <!-- Show QSB on homescreen -->
     <string name="pref_qsb_show_title">Barra di ricerca rapida</string>
-    <string name="pref_qsb_show_summary">Mostra barra di ricerca rapida nella schermata Home</string>
+    <string name="pref_qsb_show_summary">Mostra barra di ricerca rapida nella schermata home</string>
+    <!-- Edit workspace -->
+    <string name="settings_edit_allow_title">Consenti modifiche</string>
+    <string name="settings_edit_allow_summary_on">È possibile aggiungere, rimuovere e spostare icone e widget nella schermata home</string>
+    <string name="settings_edit_allow_summary_off">Non è possibile aggiungere, rimuovere e spostare icone e widget nella schermata home</string>
+    <string name="settings_edit_widgets_error">Non è possibile aggiungere widget alla schermata home</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">App protette e nascoste</string>
+    <string name="trust_apps_manager_name_dialog">App protette</string>
+    <string name="trust_apps_auth_manager">Sblocca per gestire le app protette e nascoste</string>
+    <string name="trust_apps_auth_open_app">Autenticati per aprire %1$s</string>
+    <string name="trust_apps_loading">Caricamento\u2026</string>
+    <string name="trust_apps_no_lock_error">Imposta una schermata di blocco sicura per limitare l\'accesso alle app</string>
+    <string name="trust_apps_help">Aiuto</string>
+    <string name="trust_apps_info_hidden">Le app nascoste e i loro widget sono nascosti dal menù delle applicazioni</string>
+    <string name="trust_apps_info_protected">Le applicazioni protette richiedono l\'autenticazione per essere aperte dal launcher</string>
 </resources>
