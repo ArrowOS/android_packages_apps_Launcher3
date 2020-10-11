@@ -42,4 +42,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
     <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
 
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">Show Google App</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="pref_show_google_now_summary" translatable="false">@string/msg_minus_one_on_left</string>
+
 </resources>

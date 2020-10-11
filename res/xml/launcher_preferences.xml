@@ -38,6 +38,12 @@
         android:persistent="true" />
 
     <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_enable_minus_one"
+        android:summary="@string/pref_show_google_now_summary"
+        android:title="@string/title_show_google_app"/>
+
+    <SwitchPreference
         android:key="pref_show_searchbar"
         android:title="@string/show_searchbar_title"
         android:summary="@string/show_searchbar_summary"
