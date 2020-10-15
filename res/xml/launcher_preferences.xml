@@ -55,13 +55,6 @@
         android:title="@string/trust_apps_manager_name"
         android:summary="@string/trust_apps_manager_summary" />
 
-    <SwitchPreference
-        android:key="pref_grid_options"
-        android:title="Enable grid options"
-        android:defaultValue="false"
-        android:persistent="true" />
-
-
 <PreferenceCategory
         android:key="gestures_category"
         android:title="@string/gestures_category">
