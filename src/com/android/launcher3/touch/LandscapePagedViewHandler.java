@@ -73,6 +73,11 @@ public class LandscapePagedViewHandler implements PagedOrientationHandler {
     }
 
     @Override
+    public boolean isGoingDown(float displacement, boolean isRtl) {
+        return isRtl ? displacement > 0 : displacement < 0;
+    }
+
+    @Override
     public boolean isGoingUp(float displacement, boolean isRtl) {
         return isRtl ? displacement < 0 : displacement > 0;
     }
