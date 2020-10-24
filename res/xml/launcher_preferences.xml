@@ -82,10 +82,15 @@
 
 </PreferenceCategory>
 
+<PreferenceCategory
+        android:title="@string/experiments_category">
+
     <androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
         android:persistent="false"
         android:title="Developer Options"
         android:fragment="com.android.launcher3.settings.DeveloperOptionsFragment"/>
+
+</PreferenceCategory>
 
 </androidx.preference.PreferenceScreen>
