@@ -51,4 +51,8 @@
     <string name="pref_themed_icons_title">All apps themed icons</string>
     <string name="pref_themed_icons_summary">Toggle to switch between homescreen dock and all apps themed icons</string>
 
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Suggestions</string>
+    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+
 </resources>
