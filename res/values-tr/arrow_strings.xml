@@ -15,35 +15,35 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="allow_swipe_down_clearall_title">Tüm görünümleri temizlemek için aşağı doğru kaydır</string>
-    <string name="allow_swipe_down_clearall_desc">Yalnızca daha yeni son uygulamalar görünümünde çalışacak (yani Android Pie)</string>
+    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
+    <string name="allow_swipe_down_clearall_desc">Will work only on newer Recents App view (i.e Android Pie)</string>
     <!-- Grid -->
-    <string name="num_default">Varsayılan</string>
-    <string name="grid_category_title">Sütunlar ve satırlar</string>
-    <string name="number_of_columns_title">Kılavuz ve uygulama çekmecesi sütunları</string>
-    <string name="number_of_rows_title">Kılavuz ve uygulama çekmecesi satırları</string>
-    <string name="number_of_hotseat_title">Ana ekran hızlı başlatma simgeleri</string>
+    <string name="num_default">Default</string>
+    <string name="grid_category_title">Columns and rows</string>
+    <string name="number_of_columns_title">Grid and app drawer columns</string>
+    <string name="number_of_rows_title">Grid and app drawer rows</string>
+    <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
     <string name="state_loading">Uygulanıyor\u2026</string>
-    <string name="app_drawer_category_title">Uygulama çekmecesi</string>
+    <string name="app_drawer_category_title">App drawer</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">Google uygulamasını görüntüle</string>
-    <string name="google_feed_summary">Ana ekranın soluna</string>
+    <string name="google_feed_title">Display Google app</string>
+    <string name="google_feed_summary">To the left of the main home screen</string>
     <!-- Show QSB on homescreen -->
-    <string name="pref_qsb_show_title">Hızlı arama çubuğu</string>
-    <string name="pref_qsb_show_summary">Ana ekranda hızlı arama çubuğunu göster</string>
+    <string name="pref_qsb_show_title">Quick Search Bar</string>
+    <string name="pref_qsb_show_summary">Show quick searchbar on homescreen</string>
     <!-- Edit workspace -->
     <string name="settings_edit_allow_title">Allow edit</string>
     <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
     <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
     <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
-    <string name="trust_apps_manager_name_dialog">Protected app</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_manager_name">Gizli &amp; Korumalı uygulamalar</string>
+    <string name="trust_apps_manager_name_dialog">Korumalı uygulama</string>
+    <string name="trust_apps_auth_manager">Gizli ve korumalı uygulamaları yönetmek için kilidi açın</string>
+    <string name="trust_apps_auth_open_app">%1$s\'yi açmak için kimlik doğrulaması yapın</string>
+    <string name="trust_apps_loading">Yükleniyor\u2026</string>
+    <string name="trust_apps_no_lock_error">Lütfen uygulama erişimini kısıtlamak için güvenli bir kilit ekranı ayarlayın</string>
+    <string name="trust_apps_help">Yardım</string>
+    <string name="trust_apps_info_hidden">Gizli uygulamalar ve bunların widget\'ları çekmecede gizlidir</string>
+    <string name="trust_apps_info_protected">Korumalı uygulamalar, başlatıcıdan kimlik doğrulamasının açılmasını gerektirir</string>
 </resources>

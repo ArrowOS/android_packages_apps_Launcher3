@@ -15,21 +15,21 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="allow_swipe_down_clearall_title">在「最近使用」畫面向下滑動即可清除所有應用程式</string>
+    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
     <string name="allow_swipe_down_clearall_desc">Will work only on newer Recents App view (i.e Android Pie)</string>
     <!-- Grid -->
-    <string name="num_default">預設</string>
-    <string name="grid_category_title">欄與列</string>
-    <string name="number_of_columns_title">網格和應用程式抽屜列</string>
-    <string name="number_of_rows_title">網格和應用程式抽屜列</string>
-    <string name="number_of_hotseat_title">首頁快速啟動圖示</string>
+    <string name="num_default">Default</string>
+    <string name="grid_category_title">Columns and rows</string>
+    <string name="number_of_columns_title">Grid and app drawer columns</string>
+    <string name="number_of_rows_title">Grid and app drawer rows</string>
+    <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
     <string name="state_loading">套用中\u2026</string>
-    <string name="app_drawer_category_title">應用程式清單</string>
+    <string name="app_drawer_category_title">App drawer</string>
     <!-- Google Feed -->
     <string name="google_feed_title">Display Google app</string>
     <string name="google_feed_summary">To the left of the main home screen</string>
     <!-- Show QSB on homescreen -->
-    <string name="pref_qsb_show_title">快速搜尋工具列</string>
+    <string name="pref_qsb_show_title">Quick Search Bar</string>
     <string name="pref_qsb_show_summary">Show quick searchbar on homescreen</string>
     <!-- Edit workspace -->
     <string name="settings_edit_allow_title">Allow edit</string>

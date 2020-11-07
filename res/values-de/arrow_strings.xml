@@ -15,35 +15,35 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="allow_swipe_down_clearall_title">Alle beenden beim Wischen nach unten aus dem Anwendungsverlauf</string>
-    <string name="allow_swipe_down_clearall_desc">Funktioniert nur im neueren Anwendungsverlauf (z.B. Android Pie)</string>
+    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
+    <string name="allow_swipe_down_clearall_desc">Will work only on newer Recents App view (i.e Android Pie)</string>
     <!-- Grid -->
-    <string name="num_default">Standard</string>
-    <string name="grid_category_title">Spalten und Zeilen</string>
-    <string name="number_of_columns_title">Raster und App-Drawer Spalten</string>
-    <string name="number_of_rows_title">Raster und App-Drawer Zeilen</string>
-    <string name="number_of_hotseat_title">Startbildschirm Schnellstart-Symbole</string>
+    <string name="num_default">Default</string>
+    <string name="grid_category_title">Columns and rows</string>
+    <string name="number_of_columns_title">Grid and app drawer columns</string>
+    <string name="number_of_rows_title">Grid and app drawer rows</string>
+    <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
     <string name="state_loading">Wird angewendet\u2026</string>
-    <string name="app_drawer_category_title">App-Drawer</string>
+    <string name="app_drawer_category_title">App drawer</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">Google App anzeigen</string>
-    <string name="google_feed_summary">Links vom Startbildschirm</string>
+    <string name="google_feed_title">Display Google app</string>
+    <string name="google_feed_summary">To the left of the main home screen</string>
     <!-- Show QSB on homescreen -->
-    <string name="pref_qsb_show_title">Schnellsuchleiste</string>
-    <string name="pref_qsb_show_summary">Schnellsuchleiste auf dem Startbildschirm anzeigen</string>
+    <string name="pref_qsb_show_title">Quick Search Bar</string>
+    <string name="pref_qsb_show_summary">Show quick searchbar on homescreen</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Bearbeiten zulassen</string>
+    <string name="settings_edit_allow_title">Allow edit</string>
     <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
     <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
     <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
+    <string name="trust_apps_manager_name">Versteckte &amp; Geschützte Apps</string>
     <string name="trust_apps_manager_name_dialog">Geschützte App</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
+    <string name="trust_apps_auth_manager">Entsperren, um versteckte und geschützte Apps zu verwalten</string>
+    <string name="trust_apps_auth_open_app">Authentifizieren um %1$s zu öffnen</string>
     <string name="trust_apps_loading">Wird geladen\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
+    <string name="trust_apps_no_lock_error">Bitte richten Sie einen sicheren Sperrbildschirm ein, um den Zugriff auf Apps zu beschränken</string>
     <string name="trust_apps_help">Hilfe</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_info_hidden">Versteckte Apps und ihre Widgets werden in der App-Übersicht nicht angezeigt</string>
+    <string name="trust_apps_info_protected">Geschützte Apps erfordern eine Authentifizierung, um geöffnet werden zu können</string>
 </resources>
