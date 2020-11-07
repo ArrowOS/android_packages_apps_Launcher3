@@ -15,35 +15,35 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="allow_swipe_down_clearall_title">向下滑动以清除最近任务</string>
-    <string name="allow_swipe_down_clearall_desc">仅适用于更新后的最近应用视图（即Android Pie）</string>
+    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
+    <string name="allow_swipe_down_clearall_desc">Will work only on newer Recents App view (i.e Android Pie)</string>
     <!-- Grid -->
-    <string name="num_default">默认 </string>
-    <string name="grid_category_title">列和行</string>
-    <string name="number_of_columns_title">网格和应用抽屉列数</string>
-    <string name="number_of_rows_title">网格和应用抽屉行数</string>
-    <string name="number_of_hotseat_title">桌面快速启动图标</string>
+    <string name="num_default">Default</string>
+    <string name="grid_category_title">Columns and rows</string>
+    <string name="number_of_columns_title">Grid and app drawer columns</string>
+    <string name="number_of_rows_title">Grid and app drawer rows</string>
+    <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
     <string name="state_loading">正在应用\u2026</string>
-    <string name="app_drawer_category_title">应用抽屉</string>
+    <string name="app_drawer_category_title">App drawer</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">显示 Google 应用</string>
-    <string name="google_feed_summary">在主屏幕的左侧</string>
+    <string name="google_feed_title">Display Google app</string>
+    <string name="google_feed_summary">To the left of the main home screen</string>
     <!-- Show QSB on homescreen -->
-    <string name="pref_qsb_show_title">快速搜索栏</string>
-    <string name="pref_qsb_show_summary">在主屏幕上显示快速搜索栏</string>
+    <string name="pref_qsb_show_title">Quick Search Bar</string>
+    <string name="pref_qsb_show_summary">Show quick searchbar on homescreen</string>
     <!-- Edit workspace -->
     <string name="settings_edit_allow_title">Allow edit</string>
     <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
     <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
     <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
-    <string name="trust_apps_manager_name_dialog">Protected app</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_manager_name">已隐藏并受保护的应用</string>
+    <string name="trust_apps_manager_name_dialog">受保护的应用</string>
+    <string name="trust_apps_auth_manager">解锁以管理已隐藏和受保护的应用</string>
+    <string name="trust_apps_auth_open_app">认证以打开 %1$s</string>
+    <string name="trust_apps_loading">载入中\u2026</string>
+    <string name="trust_apps_no_lock_error">请设置一个锁屏密码以限制应用访问</string>
+    <string name="trust_apps_help">帮助</string>
+    <string name="trust_apps_info_hidden">从抽屉中隐藏应用及其小部件</string>
+    <string name="trust_apps_info_protected">从启动器打开受保护的应用需要验证</string>
 </resources>
