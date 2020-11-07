@@ -15,35 +15,35 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="allow_swipe_down_clearall_title">アプリ履歴で下スワイプで全てクリア</string>
-    <string name="allow_swipe_down_clearall_desc">新しめのアプリ履歴でのみ動作します (例: Android Pie)</string>
+    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
+    <string name="allow_swipe_down_clearall_desc">Will work only on newer Recents App view (i.e Android Pie)</string>
     <!-- Grid -->
-    <string name="num_default">既定</string>
-    <string name="grid_category_title">列数と行数</string>
-    <string name="number_of_columns_title">アプリドロワーの列数</string>
-    <string name="number_of_rows_title">アプリドロワーの行数</string>
-    <string name="number_of_hotseat_title">ホーム画面のクイック起動アイコン</string>
+    <string name="num_default">Default</string>
+    <string name="grid_category_title">Columns and rows</string>
+    <string name="number_of_columns_title">Grid and app drawer columns</string>
+    <string name="number_of_rows_title">Grid and app drawer rows</string>
+    <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
     <string name="state_loading">適用中\u2026</string>
-    <string name="app_drawer_category_title">アプリドロワー</string>
+    <string name="app_drawer_category_title">App drawer</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">Google アプリを表示</string>
-    <string name="google_feed_summary">メインホーム画面の左側へ表示する</string>
+    <string name="google_feed_title">Display Google app</string>
+    <string name="google_feed_summary">To the left of the main home screen</string>
     <!-- Show QSB on homescreen -->
-    <string name="pref_qsb_show_title">クイック検索バー</string>
-    <string name="pref_qsb_show_summary">ホーム画面にクイック検索バーを表示する</string>
+    <string name="pref_qsb_show_title">Quick Search Bar</string>
+    <string name="pref_qsb_show_summary">Show quick searchbar on homescreen</string>
     <!-- Edit workspace -->
     <string name="settings_edit_allow_title">Allow edit</string>
     <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
     <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
     <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
-    <string name="trust_apps_manager_name_dialog">Protected app</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_manager_name">非表示 &amp; 保護アプリ</string>
+    <string name="trust_apps_manager_name_dialog">保護されたアプリ</string>
+    <string name="trust_apps_auth_manager">ロック解除して非表示と保護アプリを管理する</string>
+    <string name="trust_apps_auth_open_app">認証して %1$s を開く</string>
+    <string name="trust_apps_loading">読み込み中...</string>
+    <string name="trust_apps_no_lock_error">アプリのアクセスを制限するためにロック画面の保護をセットアップして下さい</string>
+    <string name="trust_apps_help">ヘルプ</string>
+    <string name="trust_apps_info_hidden">非表示アプリとそのウィジェットはドロワーから非表示になります</string>
+    <string name="trust_apps_info_protected">保護アプリはランチャーから開くのに認証が必要です</string>
 </resources>

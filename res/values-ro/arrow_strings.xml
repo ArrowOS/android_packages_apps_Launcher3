@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="number_of_columns_title">Grid and app drawer columns</string>
     <string name="number_of_rows_title">Grid and app drawer rows</string>
     <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
-    <string name="state_loading">Applying\u2026</string>
+    <string name="state_loading">Se aplică\u2026</string>
     <string name="app_drawer_category_title">App drawer</string>
     <!-- Google Feed -->
     <string name="google_feed_title">Display Google app</string>
@@ -37,13 +37,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
     <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
-    <string name="trust_apps_manager_name_dialog">Protected app</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_manager_name">Aplicații ascunse &amp; protejate</string>
+    <string name="trust_apps_manager_name_dialog">Aplicație protejată</string>
+    <string name="trust_apps_auth_manager">Deblochează pentru a gestiona aplicațiile ascunse și protejate</string>
+    <string name="trust_apps_auth_open_app">Autentifică-te pentru a deschide %1$s</string>
+    <string name="trust_apps_loading">Se încarcă\u2026</string>
+    <string name="trust_apps_no_lock_error">Vă rugăm să configurați un ecran de blocare securizat pentru a restricționa accesul aplicației</string>
+    <string name="trust_apps_help">Ajutor</string>
+    <string name="trust_apps_info_hidden">Aplicațiile ascunse și widget-urile lor sunt ascunse din sertar</string>
+    <string name="trust_apps_info_protected">Aplicațiile protejate necesită autentificare pentru a fi deschise din launcher</string>
 </resources>
