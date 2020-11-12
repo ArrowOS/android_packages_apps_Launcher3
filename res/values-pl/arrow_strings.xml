@@ -16,12 +16,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Show search bar</string>
-    <string name="show_searchbar_summary">Show the search bar on the home screen</string>
+    <string name="show_searchbar_title">Pokaż pasek wyszukiwania</string>
+    <string name="show_searchbar_summary">Pokaż pasek wyszukiwania na ekranie głównym</string>
     <string name="state_loading">Ustawianie\u2026</string>
     <!-- Gestures -->
-    <string name="gestures_category">Gestures</string>
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
+    <string name="gestures_category">Gesty</string>
+    <string name="pref_notifications_gesture_title">Gest powiadomień</string>
     <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the QS panel</string>
     <string name="pref_dt_gesture_title">Double tap gesture</string>
     <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
