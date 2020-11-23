@@ -16,9 +16,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Tunjukkan bar carian</string>
-    <string name="show_searchbar_summary">Tunjukkan bar carian di skrin utama</string>
-    <string name="state_loading">Memohon \u2026</string>
+    <string name="show_searchbar_title">Paparkan bar carian</string>
+    <string name="show_searchbar_summary">Paparkan bar carian di layar utama</string>
+    <string name="state_loading">Penetapan \u2026</string>
     <!-- Gestures -->
     <string name="gestures_category">Gerak isyarat</string>
     <string name="pref_notifications_gesture_title">Gerak isyarat notifikasi</string>

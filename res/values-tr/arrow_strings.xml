@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Ekranı kapatmak için boş bir yere çift dokunun</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Gizli &amp; Korumalı uygulamalar</string>
-    <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
+    <string name="trust_apps_manager_summary">Uygulamaları gizle veya koru &amp; bunları Ekran kilidi vb. yoluyla kısıtlayın</string>
     <string name="trust_apps_manager_name_dialog">Korumalı uygulama</string>
     <string name="trust_apps_auth_manager">Gizli ve korumalı uygulamaları yönetmek için kilidi açın</string>
     <string name="trust_apps_auth_open_app">%1$s\'yi açmak için kimlik doğrulaması yapın</string>
@@ -39,7 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Google uygulamasını göster</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <string name="msg_minus_one_on_left">Ana ekrandan sola kaydırdığınızda</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="msg_minus_one_on_right">Ana ekrandan sağa kaydırdığınızda</string>
 </resources>
