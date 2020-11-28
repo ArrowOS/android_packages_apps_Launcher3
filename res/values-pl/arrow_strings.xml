@@ -22,12 +22,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Gestures -->
     <string name="gestures_category">Gesty</string>
     <string name="pref_notifications_gesture_title">Gest powiadomień</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the QS panel</string>
-    <string name="pref_dt_gesture_title">Double tap gesture</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
+    <string name="pref_notifications_gesture_summary">Przesuń palcem pionowo w dół na ekranie głównym, aby wyświetlić panel szybkich ustawień</string>
+    <string name="pref_dt_gesture_title">Gest dwukrotnego dotknięcia</string>
+    <string name="pref_dt_gesture_summary">Kliknij dwukrotnie w puste miejsce, aby wyłączyć ekran</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Ukryte &amp; chronione aplikacje</string>
-    <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
+    <string name="trust_apps_manager_summary">Ukryj aplikacje lub chroń &amp; ogranicz je poprzez blokadę ekranu itp</string>
     <string name="trust_apps_manager_name_dialog">Chronione aplikacje</string>
     <string name="trust_apps_auth_manager">Odblokuj, aby zarządzać ukrytymi i chronionymi aplikacjami</string>
     <string name="trust_apps_auth_open_app">Uwierzytelnij, aby otworzyć %1$s</string>
@@ -37,9 +37,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="trust_apps_info_hidden">Ukryte aplikacje i ich widżety są ukryte z szuflady aplikacji</string>
     <string name="trust_apps_info_protected">Chronione aplikacje wymagają uwierzytelnienia w launcherze</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Show Google App</string>
+    <string name="title_show_google_app">Pokaż aplikację Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <string name="msg_minus_one_on_left">Gdy przesuniesz w lewo na ekranie głównym</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="msg_minus_one_on_right">Gdy przesuniesz w prawo na ekranie głównym</string>
 </resources>
