@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_notifications_gesture_summary">Csúsztasson függőlegesen lefelé a kezdőképernyőn a Gyorsbeállítások-panel megjelenítéséhez</string>
     <string name="pref_dt_gesture_title">Dupla érintéses gesztusok</string>
     <string name="pref_dt_gesture_summary">Képernyő kikapcsoláshoz duplakopp egy üres területen</string>
+    <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
+    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Rejtett és védett alkalmazások</string>
     <string name="trust_apps_manager_summary">Rejtett és védett alkalmazások korlátozása képernyőzárral stb</string>
@@ -42,4 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="msg_minus_one_on_left">Amikor a főképernyőn balra csúsztat</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Amikor a főképernyőn jobbra csúsztat</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Suggestions</string>
+    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
 </resources>
