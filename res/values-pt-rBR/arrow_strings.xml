@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_notifications_gesture_summary">Deslize verticalmente para baixo na tela inicial para mostrar o painel QS</string>
     <string name="pref_dt_gesture_title">Gestos de toque duplo</string>
     <string name="pref_dt_gesture_summary">Toque duas vezes no espaço vazio para desligar a tela</string>
+    <string name="allow_swipe_down_clearall_title">Deslize para baixo para limpar todos os recentes</string>
+    <string name="allow_swipe_down_clearall_desc">Habilitar para limpar todos os recentes na tela de visão geral deslizando para baixo</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Ocultos &amp; Apps protegidos</string>
     <string name="trust_apps_manager_summary">Ocultar apps ou protegê-los &amp; restringi-los via bloqueio de tela, etc</string>
@@ -42,4 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="msg_minus_one_on_left">Quando você desliza para a esquerda na tela inicial principal</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Quando você desliza para a direita na tela inicial principal</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Suggestions</string>
+    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
 </resources>

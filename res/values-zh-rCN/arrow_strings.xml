@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_notifications_gesture_summary">在主屏幕上垂直下滑以显示快速设置面板</string>
     <string name="pref_dt_gesture_title">双击手势</string>
     <string name="pref_dt_gesture_summary">双击空白处以关闭屏幕</string>
+    <string name="allow_swipe_down_clearall_title">向下滑动以清除所有最近任务</string>
+    <string name="allow_swipe_down_clearall_desc">启用向下滑动以清除概览屏幕上的所有最近任务</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">已隐藏并受保护的应用</string>
     <string name="trust_apps_manager_summary">通过屏幕锁定等方式以隐藏或者保护和限制应用</string>
@@ -42,4 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="msg_minus_one_on_left">从主屏幕向左滑动时</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">从主屏幕向右滑动时</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Suggestions</string>
+    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
 </resources>
