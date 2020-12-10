@@ -25,6 +25,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Interpolator;
 
 import com.android.launcher3.AbstractFloatingView;
 import com.android.launcher3.BaseDraggingActivity;
@@ -83,7 +84,15 @@ public abstract class TaskViewTouchController<T extends BaseDraggingActivity>
         mDetector = new SingleAxisSwipeDetector(activity, this, dir);
     }
 
-    private boolean canInterceptTouch() {
+    private boolean canInterceptTouch(MotionEvent ev) {
+        if ((ev.getEdgeFlags() & Utilities.EDGE_NAV_BAR) != 0) {
+            // Don't intercept swipes on the nav bar, as user might be trying to go home
+            // during a task dismiss animation.
+            if (mCurrentAnimation != null) {
+                mCurrentAnimation.getAnimationPlayer().end();
+            }
+            return false;
+        }
         if (mCurrentAnimation != null) {
             mCurrentAnimation.forceFinishIfCloseToEnd();
         }
@@ -119,7 +128,7 @@ public abstract class TaskViewTouchController<T extends BaseDraggingActivity>
             clearState();
         }
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {
-            mNoIntercept = !canInterceptTouch();
+            mNoIntercept = !canInterceptTouch(ev);
             if (mNoIntercept) {
                 return false;
             }
@@ -207,18 +216,24 @@ public abstract class TaskViewTouchController<T extends BaseDraggingActivity>
         long maxDuration = 2 * secondaryLayerDimension;
         int verticalFactor = orientationHandler.getTaskDragDisplacementFactor(mIsRtl);
         int secondaryTaskDimension = orientationHandler.getSecondaryDimension(mTaskBeingDragged);
+        // The interpolator controlling the most prominent visual movement. We use this to determine
+        // whether we passed SUCCESS_TRANSITION_PROGRESS.
+        final Interpolator currentInterpolator;
         if (goingUp) {
+            currentInterpolator = Interpolators.LINEAR;
             mPendingAnimation = mRecentsView.createTaskDismissAnimation(mTaskBeingDragged,
                     true /* animateTaskView */, true /* removeTask */, maxDuration);
 
             mEndDisplacement = -secondaryTaskDimension;
         } else if (goingDown && getSwipeForClearAllState()) {
+            currentInterpolator = Interpolators.LINEAR;
             mPendingAnimation = mRecentsView.createAllTasksDismissAnimation(maxDuration);
 
             mEndDisplacement = -mTaskBeingDragged.getHeight();
         } else {
+            currentInterpolator = Interpolators.ZOOM_IN;
             mPendingAnimation = mRecentsView.createTaskLaunchAnimation(
-                    mTaskBeingDragged, maxDuration, Interpolators.ZOOM_IN);
+                    mTaskBeingDragged, maxDuration, currentInterpolator);
 
             // Since the thumbnail is what is filling the screen, based the end displacement on it.
             View thumbnailView = mTaskBeingDragged.getThumbnail();
@@ -232,7 +247,10 @@ public abstract class TaskViewTouchController<T extends BaseDraggingActivity>
             mCurrentAnimation.setOnCancelRunnable(null);
         }
         mCurrentAnimation = mPendingAnimation.createPlaybackController()
-                .setOnCancelRunnable(this::clearState);
+               .setOnCancelRunnable(this::clearState);
+        // Setting this interpolator doesn't affect the visual motion, but is used to determine
+        // whether we successfully reached the target state in onDragEnd().
+        mCurrentAnimation.getTarget().setInterpolator(currentInterpolator);
         onUserControlledAnimationCreated(mCurrentAnimation);
         mCurrentAnimation.getTarget().addListener(this);
         mCurrentAnimation.dispatchOnStart();
