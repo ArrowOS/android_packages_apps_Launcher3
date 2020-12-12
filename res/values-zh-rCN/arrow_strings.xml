@@ -45,6 +45,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">从主屏幕向右滑动时</string>
     <!-- Suggestions -->
-    <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_title">建议</string>
+    <string name="suggestion_pref_screen_desc">适用于所有应用程序和主屏幕的建议</string>
 </resources>
