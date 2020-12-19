@@ -46,5 +46,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="msg_minus_one_on_right">Quando você desliza para a direita na tela inicial principal</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugestões</string>
-    <string name="suggestion_pref_screen_desc">Para todos os apps &amp; sugestões de tela inicial</string>
+    <string name="suggestion_pref_screen_desc">Para gaveta de apps &amp; sugestões de tela inicial</string>
 </resources>

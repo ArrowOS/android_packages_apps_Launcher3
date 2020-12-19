@@ -22,29 +22,29 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Gestures -->
     <string name="gestures_category">Liigutus</string>
     <string name="pref_notifications_gesture_title">Teavituste liigutus</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the QS panel</string>
-    <string name="pref_dt_gesture_title">Double tap gesture</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
-    <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
-    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
+    <string name="pref_notifications_gesture_summary">Kiir seadistuse kuvamiseks libistage avakuval vertikaalselt allapoole</string>
+    <string name="pref_dt_gesture_title">Topeltpuudutamise žest</string>
+    <string name="pref_dt_gesture_summary">Ekraani väljalülitamiseks topeltpuudutage tühja kohta</string>
+    <string name="allow_swipe_down_clearall_title">Kõigi kustutamiseks pühkige alla</string>
+    <string name="allow_swipe_down_clearall_desc">Lülitage sisse, et kõik hiljutised rakendused ülevaatekuvalt eemaldada, pühkides alla</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
-    <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
-    <string name="trust_apps_manager_name_dialog">Protected app</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_manager_name">Peidetud &amp; kaitstud rakendused</string>
+    <string name="trust_apps_manager_summary">Peita rakendused või kaitsta &amp; piirata neid ekraanilukuga jne.</string>
+    <string name="trust_apps_manager_name_dialog">Kaitstud rakendus</string>
+    <string name="trust_apps_auth_manager">Lukusta lahti peidetud ja kaitstud rakenduste haldamiseks</string>
+    <string name="trust_apps_auth_open_app">Autendi %1$s avamiseks</string>
+    <string name="trust_apps_loading">Laadimine\u2026</string>
+    <string name="trust_apps_no_lock_error">Palun seadista turvaline lukustuskuva, et piirata rakendustele juurdepääsu</string>
+    <string name="trust_apps_help">Abi</string>
+    <string name="trust_apps_info_hidden">Peidetud rakendused ja nende vidinad on sahtlist peidetud</string>
+    <string name="trust_apps_info_protected">Kaitstud rakendused vajavad käivitajast avamiseks autentimist</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Show Google App</string>
+    <string name="title_show_google_app">Kuva Google\'i rakendus</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <string name="msg_minus_one_on_left">Kui viipad põhiliselt avaekraanilt vasakule</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="msg_minus_one_on_right">Kui viipad põhiliselt avaekraanilt paremale</string>
     <!-- Suggestions -->
-    <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_title">Soovitused</string>
+    <string name="suggestion_pref_screen_desc">Kõigi rakenduste &amp; avakuva pakkumiste jaoks</string>
 </resources>

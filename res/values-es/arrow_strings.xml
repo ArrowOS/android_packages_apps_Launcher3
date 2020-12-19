@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Mostrar la barra de búsqueda</string>
+    <string name="show_searchbar_title">Mostrar barra de búsqueda</string>
     <string name="show_searchbar_summary">Mostrar la barra de búsqueda en la pantalla de inicio</string>
     <string name="state_loading">Aplicando\u2026</string>
     <!-- Gestures -->
@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_title">Gestos de doble toque</string>
     <string name="pref_dt_gesture_summary">Doble toque para apagar la pantalla</string>
     <string name="allow_swipe_down_clearall_title">Desliza hacia abajo para borrar todos los recientes</string>
-    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
+    <string name="allow_swipe_down_clearall_desc">Activar para limpiar todas las aplicaciones en la pantalla de recientes deslizando hacia abajo</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Aplicaciones ocultas &amp; y protegidas</string>
     <string name="trust_apps_manager_summary">Ocultar aplicaciones o protegerlas &amp; restringirlas mediante bloqueo de pantalla, etc</string>
@@ -46,5 +46,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="msg_minus_one_on_right">Cuando deslizas a la derecha desde la pantalla de inicio</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugerencias</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_desc">Para todas las aplicaciones y sugerencias de pantalla de inicio</string>
 </resources>
