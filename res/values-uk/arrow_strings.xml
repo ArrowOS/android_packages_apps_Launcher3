@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="state_loading">Застосування\u2026</string>
     <!-- Gestures -->
     <string name="gestures_category">Жести</string>
-    <string name="pref_notifications_gesture_title">Жести сповіщень</string>
+    <string name="pref_notifications_gesture_title">Жест відкриття панелі сповіщень</string>
     <string name="pref_notifications_gesture_summary">Проведіть пальцем по вертикалі вниз на головному екрані, щоб відобразити панель сповіщень</string>
     <string name="pref_dt_gesture_title">Жест подвійного натискання</string>
     <string name="pref_dt_gesture_summary">Натисніть два рази на порожньому просторі для вимкнення екрану</string>
