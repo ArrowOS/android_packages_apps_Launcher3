@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Gestures -->
     <string name="gestures_category">Gestes</string>
     <string name="pref_notifications_gesture_title">Gestes pour les notifications</string>
-    <string name="pref_notifications_gesture_summary">Faites glisser le doigt vers le bas sur l\'écran d\'accueil pour montrer le panneau de réglages rapides</string>
+    <string name="pref_notifications_gesture_summary">Faites glisser le doigt vers le bas sur l\'écran d\'accueil pour montrer le panneau de configuration rapide</string>
     <string name="pref_dt_gesture_title">Gestes par double appui</string>
     <string name="pref_dt_gesture_summary">Double appui sur un espace vide pour éteindre l\'écran</string>
     <string name="allow_swipe_down_clearall_title">Glisser vers le bas pour effacer tous les applications récentes</string>
