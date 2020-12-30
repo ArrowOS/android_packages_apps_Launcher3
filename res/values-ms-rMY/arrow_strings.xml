@@ -25,8 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_notifications_gesture_summary">Leret ke bawah ke bawah pada skrin utama untuk menunjukkan panel QS</string>
     <string name="pref_dt_gesture_title">Gerak isyarat sentuh berganda</string>
     <string name="pref_dt_gesture_summary">Sentuh berganda di ruang kosong untuk mematikan layar</string>
-    <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
-    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
+    <string name="allow_swipe_down_clearall_title">Leret ke bawah untuk memadam yang terakhir</string>
+    <string name="allow_swipe_down_clearall_desc">Aktifkan untuk memadam semua terkini di layar gambaran keseluruhan dengan meleret ke bawah</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Disembunyi &amp; Aplikasi dilindungi</string>
     <string name="trust_apps_manager_summary">Sembunyi atau lindungi aplikasi &amp; hadkan melalui Kunci Layar dan sebagainya</string>
@@ -45,6 +45,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Bila anda leret kanan dari laman Utama</string>
     <!-- Suggestions -->
-    <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_title">Cadangan</string>
+    <string name="suggestion_pref_screen_desc">Semua aplikasi &amp; Cadangan layar home</string>
 </resources>
