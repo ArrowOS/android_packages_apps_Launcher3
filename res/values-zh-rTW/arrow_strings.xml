@@ -16,35 +16,35 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Show search bar</string>
-    <string name="show_searchbar_summary">Show the search bar on the home screen</string>
+    <string name="show_searchbar_title">顯示搜尋列</string>
+    <string name="show_searchbar_summary">在主畫面上顯示搜索列</string>
     <string name="state_loading">套用中\u2026</string>
     <!-- Gestures -->
-    <string name="gestures_category">Gestures</string>
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the QS panel</string>
-    <string name="pref_dt_gesture_title">Double tap gesture</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
-    <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
-    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
+    <string name="gestures_category">手勢</string>
+    <string name="pref_notifications_gesture_title">通知手勢</string>
+    <string name="pref_notifications_gesture_summary">在主畫面垂直向下滑動來顯示快速設定面板</string>
+    <string name="pref_dt_gesture_title">雙擊手勢</string>
+    <string name="pref_dt_gesture_summary">在空白處點兩下以關閉螢幕</string>
+    <string name="allow_swipe_down_clearall_title">向下滑動以清除所有最近記錄</string>
+    <string name="allow_swipe_down_clearall_desc">啟用向下滑動以清除所有最近記錄</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
-    <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
-    <string name="trust_apps_manager_name_dialog">Protected app</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_manager_name">隱藏與受保護應用程式</string>
+    <string name="trust_apps_manager_summary">通過屏幕鎖定等方式以隱藏或者保護和限制應用程式</string>
+    <string name="trust_apps_manager_name_dialog">受保護的應用程式</string>
+    <string name="trust_apps_auth_manager">解鎖以管理隱藏和受保護的應用程式</string>
+    <string name="trust_apps_auth_open_app">進行身份驗證以開啟 %1$s</string>
+    <string name="trust_apps_loading">正在讀取\u2026</string>
+    <string name="trust_apps_no_lock_error">請設定安全鎖定畫面以限制應用程式存取權限</string>
+    <string name="trust_apps_help">說明</string>
+    <string name="trust_apps_info_hidden">隱藏的應用程式及其小工具隱藏在清單中</string>
+    <string name="trust_apps_info_protected">需要身份驗證才能從啟動器打開受保護的應用程序</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Show Google App</string>
+    <string name="title_show_google_app">顯示 Google 應用程式</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <string name="msg_minus_one_on_left">當在主畫面向左滑動時</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="msg_minus_one_on_right">當在主畫面向右滑動時</string>
     <!-- Suggestions -->
-    <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_title">建議</string>
+    <string name="suggestion_pref_screen_desc">適用於所有應用程序和主畫面的建議</string>
 </resources>
