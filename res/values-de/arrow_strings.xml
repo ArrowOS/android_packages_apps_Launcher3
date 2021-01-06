@@ -26,10 +26,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_title">Doppeltipp-Geste</string>
     <string name="pref_dt_gesture_summary">Doppetipp auf einen leeren Bereich um den Bildschirm auszuschalten</string>
     <string name="allow_swipe_down_clearall_title">Wische nach unten, um den Anwendungsverlauf zu leeren</string>
-    <string name="allow_swipe_down_clearall_desc">Aktivieren, um alle Anwenungen im Anwendungsverlauf zu löschen, indem man nach unten wischt</string>
+    <string name="allow_swipe_down_clearall_desc">Aktivieren, um alle Anwendungen im Anwendungsverlauf zu löschen, indem man nach unten wischt</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Versteckte &amp; Geschützte Apps</string>
-    <string name="trust_apps_manager_summary">Verstecke oder schütze Apps via Sperrbildschirm</string>
+    <string name="trust_apps_manager_summary">Verstecke oder schütze Apps mit dem Sperrbildschirmcode</string>
     <string name="trust_apps_manager_name_dialog">Geschützte App</string>
     <string name="trust_apps_auth_manager">Entsperren, um versteckte und geschützte Apps zu verwalten</string>
     <string name="trust_apps_auth_open_app">Authentifizieren um %1$s zu öffnen</string>
