@@ -47,4 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">建议</string>
     <string name="suggestion_pref_screen_desc">适用于所有应用程序和主屏幕的建议</string>
+    <!-- Icon packs -->
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_pack_summary">Select a custom icon pack</string>
 </resources>
