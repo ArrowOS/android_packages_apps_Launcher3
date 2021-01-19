@@ -47,4 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugerencias</string>
     <string name="suggestion_pref_screen_desc">Para todas las aplicaciones y sugerencias de pantalla de inicio</string>
+    <!-- Icon packs -->
+    <string name="icon_pack">Paquete de iconos</string>
+    <string name="icon_pack_summary">Selecciona un paquete de iconos personalizado</string>
 </resources>

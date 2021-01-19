@@ -47,4 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Öneriler</string>
     <string name="suggestion_pref_screen_desc">Tüm uygulamalar &amp; Ana ekran önerileri için</string>
+    <!-- Icon packs -->
+    <string name="icon_pack">Simge paketi</string>
+    <string name="icon_pack_summary">Özel bir simge paketi seçin</string>
 </resources>

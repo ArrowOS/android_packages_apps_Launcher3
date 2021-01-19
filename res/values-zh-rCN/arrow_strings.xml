@@ -46,5 +46,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="msg_minus_one_on_right">从主屏幕向右滑动时</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">建议</string>
-    <string name="suggestion_pref_screen_desc">适用于所有应用程序和主屏幕的建议</string>
+    <string name="suggestion_pref_screen_desc">适用于“所有应用”列表和主屏幕的建议</string>
+    <!-- Icon packs -->
+    <string name="icon_pack">图标包</string>
+    <string name="icon_pack_summary">选择一个自定义图标包</string>
 </resources>

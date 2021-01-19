@@ -47,4 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Suggesties</string>
     <string name="suggestion_pref_screen_desc">Voor alle apps &amp; startscherm suggesties</string>
+    <!-- Icon packs -->
+    <string name="icon_pack">Pictogram pakket</string>
+    <string name="icon_pack_summary">Selecteer een aangepast pictogrammenpakket</string>
 </resources>
