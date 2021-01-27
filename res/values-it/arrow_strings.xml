@@ -48,6 +48,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Suggerimenti</string>
     <string name="suggestion_pref_screen_desc">Per tutte le app &amp; suggerimenti nella schermata principale</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_pack">Pacchetto icone</string>
+    <string name="icon_pack_summary">Seleziona un pacchetto di icone personalizzato</string>
 </resources>

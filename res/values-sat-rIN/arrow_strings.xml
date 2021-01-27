@@ -48,6 +48,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">ᱥᱚᱞᱦᱟᱠᱚ</string>
     <string name="suggestion_pref_screen_desc">ᱡᱷᱚᱛᱚ ᱮᱯ ᱞᱟᱹᱜᱤᱫ &amp; ᱚᱲᱟᱜ ᱥᱠᱨᱤᱱ ᱥᱚᱞᱦᱟᱠᱚ</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_pack">ᱟᱭᱠᱚᱱ ᱯᱮᱠ</string>
+    <string name="icon_pack_summary">ᱢᱤᱫᱴᱟᱹᱝ ᱠᱟᱹᱥᱴᱚᱢ ᱟᱭᱠᱚᱱ ᱯᱮᱠ ᱵᱟᱪᱷᱟᱣ ᱢᱮ</string>
 </resources>

@@ -48,6 +48,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Προτάσεις</string>
     <string name="suggestion_pref_screen_desc">Για όλες τις εφαρμογές&amp; Προτάσεις αρχικής οθόνης</string>
     <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="icon_pack">Πακέτο εικονιδίων</string>
+    <string name="icon_pack_summary">Επιλέξτε ένα προσαρμοσμένο πακέτο εικονιδίων</string>
 </resources>
