@@ -48,6 +48,7 @@ import com.android.launcher3.popup.SystemShortcut.AppInfo;
 import com.android.launcher3.userevent.nano.LauncherLogProto;
 import com.android.launcher3.util.Executors;
 import com.android.launcher3.util.InstantAppResolver;
+import com.android.launcher3.util.PackageManagerHelper;
 import com.android.quickstep.views.RecentsView;
 import com.android.quickstep.views.TaskThumbnailView;
 import com.android.quickstep.views.TaskView;
@@ -72,6 +73,11 @@ public interface TaskShortcutFactory {
     SystemShortcut getShortcut(BaseDraggingActivity activity, TaskView view);
 
     TaskShortcutFactory APP_INFO = (activity, view) -> new AppInfo(activity, view.getItemInfo());
+
+    TaskShortcutFactory UNINSTALL = (activity, view) ->
+            PackageManagerHelper.isSystemApp(activity,
+                 view.getTask().getTopComponent().getPackageName())
+                    ? null : new SystemShortcut.UnInstall(activity, view.getItemInfo());
 
     abstract class MultiWindowFactory implements TaskShortcutFactory {
 
