@@ -586,6 +586,7 @@ public class InvariantDeviceProfile {
 
         private final String dbFile;
         private final int numAllAppsColumns;
+        private final int numAllAppsColumnsDefault;
 
         private final int defaultLayoutId;
         private final int demoModeLayoutId;
@@ -610,8 +611,10 @@ public class InvariantDeviceProfile {
                     R.styleable.GridDisplayOption_numFolderRows, numRows);
             numFolderColumns = a.getInt(
                     R.styleable.GridDisplayOption_numFolderColumns, numColumns);
+            numAllAppsColumnsDefault = context.getResources().getInteger(
+                R.integer.all_apps_columns_default);
             numAllAppsColumns = a.getInt(
-                    R.styleable.GridDisplayOption_numAllAppsColumns, numColumns);
+                    R.styleable.GridDisplayOption_numAllAppsColumns, numAllAppsColumnsDefault);
 
             a.recycle();
 
@@ -631,6 +634,7 @@ public class InvariantDeviceProfile {
         private float iconTextSize;
         private float landscapeIconSize;
         private float allAppsIconSize;
+        private float allAppsIconSizeDefault;
         private float allAppsIconTextSize;
 
         DisplayOption(GridOption grid, Context context, AttributeSet attrs) {
@@ -649,8 +653,10 @@ public class InvariantDeviceProfile {
                     iconSize);
             iconTextSize = a.getFloat(R.styleable.ProfileDisplayOption_iconTextSize, 0);
 
+            allAppsIconSizeDefault = context.getResources().getInteger(
+                R.integer.all_apps_icon_size_default);
             allAppsIconSize = a.getFloat(R.styleable.ProfileDisplayOption_allAppsIconSize,
-                    iconSize);
+                    allAppsIconSizeDefault);
             allAppsIconTextSize = a.getFloat(R.styleable.ProfileDisplayOption_allAppsIconTextSize,
                     iconTextSize);
             a.recycle();

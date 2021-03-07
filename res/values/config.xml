@@ -188,4 +188,7 @@
 
     <string-array name="live_wallpapers_remove_sysui_scrims">
     </string-array>
+
+    <integer name="all_apps_columns_default">5</integer>
+    <integer name="all_apps_icon_size_default">56</integer>
 </resources>
