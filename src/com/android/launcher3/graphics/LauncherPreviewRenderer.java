@@ -50,6 +50,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextClock;
 
+import com.android.launcher3.arrow.icon.ArrowIconFactory;
 import com.android.launcher3.BubbleTextView;
 import com.android.launcher3.CellLayout;
 import com.android.launcher3.DeviceProfile;
@@ -65,7 +66,6 @@ import com.android.launcher3.R;
 import com.android.launcher3.WorkspaceLayoutManager;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.folder.FolderIcon;
-import com.android.launcher3.icons.BaseIconFactory;
 import com.android.launcher3.icons.BitmapInfo;
 import com.android.launcher3.icons.LauncherIcons;
 import com.android.launcher3.model.AllAppsList;
@@ -226,8 +226,8 @@ public class LauncherPreviewRenderer {
         mInsets.top = mInsets.bottom = (mDp.heightPx - mDp.availableHeightPx) / 2;
         mDp.updateInsets(mInsets);
 
-        BaseIconFactory iconFactory =
-                new BaseIconFactory(context, mIdp.fillResIconDpi, mIdp.iconBitmapSize) { };
+        ArrowIconFactory iconFactory =
+                new ArrowIconFactory(context, mIdp.fillResIconDpi, mIdp.iconBitmapSize) { };
         BitmapInfo iconInfo = iconFactory.createBadgedIconBitmap(new AdaptiveIconDrawable(
                         new ColorDrawable(Color.WHITE), new ColorDrawable(Color.WHITE)),
                 Process.myUserHandle(),
