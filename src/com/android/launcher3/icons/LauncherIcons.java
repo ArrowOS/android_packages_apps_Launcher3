@@ -18,6 +18,7 @@ package com.android.launcher3.icons;
 
 import android.content.Context;
 
+import com.android.launcher3.arrow.icon.ArrowIconFactory;
 import com.android.launcher3.InvariantDeviceProfile;
 import com.android.launcher3.graphics.IconShape;
 import com.android.launcher3.graphics.LauncherPreviewRenderer;
@@ -26,7 +27,7 @@ import com.android.launcher3.graphics.LauncherPreviewRenderer;
  * Wrapper class to provide access to {@link BaseIconFactory} and also to provide pool of this class
  * that are threadsafe.
  */
-public class LauncherIcons extends BaseIconFactory implements AutoCloseable {
+public class LauncherIcons extends ArrowIconFactory implements AutoCloseable {
 
     private static final Object sPoolSync = new Object();
     private static LauncherIcons sPool;
