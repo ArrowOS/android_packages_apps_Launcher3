@@ -94,7 +94,7 @@ public class IconCache extends BaseIconCache {
         mLauncherApps = mContext.getSystemService(LauncherApps.class);
         mUserManager = UserCache.INSTANCE.get(mContext);
         mInstantAppResolver = InstantAppResolver.newInstance(mContext);
-        mIconProvider = IconProvider.INSTANCE.get(context);
+        mIconProvider = new IconProvider(context);
     }
 
     @Override
