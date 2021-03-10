@@ -22,23 +22,18 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Point;
 import android.util.Log;
 
-import com.android.launcher3.Utilities;
-
 import java.util.function.Consumer;
-
-import static com.android.launcher3.icons.IconPackProvider.PREF_ICON_PACK;
 
 /**
  * {@link BroadcastReceiver} which watches configuration changes and
  * notifies the callback in case changes which affect the device profile occur.
  */
 public class ConfigMonitor extends BroadcastReceiver implements
-        DefaultDisplay.DisplayInfoChangeListener, SharedPreferences.OnSharedPreferenceChangeListener {
+        DefaultDisplay.DisplayInfoChangeListener {
 
     private static final String TAG = "ConfigMonitor";
 
@@ -75,8 +70,6 @@ public class ConfigMonitor extends BroadcastReceiver implements
 
         // Listen for configuration change
         mContext.registerReceiver(this, new IntentFilter(Intent.ACTION_CONFIGURATION_CHANGED));
-
-        Utilities.getPrefs(mContext).registerOnSharedPreferenceChangeListener(this);
     }
 
     @Override
@@ -109,13 +102,6 @@ public class ConfigMonitor extends BroadcastReceiver implements
         }
     }
 
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (PREF_ICON_PACK.equals(key)) {
-            notifyChange();
-        }
-    }
-
     private synchronized void notifyChange() {
         if (mCallback != null) {
             Consumer<Context> callback = mCallback;
@@ -129,7 +115,6 @@ public class ConfigMonitor extends BroadcastReceiver implements
             mContext.unregisterReceiver(this);
             DefaultDisplay display = DefaultDisplay.INSTANCE.get(mContext);
             display.removeChangeListener(this);
-            Utilities.getPrefs(mContext).unregisterOnSharedPreferenceChangeListener(this);
         } catch (Exception e) {
             Log.e(TAG, "Failed to unregister config monitor", e);
         }
