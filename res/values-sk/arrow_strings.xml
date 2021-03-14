@@ -16,38 +16,45 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Show search bar</string>
-    <string name="show_searchbar_summary">Show the search bar on the home screen</string>
-    <string name="state_loading">Applying\u2026</string>
+    <string name="show_searchbar_title">Zobraziť vyhľadávací pruh</string>
+    <string name="show_searchbar_summary">Zobraziť vyhľadávací pruh na domovskej obrazovke</string>
+    <string name="state_loading">Applikuje sa\u2026</string>
     <!-- Gestures -->
-    <string name="gestures_category">Gestures</string>
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the QS panel</string>
-    <string name="pref_dt_gesture_title">Double tap gesture</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
-    <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
-    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
+    <string name="gestures_category">Gestá</string>
+    <string name="pref_notifications_gesture_title">Gesto upozornení</string>
+    <string name="pref_notifications_gesture_summary">Potiahnutím prsta smerom dolu na domovskej obrazovke zobraziť panel Rýchlych nastavení</string>
+    <string name="pref_dt_gesture_title">Gesto dvojklikom</string>
+    <string name="pref_dt_gesture_summary">Dvojklikom do prázdneho priestoru vypnúť zariadenie</string>
+    <string name="allow_swipe_down_clearall_title">Potiahnutím prsta nadol vymazať všetky nedávne</string>
+    <string name="allow_swipe_down_clearall_desc">Povoliť vymazanie všetkých nedávnych aplikácií v zobrazení prehľadu potiahnutím nadol</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
-    <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
-    <string name="trust_apps_manager_name_dialog">Protected app</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_manager_name">Skryté a chránené aplikácie</string>
+    <string name="trust_apps_manager_summary">Skryť aplikácie alebo ich chrániť a obmedziť pomocou uzamknutia obrazovky atď.</string>
+    <string name="trust_apps_manager_name_dialog">Chránené aplikácie</string>
+    <string name="trust_apps_auth_manager">Pre správu skrytých a chránených aplikácií odomknite</string>
+    <string name="trust_apps_auth_open_app">Povoľte otvorenie %1$s</string>
+    <string name="trust_apps_loading">Nahrávanie\u2026</string>
+    <string name="trust_apps_no_lock_error">Pre obmedzenie prístupu k aplikácii prosím nastavte zabezpečenú zamykaciu obrazovku</string>
+    <string name="trust_apps_help">Nápoveda</string>
+    <string name="trust_apps_info_hidden">Skryté aplikácie a ich widgety se nezobrazujú v zozname aplikácií</string>
+    <string name="trust_apps_info_protected">Chránené aplikácie vyžadujú pre spustenie zo spúšťača overenie</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Show Google App</string>
+    <string name="title_show_google_app">Zobraziť Google aplikácie</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <string name="msg_minus_one_on_left">Pri potiahnutí prstom vľavo na hlavnej obrazovke</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="msg_minus_one_on_right">Pri potiahnutí prstom vpravo na hlavnej obrazovke</string>
     <!-- Suggestions -->
-    <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
-    <!-- Icon packs -->
-    <string name="icon_pack">Icon pack</string>
-    <string name="icon_pack_summary">Select a custom icon pack</string>
+    <string name="suggestion_pref_screen_title">Návrhy</string>
+    <string name="suggestion_pref_screen_desc">Pre všetky aplikácie &amp; návrhy dna ploche</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Icon pack</string>
+    <string name="icon_pack_default_label">Default</string>
+    <string name="icon_pack_add">Install more</string>
+    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <!-- Edit workspace -->
+    <string name="settings_edit_allow_title">Allow edit</string>
+    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
+    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
+    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
 </resources>

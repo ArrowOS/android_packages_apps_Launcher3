@@ -47,7 +47,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Suggerimenti</string>
     <string name="suggestion_pref_screen_desc">Per tutte le app &amp; suggerimenti nella schermata principale</string>
-    <!-- Icon packs -->
-    <string name="icon_pack">Pacchetto icone</string>
-    <string name="icon_pack_summary">Seleziona un pacchetto di icone personalizzato</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Icon pack</string>
+    <string name="icon_pack_default_label">Default</string>
+    <string name="icon_pack_add">Install more</string>
+    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <!-- Edit workspace -->
+    <string name="settings_edit_allow_title">Allow edit</string>
+    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
+    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
+    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
 </resources>
