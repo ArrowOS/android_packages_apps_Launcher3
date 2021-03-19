@@ -48,13 +48,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">建议</string>
     <string name="suggestion_pref_screen_desc">适用于“所有应用”列表和主屏幕的建议</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">图标包</string>
+    <string name="icon_pack_default_label">默认</string>
+    <string name="icon_pack_add">安装更多</string>
+    <string name="icon_pack_no_market">没有可用的应用商店</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">允许编辑</string>
+    <string name="settings_edit_allow_summary_on">可在主屏幕上添加、删除和移动图标及小部件</string>
+    <string name="settings_edit_allow_summary_off">不可在主屏幕上添加、删除和移动图标及小部件</string>
+    <string name="settings_edit_widgets_error">无法将小部件添加到主屏幕</string>
 </resources>

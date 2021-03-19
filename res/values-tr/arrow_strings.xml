@@ -48,13 +48,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Öneriler</string>
     <string name="suggestion_pref_screen_desc">Tüm uygulamalar &amp; Ana ekran önerileri için</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">Simge paketi</string>
+    <string name="icon_pack_default_label">Varsayılan</string>
+    <string name="icon_pack_add">Daha fazla yükle</string>
+    <string name="icon_pack_no_market">Kullanılabilir uygulama mağazası yok</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">Düzenlemeye izin ver</string>
+    <string name="settings_edit_allow_summary_on">Ana ekrana simgeler ve widget\'lar eklenebilir, kaldırılabilir ve taşınabilir</string>
+    <string name="settings_edit_allow_summary_off">Ana ekrana simgeler ve widget\'lar eklenemez, kaldırılamaz ve taşınamaz</string>
+    <string name="settings_edit_widgets_error">Ana ekrana widget eklemek mümkün değil</string>
 </resources>

@@ -48,13 +48,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Sugestões</string>
     <string name="suggestion_pref_screen_desc">Para gaveta de apps &amp; sugestões de tela inicial</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">Pacote de ícones</string>
+    <string name="icon_pack_default_label">Padrão</string>
+    <string name="icon_pack_add">Instalar mais</string>
+    <string name="icon_pack_no_market">Não há loja de aplicativos disponível</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">Permitir edição</string>
+    <string name="settings_edit_allow_summary_on">Ícones e widgets podem ser adicionados, removidos e movidos na tela inicial</string>
+    <string name="settings_edit_allow_summary_off">Ícones e widgets não podem ser adicionados, removidos e movidos na tela inicial</string>
+    <string name="settings_edit_widgets_error">Não é possível adicionar widgets à tela inicial</string>
 </resources>

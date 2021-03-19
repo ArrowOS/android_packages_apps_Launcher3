@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">தேடல் பட்டையைக் காண்பி</string>
     <string name="show_searchbar_summary">முகப்புத் திரையில் தேடல் பட்டியைக் காண்பி</string>
-    <string name="state_loading">பயன்படுத்தப்படுகிறது\u2026</string>
+    <string name="state_loading">விண்ணப்பிக்கிறது\u2026</string>
     <!-- Gestures -->
     <string name="gestures_category">சைகைகள்</string>
     <string name="pref_notifications_gesture_title">அறிவிப்பு சைகைகள்</string>
@@ -37,24 +37,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="trust_apps_no_lock_error">பயன்பாட்டு அணுகலைக் கட்டுப்படுத்த பாதுகாப்பான பூட்டுத் திரையை அமைக்கவும்</string>
     <string name="trust_apps_help">உதவி</string>
     <string name="trust_apps_info_hidden">மறைக்கப்பட்ட செயலிகளும் அவற்றின் விட்ஜெட்களும் டிராயரில் இருந்து மறைக்கப்பட்டுள்ளன</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_info_protected">பாதுகாக்கப்பட்ட செயலிகள் துவக்கியிலிருந்து திறக்கப்பட அங்கீகாரம் வேண்டும்</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Show Google App</string>
+    <string name="title_show_google_app">கூகுள் செயலியை காட்டு</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <string name="msg_minus_one_on_left">பிரதான முகப்புத்திரையிலிருந்து இடபுறமாக தேய்க்கும்போது</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="msg_minus_one_on_right">பிரதான முகப்புத்திரையிலிருந்து வலபுறமாக தேய்க்கும்போது</string>
     <!-- Suggestions -->
-    <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_title">பரிந்துரைகள்</string>
+    <string name="suggestion_pref_screen_desc">எல்லா செயலிகள் &amp; முகப்புத் திரை பரிந்துரைகளுக்கும்</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">படவுருத் தொகுப்பு</string>
+    <string name="icon_pack_default_label">இயல்புநிலை</string>
+    <string name="icon_pack_add">மேலும் நிறுவு</string>
+    <string name="icon_pack_no_market">செயலி அங்காடி ஏதுமில்லை</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">திருத்த அனுமதி</string>
+    <string name="settings_edit_allow_summary_on">முகப்புத் திரையில் படவுருக்கள் &amp; விட்ஜெட்கள் சேர்க்க, அகற்ற &amp; நகர்த்த முடியும்</string>
+    <string name="settings_edit_allow_summary_off">முகப்புத் திரையில் படவுருக்கள் &amp; விட்ஜெட்கள் சேர்க்க, அகற்ற &amp; நகர்த்த இயலாது</string>
+    <string name="settings_edit_widgets_error">முகப்புத் திரையில் விட்ஜெட்களைச் சேர்த்தல் சாத்தியமில்லை</string>
 </resources>

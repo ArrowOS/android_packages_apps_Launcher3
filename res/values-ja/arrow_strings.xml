@@ -48,13 +48,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">候補</string>
     <string name="suggestion_pref_screen_desc">全てのアプリとホーム画面の候補</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">アイコンパック</string>
+    <string name="icon_pack_default_label">既定</string>
+    <string name="icon_pack_add">追加でインストール</string>
+    <string name="icon_pack_no_market">利用可能なアプリストアがありません</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">編集を許可</string>
+    <string name="settings_edit_allow_summary_on">アイコンやウィジェットの追加、削除、移動を許可する</string>
+    <string name="settings_edit_allow_summary_off">アイコンやウィジェットの追加、削除、移動を許可しない</string>
+    <string name="settings_edit_widgets_error">ウィジェットをホーム画面に追加できません</string>
 </resources>

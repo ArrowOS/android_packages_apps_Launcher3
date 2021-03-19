@@ -16,45 +16,45 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Show search bar</string>
-    <string name="show_searchbar_summary">Show the search bar on the home screen</string>
+    <string name="show_searchbar_title">검색 바 표시</string>
+    <string name="show_searchbar_summary">홈 화면에서 검색 바 표시</string>
     <string name="state_loading">적용 중\u2026</string>
     <!-- Gestures -->
-    <string name="gestures_category">Gestures</string>
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the QS panel</string>
-    <string name="pref_dt_gesture_title">Double tap gesture</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
-    <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
-    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
+    <string name="gestures_category">제스처 설정</string>
+    <string name="pref_notifications_gesture_title">알림 제스처</string>
+    <string name="pref_notifications_gesture_summary">빠른 설정 패널을 보려면 홈 화면에서 아래로 밀기</string>
+    <string name="pref_dt_gesture_title">더블 탭 제스처</string>
+    <string name="pref_dt_gesture_summary">화면을 끄려면 빈 공간을 두 번 탭하기</string>
+    <string name="allow_swipe_down_clearall_title">아래로 스와이프해서 모두 지우기</string>
+    <string name="allow_swipe_down_clearall_desc">화면을 아래로 스와이프하여 모두 지우기 활성화</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
-    <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
-    <string name="trust_apps_manager_name_dialog">Protected app</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden and protected apps</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_manager_name">숨겨지거나 &amp; 보호된 앱</string>
+    <string name="trust_apps_manager_summary">앱을 숨기거나 보호&amp;, 화면 잠금을 통해 제한</string>
+    <string name="trust_apps_manager_name_dialog">보호된 앱</string>
+    <string name="trust_apps_auth_manager">숨겨지거나 보호된 앱을 관리하려면 잠금을 해제하세요.</string>
+    <string name="trust_apps_auth_open_app">인증하여 %1$s 열기</string>
+    <string name="trust_apps_loading">불러오는 중\u2026</string>
+    <string name="trust_apps_no_lock_error">제한된 앱 접근을 위해 잠금 화면을 설정하세요.</string>
+    <string name="trust_apps_help">도움말</string>
+    <string name="trust_apps_info_hidden">숨겨진 앱과 해당 앱의 위젯은 앱 서랍에서 숨겨집니다.</string>
+    <string name="trust_apps_info_protected">보호된 앱을 런처에서 열려면 인증이 필요합니다.</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Show Google App</string>
+    <string name="title_show_google_app">Google 앱 표시</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">When you swipe left from main Home screen</string>
+    <string name="msg_minus_one_on_left">메인 홈 화면에서 왼쪽으로 스와이프할 때</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">When you swipe right from main Home screen</string>
+    <string name="msg_minus_one_on_right">메인 홈 화면에서 오른쪽으로 스와이프할 때</string>
     <!-- Suggestions -->
-    <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_title">제안</string>
+    <string name="suggestion_pref_screen_desc">모든 앱 &amp; 홈 화면 제안</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">아이콘 팩</string>
+    <string name="icon_pack_default_label">기본값</string>
+    <string name="icon_pack_add">추가로 설치</string>
+    <string name="icon_pack_no_market">사용할 수 있는 앱 스토어가 없습니다.</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">편집 허용</string>
+    <string name="settings_edit_allow_summary_on">아이콘과 위젯을 홈 화면에 추가하거나 제거, 이동할 수 있도록 허용합니다.</string>
+    <string name="settings_edit_allow_summary_off">아이콘과 위젯을 홈 화면에 추가하거나 제거, 이동할 수 없습니다.</string>
+    <string name="settings_edit_widgets_error">홈 화면에 위젯을 추가할 수 없습니다.</string>
 </resources>
