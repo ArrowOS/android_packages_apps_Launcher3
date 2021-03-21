@@ -56,7 +56,6 @@ import com.android.launcher3.LauncherFiles;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
-import com.android.launcher3.trust.TrustAppsActivity;
 import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
 import com.android.launcher3.util.SecureSettingsObserver;
 
@@ -80,7 +79,6 @@ public class SettingsActivity extends FragmentActivity
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
 
-    public static final String KEY_TRUST_APPS = "pref_trust_apps";
     public static final String KEY_ICON_PACK = "pref_icon_pack";
 
     @Override
@@ -277,17 +275,6 @@ public class SettingsActivity extends FragmentActivity
                     // Show if plugins are enabled or flag UI is enabled.
                     return FeatureFlags.showFlagTogglerUi(getContext()) ||
                             PluginManagerWrapper.hasPlugins(getContext());
-
-                case KEY_TRUST_APPS:
-                    preference.setOnPreferenceClickListener(p -> {
-                        Utilities.showLockScreen(getActivity(),
-                                getString(R.string.trust_apps_manager_name), () -> {
-                            Intent intent = new Intent(getActivity(), TrustAppsActivity.class);
-                            startActivity(intent);
-                        });
-                        return true;
-                    });
-                    return true;
 
                 case KEY_ENABLE_MINUS_ONE:
                     mShowGoogleAppPref = preference;

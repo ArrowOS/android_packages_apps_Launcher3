@@ -60,7 +60,3 @@
 -keep class com.android.quickstep.** {
   *;
 }
-
--keep class com.android.launcher3.trust.** {
- *;
-}
