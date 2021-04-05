@@ -15,6 +15,7 @@
  */
 package com.android.launcher3.trust;
 
+import android.content.Intent;
 import android.graphics.drawable.Animatable2;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
@@ -119,25 +120,8 @@ class TrustAppsAdapter extends RecyclerView.Adapter<TrustAppsAdapter.ViewHolder>
             });
 
             mProtectedView.setOnClickListener(v -> {
-                component.invertProtection();
-
-                mProtectedView.setImageResource(component.isProtected() ?
-                        R.drawable.avd_protected_lock : R.drawable.avd_protected_unlock);
-                AnimatedVectorDrawable avd = (AnimatedVectorDrawable) mProtectedView.getDrawable();
-
-                int position = getAdapterPosition();
-                if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
-                    avd.registerAnimationCallback(new Animatable2.AnimationCallback() {
-                        @Override
-                        public void onAnimationEnd(Drawable drawable) {
-                            updateProtectedList(position, component);
-                        }
-                    });
-                    avd.start();
-                } else {
-                    avd.start();
-                    updateProtectedList(position, component);
-                }
+                final Intent systemAppLockIntent = new Intent("android.settings.APPLOCK_SETTINGS");
+                v.getContext().startActivity(systemAppLockIntent);
             });
         }
 
