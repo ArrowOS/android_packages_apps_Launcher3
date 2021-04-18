@@ -70,6 +70,10 @@
         <intent android:action="android.settings.ACTION_CONTENT_SUGGESTIONS_SETTINGS" />
     </androidx.preference.PreferenceScreen>
 
+    <Preference
+        android:key="pref_trust_apps"
+        android:title="@string/trust_apps_manager_name" />
+
 <PreferenceCategory
         android:key="gestures_category"
         android:title="@string/gestures_category">
