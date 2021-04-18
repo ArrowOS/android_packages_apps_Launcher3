@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Докоснете двата пъти на празно място за да изключите екрана</string>
     <string name="allow_swipe_down_clearall_title">Плъзнете надолу за да изчистите всички скорошни приложения</string>
     <string name="allow_swipe_down_clearall_desc">Включете за да изчиствате всички скорошни приложения с плъзгане надолу</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Скрити &amp; Защитени приложения</string>
-    <string name="trust_apps_manager_summary">Скрий или защити приложения&amp; ограничете ги с парола и т.н.</string>
-    <string name="trust_apps_manager_name_dialog">Защитено приложение</string>
-    <string name="trust_apps_auth_manager">Отключете за да управлявате скритите или защитени приложения</string>
-    <string name="trust_apps_auth_open_app">Аутентикирайте се за да отворите %1$s</string>
-    <string name="trust_apps_loading">Зареждане\u2026</string>
-    <string name="trust_apps_no_lock_error">Моля задайте сигурно заключване на екрана за да ограничавате достъп до приложения</string>
-    <string name="trust_apps_help">Помощ</string>
-    <string name="trust_apps_info_hidden">Скрити приложения и техните добавки са скрити от чекмеджето с приложения</string>
-    <string name="trust_apps_info_protected">Защитени приложения изискват верификация за да бъдат отворени</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Показване на приложението Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">在空白處點兩下以關閉螢幕</string>
     <string name="allow_swipe_down_clearall_title">向下滑動以清除所有最近記錄</string>
     <string name="allow_swipe_down_clearall_desc">啟用向下滑動以清除所有最近記錄</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">隱藏與受保護應用程式</string>
-    <string name="trust_apps_manager_summary">通過屏幕鎖定等方式以隱藏或者保護和限制應用程式</string>
-    <string name="trust_apps_manager_name_dialog">受保護的應用程式</string>
-    <string name="trust_apps_auth_manager">解鎖以管理隱藏和受保護的應用程式</string>
-    <string name="trust_apps_auth_open_app">進行身份驗證以開啟 %1$s</string>
-    <string name="trust_apps_loading">正在讀取\u2026</string>
-    <string name="trust_apps_no_lock_error">請設定安全鎖定畫面以限制應用程式存取權限</string>
-    <string name="trust_apps_help">說明</string>
-    <string name="trust_apps_info_hidden">隱藏的應用程式及其小工具隱藏在清單中</string>
-    <string name="trust_apps_info_protected">需要身份驗證才能從啟動器打開受保護的應用程序</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">顯示 Google 應用程式</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
@@ -48,13 +37,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">建議</string>
     <string name="suggestion_pref_screen_desc">適用於所有應用程序和主畫面的建議</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">圖示包</string>
+    <string name="icon_pack_default_label">預設</string>
+    <string name="icon_pack_add">安裝更多</string>
+    <string name="icon_pack_no_market">沒有可用的應用程式商店</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">允許編輯</string>
+    <string name="settings_edit_allow_summary_on">圖示和小工具可以在主畫面上新增、刪除和移動</string>
+    <string name="settings_edit_allow_summary_off">圖示和小工具無法在主畫面上新增、刪除和移動</string>
+    <string name="settings_edit_widgets_error">無法將小工具新增至主畫面</string>
 </resources>

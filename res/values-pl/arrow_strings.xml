@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Kliknij dwukrotnie w puste miejsce, aby wyłączyć ekran</string>
     <string name="allow_swipe_down_clearall_title">Przesuń w dół, aby wyczyścić wszystkie ostatnie aplikacje</string>
     <string name="allow_swipe_down_clearall_desc">Włącz, aby wyczyścić wszystkie ostatnie aplikacje na ekranie podglądu przesuwając palcem w dół</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Ukryte &amp; chronione aplikacje</string>
-    <string name="trust_apps_manager_summary">Ukryj aplikacje lub chroń &amp; ogranicz je poprzez blokadę ekranu itp</string>
-    <string name="trust_apps_manager_name_dialog">Chronione aplikacje</string>
-    <string name="trust_apps_auth_manager">Odblokuj, aby zarządzać ukrytymi i chronionymi aplikacjami</string>
-    <string name="trust_apps_auth_open_app">Uwierzytelnij, aby otworzyć %1$s</string>
-    <string name="trust_apps_loading">Ładowanie\u2026</string>
-    <string name="trust_apps_no_lock_error">Należy skonfigurować blokadę urządzenia, aby ograniczyć dostęp do aplikacji</string>
-    <string name="trust_apps_help">Pomoc</string>
-    <string name="trust_apps_info_hidden">Ukryte aplikacje i ich widżety są ukryte z szuflady aplikacji</string>
-    <string name="trust_apps_info_protected">Chronione aplikacje wymagają uwierzytelnienia w launcherze</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Pokaż aplikację Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

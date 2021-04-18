@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Ekranı kapatmak için boş bir yere çift dokunun</string>
     <string name="allow_swipe_down_clearall_title">Tüm son uygulamaları temizlemek için aşağı kaydırın</string>
     <string name="allow_swipe_down_clearall_desc">Aşağı kaydırarak tüm son uygulamaları temizlemeyi etkinleştirin</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Gizli &amp; Korumalı uygulamalar</string>
-    <string name="trust_apps_manager_summary">Uygulamaları gizle veya koru &amp; bunları Ekran kilidi vb. yoluyla kısıtlayın</string>
-    <string name="trust_apps_manager_name_dialog">Korumalı uygulama</string>
-    <string name="trust_apps_auth_manager">Gizli ve korumalı uygulamaları yönetmek için kilidi açın</string>
-    <string name="trust_apps_auth_open_app">%1$s\'yi açmak için kimlik doğrulaması yapın</string>
-    <string name="trust_apps_loading">Yükleniyor\u2026</string>
-    <string name="trust_apps_no_lock_error">Lütfen uygulama erişimini kısıtlamak için güvenli bir kilit ekranı ayarlayın</string>
-    <string name="trust_apps_help">Yardım</string>
-    <string name="trust_apps_info_hidden">Gizli uygulamalar ve bunların widget\'ları çekmecede gizlidir</string>
-    <string name="trust_apps_info_protected">Korumalı uygulamalar, başlatıcıdan kimlik doğrulamasının açılmasını gerektirir</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Google uygulamasını göster</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

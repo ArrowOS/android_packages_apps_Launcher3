@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Toque duplo num espaço vazio para desligar o ecrã</string>
     <string name="allow_swipe_down_clearall_title">Deslize para baixo para limpar todos os recentes</string>
     <string name="allow_swipe_down_clearall_desc">Active para limpar todos os recentes no ecrã geral deslizando para baixo</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Ocultar &amp; Aplicações protegidas</string>
-    <string name="trust_apps_manager_summary">Ocultar aplicações ou protegê-las &amp; restringindo-as via bloqueio de ecrã, etc</string>
-    <string name="trust_apps_manager_name_dialog">Aplicações protegidas</string>
-    <string name="trust_apps_auth_manager">Desbloquear para gerir as aplicações ocultas e protegidas</string>
-    <string name="trust_apps_auth_open_app">Autentique para abrir %1$s</string>
-    <string name="trust_apps_loading">A carregar\u2026</string>
-    <string name="trust_apps_no_lock_error">Por favor, configure um ecrã de bloqueio seguro para restringir o acesso às aplicações</string>
-    <string name="trust_apps_help">Ajuda</string>
-    <string name="trust_apps_info_hidden">As aplicações ocultas e os seus widgets estão escondidos da gaveta de aplicações</string>
-    <string name="trust_apps_info_protected">Aplicações protegidas requerem autenticação para serem abertas a partir da gaveta de aplicações</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Mostrar aplicação Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
@@ -48,13 +37,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Sugestões</string>
     <string name="suggestion_pref_screen_desc">Para todas as aplicações &amp; sugestões de ecrã inicial</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">Pacote de ícones</string>
+    <string name="icon_pack_default_label">Predefinição</string>
+    <string name="icon_pack_add">Instalar mais</string>
+    <string name="icon_pack_no_market">Não está instalada uma loja de aplicações</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">Permitir edições</string>
+    <string name="settings_edit_allow_summary_on">Ícones e widgets podem ser adicionados, removidos e movidos no ecrã inicial</string>
+    <string name="settings_edit_allow_summary_off">Ícones e widgets não podem ser adicionados, removidos ou movidos do ecrã inicial</string>
+    <string name="settings_edit_widgets_error">Não é possível adicionar widgets ao ecrã inicial</string>
 </resources>

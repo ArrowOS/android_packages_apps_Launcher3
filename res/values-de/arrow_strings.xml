@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Doppetipp auf einen leeren Bereich um den Bildschirm auszuschalten</string>
     <string name="allow_swipe_down_clearall_title">Wische nach unten, um den Anwendungsverlauf zu leeren</string>
     <string name="allow_swipe_down_clearall_desc">Aktivieren, um alle Anwendungen im Anwendungsverlauf zu löschen, indem man nach unten wischt</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Versteckte &amp; Geschützte Apps</string>
-    <string name="trust_apps_manager_summary">Verstecke oder schütze Apps mit dem Sperrbildschirmcode</string>
-    <string name="trust_apps_manager_name_dialog">Geschützte App</string>
-    <string name="trust_apps_auth_manager">Entsperren, um versteckte und geschützte Apps zu verwalten</string>
-    <string name="trust_apps_auth_open_app">Authentifizieren um %1$s zu öffnen</string>
-    <string name="trust_apps_loading">Wird geladen\u2026</string>
-    <string name="trust_apps_no_lock_error">Bitte richten Sie einen sicheren Sperrbildschirm ein, um den Zugriff auf Apps zu beschränken</string>
-    <string name="trust_apps_help">Hilfe</string>
-    <string name="trust_apps_info_hidden">Versteckte Apps und ihre Widgets werden in der App-Übersicht nicht angezeigt</string>
-    <string name="trust_apps_info_protected">Geschützte Apps erfordern eine Authentifizierung, um geöffnet werden zu können</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Google App anzeigen</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

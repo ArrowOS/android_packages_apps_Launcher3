@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">ᱥᱠᱨᱤᱱ ᱚᱯᱷ ᱞᱟᱹᱜᱤᱫ ᱠᱷᱟᱹᱞᱤ ᱡᱟᱭᱜᱟ ᱨᱮ ᱵᱟᱨ ᱡᱮᱠᱷᱟ ᱚᱛᱟᱭ ᱢᱮ</string>
     <string name="allow_swipe_down_clearall_title">ᱱᱤᱛᱚᱜᱟᱜ ᱠᱚ ᱢᱮᱴᱟᱣ ᱞᱟᱹᱜᱤᱫ ᱞᱟᱛᱟᱨ ᱥᱮᱱ ᱴᱷᱮᱞᱟᱣ ᱢᱮ</string>
     <string name="allow_swipe_down_clearall_desc">ᱞᱟᱛᱟᱨ ᱴᱷᱮᱱ ᱴᱷᱮᱞᱟᱣ ᱠᱟᱛᱮ ᱚᱣᱟᱹᱨᱣᱤᱣ ᱥᱠᱨᱤᱱ ᱨᱮ ᱱᱤᱛᱚᱜᱟᱜ ᱠᱚ ᱢᱮᱴᱟᱣ ᱮᱢ ᱪᱷᱚᱭ ᱢᱮ</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">ᱩᱠᱩ &amp; ᱨᱩᱠᱷᱤᱭᱟᱹ ᱮᱯᱠᱚ</string>
-    <string name="trust_apps_manager_summary">ᱮᱯᱠᱚ ᱩᱠᱩᱭ ᱢᱮ ᱟᱨ ᱵᱟᱝ ᱨᱩᱠᱷᱤᱭᱟᱹᱭ ᱢᱮ &amp; ᱥᱠᱨᱤᱱ ᱠᱩᱞᱩᱯ ᱛᱮ ᱵᱚᱸᱫ ᱪᱷᱚᱭ ᱢᱮ ᱟᱫᱤ</string>
-    <string name="trust_apps_manager_name_dialog">ᱮᱯ ᱨᱩᱠᱷᱤᱭᱟᱹᱭ ᱢᱮ</string>
-    <string name="trust_apps_auth_manager">ᱩᱠᱩ ᱟᱨ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱮᱯ ᱠᱚ ᱢᱮᱱᱮᱡᱽ ᱞᱟᱹᱜᱤᱫ ᱠᱷᱩᱞᱟᱹᱭ ᱢᱮ</string>
-    <string name="trust_apps_auth_open_app">%1$s ᱠᱷᱩᱞᱟᱹ ᱞᱟᱹᱜᱤᱫ ᱯᱨᱚᱢᱟᱬ ᱮᱢ ᱢᱮ</string>
-    <string name="trust_apps_loading">ᱞᱟᱫᱮᱜ ᱠᱟᱱᱟ\u2026</string>
-    <string name="trust_apps_no_lock_error">ᱮᱯ ᱟᱫᱮᱨ ᱠᱚ ᱵᱚᱸᱫ ᱪᱷᱚ ᱞᱟᱹᱜᱤᱫ ᱫᱚᱭᱟᱠᱟᱛᱮ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱠᱩᱞᱩᱯ ᱥᱠᱨᱤᱱ ᱥᱮᱴ ᱢᱮ</string>
-    <string name="trust_apps_help">ᱜᱚᱲᱚ</string>
-    <string name="trust_apps_info_hidden">ᱰᱨᱚᱣᱟᱹᱨ ᱠᱷᱚᱱ ᱮᱯᱠᱚ ᱟᱨ ᱣᱤᱡᱮᱴ ᱠᱚ ᱩᱠᱩᱭ ᱮᱱᱟ</string>
-    <string name="trust_apps_info_protected">ᱞᱚᱸᱪᱚᱨ ᱠᱷᱚᱱ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱮᱯ ᱠᱚ ᱠᱷᱩᱞᱟᱹ ᱞᱟᱹᱜᱤᱫ ᱯᱨᱚᱢᱟᱬ ᱠᱚ ᱫᱚᱨᱠᱟᱨ</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">ᱜᱩᱜᱟᱹᱞ ᱮᱯ ᱫᱮᱠᱷᱟᱣ ᱢᱮ</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

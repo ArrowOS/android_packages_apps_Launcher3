@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Ekraani väljalülitamiseks topeltpuudutage tühja kohta</string>
     <string name="allow_swipe_down_clearall_title">Kõigi kustutamiseks pühkige alla</string>
     <string name="allow_swipe_down_clearall_desc">Lülitage sisse, et kõik hiljutised rakendused ülevaatekuvalt eemaldada, pühkides alla</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Peidetud &amp; kaitstud rakendused</string>
-    <string name="trust_apps_manager_summary">Peita rakendused või kaitsta &amp; piirata neid ekraanilukuga jne.</string>
-    <string name="trust_apps_manager_name_dialog">Kaitstud rakendus</string>
-    <string name="trust_apps_auth_manager">Lukusta lahti peidetud ja kaitstud rakenduste haldamiseks</string>
-    <string name="trust_apps_auth_open_app">Autendi %1$s avamiseks</string>
-    <string name="trust_apps_loading">Laadimine\u2026</string>
-    <string name="trust_apps_no_lock_error">Palun seadista turvaline lukustuskuva, et piirata rakendustele juurdepääsu</string>
-    <string name="trust_apps_help">Abi</string>
-    <string name="trust_apps_info_hidden">Peidetud rakendused ja nende vidinad on sahtlist peidetud</string>
-    <string name="trust_apps_info_protected">Kaitstud rakendused vajavad käivitajast avamiseks autentimist</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Kuva Google\'i rakendus</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
@@ -48,13 +37,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Soovitused</string>
     <string name="suggestion_pref_screen_desc">Kõigi rakenduste &amp; avakuva pakkumiste jaoks</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">Ikoonipakk</string>
+    <string name="icon_pack_default_label">Vaikimisi</string>
+    <string name="icon_pack_add">Paigalda veel</string>
+    <string name="icon_pack_no_market">Ühtegi rakendustepoodi pole saadaval</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">Luba redigeerimine</string>
+    <string name="settings_edit_allow_summary_on">Avaekraani ikoone ja vidinaid saab lisada, eemaldada ja liigutada</string>
+    <string name="settings_edit_allow_summary_off">Avaekraani ikoone ja vidinaid ei saa lisada, eemaldada ega liigutada</string>
+    <string name="settings_edit_widgets_error">Vidinate lisamine avaekraanile pole võimalik</string>
 </resources>

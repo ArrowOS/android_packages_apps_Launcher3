@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Двойное нажатие на пустом месте для выключения экрана</string>
     <string name="allow_swipe_down_clearall_title">Смахните вниз, чтобы очистить всё</string>
     <string name="allow_swipe_down_clearall_desc">Включите, чтобы удалить все недавние приложения на обзорном экране, проведя вниз</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Скрытые &amp; Защищенные приложения</string>
-    <string name="trust_apps_manager_summary">Скрыть приложения или защитить &amp; ограничить их с помощью блокировки экрана и т.д.</string>
-    <string name="trust_apps_manager_name_dialog">Защищенные приложения</string>
-    <string name="trust_apps_auth_manager">Разблокируйте, для управления скрытыми и защищенными приложениями</string>
-    <string name="trust_apps_auth_open_app">Авторизуйтесь, для открытия %1$s</string>
-    <string name="trust_apps_loading">Загрузка\u2026</string>
-    <string name="trust_apps_no_lock_error">Пожалуйста, установите блокировку экрана для ограничения доступа к приложениям</string>
-    <string name="trust_apps_help">Справка</string>
-    <string name="trust_apps_info_hidden">Скрытые приложения и их виджеты не отображаются в меню приложений</string>
-    <string name="trust_apps_info_protected">Для открытия защищенных приложений из лаунчера требуется аутентификация</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Показать приложение Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

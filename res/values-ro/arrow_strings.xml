@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
     <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
     <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Aplicații ascunse &amp; protejate</string>
-    <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
-    <string name="trust_apps_manager_name_dialog">Aplicație protejată</string>
-    <string name="trust_apps_auth_manager">Deblochează pentru a gestiona aplicațiile ascunse și protejate</string>
-    <string name="trust_apps_auth_open_app">Autentifică-te pentru a deschide %1$s</string>
-    <string name="trust_apps_loading">Se încarcă\u2026</string>
-    <string name="trust_apps_no_lock_error">Vă rugăm să configurați un ecran de blocare securizat pentru a restricționa accesul aplicației</string>
-    <string name="trust_apps_help">Ajutor</string>
-    <string name="trust_apps_info_hidden">Aplicațiile ascunse și widget-urile lor sunt ascunse din sertar</string>
-    <string name="trust_apps_info_protected">Aplicațiile protejate necesită autentificare pentru a fi deschise din launcher</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Show Google App</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

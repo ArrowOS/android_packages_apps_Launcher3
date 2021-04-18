@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
     <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
     <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Скривене &amp; заштићене апликације</string>
-    <string name="trust_apps_manager_summary">Hide apps or protect &amp; restrict them via Screen lock etc</string>
-    <string name="trust_apps_manager_name_dialog">Заштићене апликације</string>
-    <string name="trust_apps_auth_manager">Откључај да би подесио скривене и заштићене апликације</string>
-    <string name="trust_apps_auth_open_app">Идентификуј се да отвориш %1$s</string>
-    <string name="trust_apps_loading">Учитавање\u2026</string>
-    <string name="trust_apps_no_lock_error">Подесите закључани екран да бисте онемогућили приступ апликацији</string>
-    <string name="trust_apps_help">Помоћ</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Прикажи Google апликацију</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

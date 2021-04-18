@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Dubbeltikken op lege ruimte voor scherm uit</string>
     <string name="allow_swipe_down_clearall_title">Veeg naar beneden om alle recente apps te wissen</string>
     <string name="allow_swipe_down_clearall_desc">Inschakelen om alle recente apps in het overzichtsscherm te wissen door naar beneden te vegen</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Verborgen &amp; Beschermde apps</string>
-    <string name="trust_apps_manager_summary">Verberg apps of bescherm &amp; beperk ze via scherm lock etc</string>
-    <string name="trust_apps_manager_name_dialog">Beschermde app</string>
-    <string name="trust_apps_auth_manager">Ontgrendel om de verborgen en beschermde apps te beheren</string>
-    <string name="trust_apps_auth_open_app">Verifieer om %1$s te openen</string>
-    <string name="trust_apps_loading">Laden\u2026</string>
-    <string name="trust_apps_no_lock_error">Stel een veilig vergrendelingsscherm in om de toegang tot de apps te beperken</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Verborgen apps en hun widgets worden niet weergegeven in het app-overzicht</string>
-    <string name="trust_apps_info_protected">Beschermde apps vereisen authenticatie om te starten vanuit de launcher</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Toon Google app</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
@@ -48,13 +37,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Suggesties</string>
     <string name="suggestion_pref_screen_desc">Voor alle apps &amp; startscherm suggesties</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">Pictogram pakket</string>
+    <string name="icon_pack_default_label">Standaard</string>
+    <string name="icon_pack_add">Meer installeren</string>
+    <string name="icon_pack_no_market">Er is geen beschikbare app winkel</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">Bewerken toestaan</string>
+    <string name="settings_edit_allow_summary_on">Iconen en widgets kunnen worden toegevoegd, verwijderd en verplaatst op het startscherm</string>
+    <string name="settings_edit_allow_summary_off">Pictogrammen en widgets kunnen niet worden toegevoegd, verplaatst en verwijderd</string>
+    <string name="settings_edit_widgets_error">Het is niet mogelijk om widgets toe te voegen aan het startscherm</string>
 </resources>

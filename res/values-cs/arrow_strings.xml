@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Dvojím poklepáním do prázdného prostoru vypnout zařízení</string>
     <string name="allow_swipe_down_clearall_title">Potáhnutím dolů vymazat všechny nedávné</string>
     <string name="allow_swipe_down_clearall_desc">Povolit vymazání všech nedávných aplikací v zobrazení přehledu potáhnutím dolů</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Skryté a chráněné aplikace</string>
-    <string name="trust_apps_manager_summary">Skrýt aplikace nebo je chránit a omezit pomocí zámku obrazovky atd.</string>
-    <string name="trust_apps_manager_name_dialog">Chráněné aplikace</string>
-    <string name="trust_apps_auth_manager">Pro správu skrytých a zabezpečených aplikací nejdříve odemkněte obrazovku</string>
-    <string name="trust_apps_auth_open_app">Povolte otevření %1$s</string>
-    <string name="trust_apps_loading">Načítání\u2026</string>
-    <string name="trust_apps_no_lock_error">Pro omezení přístupu k aplikaci prosím nastavte zabezpečenou obrazovku uzamčení</string>
-    <string name="trust_apps_help">Nápověda</string>
-    <string name="trust_apps_info_hidden">Takto označené aplikace jsou skryty, včetně jejich widgetů, ze seznamu aplikací</string>
-    <string name="trust_apps_info_protected">Takto jsou označeny zabezpečené aplikace. Před jejich spuštěním je vyžadováno zadání bezpečnostního ověření</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Zobrazit aplikaci Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

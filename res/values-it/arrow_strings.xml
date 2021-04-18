@@ -27,17 +27,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Tocca due volte sullo spazio vuoto per spegnere lo schermo</string>
     <string name="allow_swipe_down_clearall_title">Scorri verso il basso per chiudere tutte le app</string>
     <string name="allow_swipe_down_clearall_desc">Abilita per chiudere tutte le app nella schermata scorrendo verso il basso</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">App protette e nascoste</string>
-    <string name="trust_apps_manager_summary">Nascondi le app e/o proteggi &amp; limitando tramite blocco schermo ecc</string>
-    <string name="trust_apps_manager_name_dialog">App protette</string>
-    <string name="trust_apps_auth_manager">Sblocca per gestire le app protette e nascoste</string>
-    <string name="trust_apps_auth_open_app">Autenticati per aprire %1$s</string>
-    <string name="trust_apps_loading">Caricamento\u2026</string>
-    <string name="trust_apps_no_lock_error">Imposta una schermata di blocco sicura per limitare l\'accesso alle app</string>
-    <string name="trust_apps_help">Aiuto</string>
-    <string name="trust_apps_info_hidden">Le app nascoste e i loro widget sono nascosti dal menù delle applicazioni</string>
-    <string name="trust_apps_info_protected">Le applicazioni protette richiedono l\'autenticazione per essere aperte dal launcher</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Mostra l\'app Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
@@ -48,13 +37,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Suggerimenti</string>
     <string name="suggestion_pref_screen_desc">Per tutte le app &amp; suggerimenti nella schermata principale</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">Pacchetto icone</string>
+    <string name="icon_pack_default_label">Predefinito</string>
+    <string name="icon_pack_add">Installa altri</string>
+    <string name="icon_pack_no_market">Nessun app store disponibile</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">Consenti modifiche</string>
+    <string name="settings_edit_allow_summary_on">È possibile aggiungere, rimuovere e spostare icone e widget nella schermata home</string>
+    <string name="settings_edit_allow_summary_off">Non è possibile aggiungere, rimuovere e spostare icone e widget nella schermata home</string>
+    <string name="settings_edit_widgets_error">Non è possibile aggiungere widget alla schermata home</string>
 </resources>
