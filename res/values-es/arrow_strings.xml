@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Mostrar barra de búsqueda</string>
+    <string name="show_searchbar_title">Mostrar la barra de búsqueda</string>
     <string name="show_searchbar_summary">Mostrar la barra de búsqueda en la pantalla de inicio</string>
     <string name="state_loading">Aplicando\u2026</string>
     <!-- Gestures -->
@@ -24,26 +24,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_notifications_gesture_title">Gesto de notificaciones</string>
     <string name="pref_notifications_gesture_summary">Desliza verticalmente hacia abajo en la pantalla de inicio para mostrar el panel de ajustes rápidos</string>
     <string name="pref_dt_gesture_title">Gestos de doble toque</string>
-    <string name="pref_dt_gesture_summary">Doble toque para apagar la pantalla</string>
+    <string name="pref_dt_gesture_summary">Doble toque en un espacio vacío para apagar la pantalla</string>
     <string name="allow_swipe_down_clearall_title">Desliza hacia abajo para borrar todos los recientes</string>
-    <string name="allow_swipe_down_clearall_desc">Activar para limpiar todas las aplicaciones en la pantalla de recientes deslizando hacia abajo</string>
+    <string name="allow_swipe_down_clearall_desc">Activar para limpiar todas las aplicaciones en la pantalla de recientes al deslizar hacia abajo</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Mostrar aplicación de Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Cuando deslizas a la izquierda desde la pantalla de inicio</string>
+    <string name="msg_minus_one_on_left">Cuando deslizas a la izquierda desde la Pantalla de inicio</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Cuando deslizas a la derecha desde la pantalla de inicio</string>
+    <string name="msg_minus_one_on_right">Cuando deslizas a la derecha desde la Pantalla de inicio</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugerencias</string>
     <string name="suggestion_pref_screen_desc">Para todas las aplicaciones y sugerencias de pantalla de inicio</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Paquete de iconos</string>
+    <string name="icon_pack_title">Paquete de íconos</string>
     <string name="icon_pack_default_label">Por defecto</string>
     <string name="icon_pack_add">Instalar más</string>
-    <string name="icon_pack_no_market">No está disponible la tienda de aplicaciones</string>
+    <string name="icon_pack_no_market">No hay ninguna tienda de aplicaciones disponible</string>
     <!-- Edit workspace -->
     <string name="settings_edit_allow_title">Permitir edición</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
+    <string name="settings_edit_allow_summary_on">Los íconos y widgets se pueden añadir, eliminar y mover en la Pantalla de inicio</string>
+    <string name="settings_edit_allow_summary_off">Los íconos y widgets no se pueden añadir, eliminar o mover en la Pantalla de inicio</string>
     <string name="settings_edit_widgets_error">No es posible añadir widgets a la pantalla de inicio</string>
 </resources>

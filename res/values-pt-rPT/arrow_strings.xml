@@ -21,14 +21,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="state_loading">A aplicar\u2026</string>
     <!-- Gestures -->
     <string name="gestures_category">Gestos</string>
-    <string name="pref_notifications_gesture_title">Gesto de notificações</string>
+    <string name="pref_notifications_gesture_title">Gesto das notificações</string>
     <string name="pref_notifications_gesture_summary">Deslize verticalmente para baixo no ecrã inicial para mostrar o painel QS</string>
     <string name="pref_dt_gesture_title">Gestos de toque duplo</string>
     <string name="pref_dt_gesture_summary">Toque duplo num espaço vazio para desligar o ecrã</string>
     <string name="allow_swipe_down_clearall_title">Deslize para baixo para limpar todos os recentes</string>
     <string name="allow_swipe_down_clearall_desc">Active para limpar todos os recentes no ecrã geral deslizando para baixo</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Mostrar aplicação Google</string>
+    <string name="title_show_google_app">Mostrar a aplicação Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_left">Quando desliza para a esquerda no ecrã principal</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
@@ -38,12 +38,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_desc">Para todas as aplicações &amp; sugestões de ecrã inicial</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">Pacote de ícones</string>
-    <string name="icon_pack_default_label">Predefinição</string>
+    <string name="icon_pack_default_label">Padrão</string>
     <string name="icon_pack_add">Instalar mais</string>
     <string name="icon_pack_no_market">Não está instalada uma loja de aplicações</string>
     <!-- Edit workspace -->
     <string name="settings_edit_allow_title">Permitir edições</string>
-    <string name="settings_edit_allow_summary_on">Ícones e widgets podem ser adicionados, removidos e movidos no ecrã inicial</string>
-    <string name="settings_edit_allow_summary_off">Ícones e widgets não podem ser adicionados, removidos ou movidos do ecrã inicial</string>
+    <string name="settings_edit_allow_summary_on">Os ícones e widgets podem ser adicionados, removidos e movidos no ecrã inicial</string>
+    <string name="settings_edit_allow_summary_off">Os ícones e widgets não podem ser adicionados, removidos ou movidos do ecrã inicial</string>
     <string name="settings_edit_widgets_error">Não é possível adicionar widgets ao ecrã inicial</string>
 </resources>
