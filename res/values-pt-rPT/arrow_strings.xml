@@ -22,11 +22,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Gestures -->
     <string name="gestures_category">Gestos</string>
     <string name="pref_notifications_gesture_title">Gesto das notificações</string>
-    <string name="pref_notifications_gesture_summary">Deslize verticalmente para baixo no ecrã inicial para mostrar o painel QS</string>
+    <string name="pref_notifications_gesture_summary">Deslize para baixo no ecrã inicial para mostrar o painel de notificação</string>
     <string name="pref_dt_gesture_title">Gestos de toque duplo</string>
     <string name="pref_dt_gesture_summary">Toque duplo num espaço vazio para desligar o ecrã</string>
     <string name="allow_swipe_down_clearall_title">Deslize para baixo para limpar todos os recentes</string>
     <string name="allow_swipe_down_clearall_desc">Active para limpar todos os recentes no ecrã geral deslizando para baixo</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Hidden apps</string>
+    <string name="trust_apps_manager_summary">Hide apps &amp; restrict them via Screen lock etc</string>
+    <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
+    <string name="trust_apps_loading">Loading\u2026</string>
+    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
+    <string name="trust_apps_help">Help</string>
+    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Mostrar a aplicação Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
@@ -35,7 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="msg_minus_one_on_right">Quando desliza para a direita no ecrã principal</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugestões</string>
-    <string name="suggestion_pref_screen_desc">Para todas as aplicações &amp; sugestões de ecrã inicial</string>
+    <string name="suggestion_pref_screen_desc">Para todas as aplicações &amp; Sugestões no ecrã inicial</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">Pacote de ícones</string>
     <string name="icon_pack_default_label">Padrão</string>

@@ -27,6 +27,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">Sentuh berganda di ruang kosong untuk mematikan layar</string>
     <string name="allow_swipe_down_clearall_title">Leret ke bawah untuk memadam yang terakhir</string>
     <string name="allow_swipe_down_clearall_desc">Aktifkan untuk memadam semua terkini di layar gambaran keseluruhan dengan meleret ke bawah</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Hidden apps</string>
+    <string name="trust_apps_manager_summary">Hide apps &amp; restrict them via Screen lock etc</string>
+    <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
+    <string name="trust_apps_loading">Loading\u2026</string>
+    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
+    <string name="trust_apps_help">Help</string>
+    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Tunjukkan aplikasi Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

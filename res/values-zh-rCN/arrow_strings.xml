@@ -27,6 +27,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">双击空白处以关闭屏幕</string>
     <string name="allow_swipe_down_clearall_title">向下滑动以清除所有最近任务</string>
     <string name="allow_swipe_down_clearall_desc">启用向下滑动以清除概览屏幕上的所有最近任务</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Hidden apps</string>
+    <string name="trust_apps_manager_summary">Hide apps &amp; restrict them via Screen lock etc</string>
+    <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
+    <string name="trust_apps_loading">Loading\u2026</string>
+    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
+    <string name="trust_apps_help">Help</string>
+    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">显示 Google 应用</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

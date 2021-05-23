@@ -27,6 +27,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_dt_gesture_summary">空白領域をダブルタップして画面を消灯する</string>
     <string name="allow_swipe_down_clearall_title">下スワイプでアプリ履歴を全消去</string>
     <string name="allow_swipe_down_clearall_desc">下にスワイプして一覧画面の全てのアプリ履歴を消去する</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">非表示のアプリ</string>
+    <string name="trust_apps_manager_summary">ロック画面経由などからアプリを非表示にするか制限をする</string>
+    <string name="trust_apps_auth_manager">非表示のアプリを管理するにはロックを解除して下さい</string>
+    <string name="trust_apps_loading">読み込み中\u2026</string>
+    <string name="trust_apps_no_lock_error">アプリのアクセスを制限するためにロック画面の保護をセットアップして下さい</string>
+    <string name="trust_apps_help">ヘルプ</string>
+    <string name="trust_apps_info_hidden">非表示アプリとそのウィジェットはドロワーから非表示になります</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Google アプリを表示</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

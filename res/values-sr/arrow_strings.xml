@@ -22,11 +22,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Gestures -->
     <string name="gestures_category">Покрети</string>
     <string name="pref_notifications_gesture_title">Покрети за увећање</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the QS panel</string>
+    <string name="pref_notifications_gesture_summary">Превуците вертикално надоле на почетном екрану да бисте приказали QS панел</string>
     <string name="pref_dt_gesture_title">Двапут додирните покрет</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
-    <string name="allow_swipe_down_clearall_title">Swipe down to clear all recents</string>
-    <string name="allow_swipe_down_clearall_desc">Enable to clear all recents in the overview screen by swiping down</string>
+    <string name="pref_dt_gesture_summary">Двапут додирните празан простор за искључивање екрана</string>
+    <string name="allow_swipe_down_clearall_title">Превуците надоле да бисте обрисали све недавне догађаје</string>
+    <string name="allow_swipe_down_clearall_desc">Омогућите да обришете све недавне тренутке на екрану прегледа превлачењем надоле</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Hidden apps</string>
+    <string name="trust_apps_manager_summary">Hide apps &amp; restrict them via Screen lock etc</string>
+    <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
+    <string name="trust_apps_loading">Loading\u2026</string>
+    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
+    <string name="trust_apps_help">Help</string>
+    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Прикажи Google апликацију</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
@@ -35,15 +43,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="msg_minus_one_on_right">Када превучете на десно са главног екрана</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Предлог</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_desc">За све апликације &amp; Предлози за почетни екран</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Icon pack</string>
-    <string name="icon_pack_default_label">Default</string>
-    <string name="icon_pack_add">Install more</string>
-    <string name="icon_pack_no_market">There\'s no available app store</string>
+    <string name="icon_pack_title">Пакет икона</string>
+    <string name="icon_pack_default_label">Подразумевано</string>
+    <string name="icon_pack_add">Инсталирате више</string>
+    <string name="icon_pack_no_market">Нема доступне продавнице апликација</string>
     <!-- Edit workspace -->
-    <string name="settings_edit_allow_title">Allow edit</string>
-    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
-    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <string name="settings_edit_allow_title">Омогући измене</string>
+    <string name="settings_edit_allow_summary_on">Иконе и виџете могу да се додају, уклањају и премештају на почетном екрану</string>
+    <string name="settings_edit_allow_summary_off">Иконе и виџете не могу се додавати, уклањати и премештати на почетном екрану</string>
+    <string name="settings_edit_widgets_error">Није могуће додати виџете на почетни екран</string>
 </resources>
