@@ -28,13 +28,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_title">向下滑動以清除所有最近記錄</string>
     <string name="allow_swipe_down_clearall_desc">啟用向下滑動以清除所有最近記錄</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden apps</string>
-    <string name="trust_apps_manager_summary">Hide apps &amp; restrict them via Screen lock etc</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
+    <string name="trust_apps_manager_name">隱藏的應用程式</string>
+    <string name="trust_apps_manager_summary">透過螢幕鎖定等方式以隱藏或者保護和限制應用程式</string>
+    <string name="trust_apps_auth_manager">解鎖以管理隱藏應用</string>
+    <string name="trust_apps_loading">載入中\u2026</string>
+    <string name="trust_apps_no_lock_error">請設定安全鎖定畫面以限制應用程式存取權限</string>
+    <string name="trust_apps_help">說明</string>
+    <string name="trust_apps_info_hidden">從抽屜中隱藏應用及其部件</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">顯示 Google 應用程式</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->

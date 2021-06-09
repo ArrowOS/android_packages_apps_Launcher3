@@ -16,25 +16,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Zoekbalk weergeven</string>
-    <string name="show_searchbar_summary">Toon de zoekbalk op het thuisscherm</string>
+    <string name="show_searchbar_title">Toon zoekbalk</string>
+    <string name="show_searchbar_summary">Toon de zoekbalk op het startscherm</string>
     <string name="state_loading">Toepassen\u2026</string>
     <!-- Gestures -->
     <string name="gestures_category">Gebaren</string>
-    <string name="pref_notifications_gesture_title">Meldingen gebaren</string>
-    <string name="pref_notifications_gesture_summary">Verticaal omlaag vegen op het beginscherm voor het QS paneel weergeven</string>
+    <string name="pref_notifications_gesture_title">Meldingen gebaar</string>
+    <string name="pref_notifications_gesture_summary">Veeg op het beginscherm van boven naar beneden om het QS paneel weer te geven</string>
     <string name="pref_dt_gesture_title">Dubbelklik gebaar</string>
     <string name="pref_dt_gesture_summary">Dubbeltikken op lege ruimte voor scherm uit</string>
     <string name="allow_swipe_down_clearall_title">Veeg naar beneden om alle recente apps te wissen</string>
     <string name="allow_swipe_down_clearall_desc">Inschakelen om alle recente apps in het overzichtsscherm te wissen door naar beneden te vegen</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden apps</string>
-    <string name="trust_apps_manager_summary">Hide apps &amp; restrict them via Screen lock etc</string>
-    <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
+    <string name="trust_apps_manager_name">Verborgen apps</string>
+    <string name="trust_apps_manager_summary">Verberg apps en bescherm ze via scherm vergrendeling etc</string>
+    <string name="trust_apps_auth_manager">Ontgrendel om de verborgen apps te beheren</string>
+    <string name="trust_apps_loading">Aan het laden\u2026</string>
+    <string name="trust_apps_no_lock_error">Stel een veilig vergrendelingsscherm in om de toegang tot de apps te beperken</string>
     <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
+    <string name="trust_apps_info_hidden">Verborgen apps en hun widgets worden niet weergegeven in het app-overzicht</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Toon Google app</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
@@ -45,13 +45,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="suggestion_pref_screen_title">Suggesties</string>
     <string name="suggestion_pref_screen_desc">Voor alle apps &amp; startscherm suggesties</string>
     <!-- Icon pack -->
-    <string name="icon_pack_title">Pictogram pakket</string>
+    <string name="icon_pack_title">Icoon pakket</string>
     <string name="icon_pack_default_label">Standaard</string>
     <string name="icon_pack_add">Meer installeren</string>
     <string name="icon_pack_no_market">Er is geen beschikbare app winkel</string>
     <!-- Edit workspace -->
     <string name="settings_edit_allow_title">Bewerken toestaan</string>
     <string name="settings_edit_allow_summary_on">Iconen en widgets kunnen worden toegevoegd, verwijderd en verplaatst op het startscherm</string>
-    <string name="settings_edit_allow_summary_off">Pictogrammen en widgets kunnen niet worden toegevoegd, verplaatst en verwijderd</string>
+    <string name="settings_edit_allow_summary_off">Iconen en widgets kunnen niet worden toegevoegd, verwijderd en verplaatst op het startscherm</string>
     <string name="settings_edit_widgets_error">Het is niet mogelijk om widgets toe te voegen aan het startscherm</string>
 </resources>
