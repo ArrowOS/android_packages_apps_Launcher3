@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_title">ปัดลงเพื่อล้างรายการล่าสุดทั้งหมด</string>
     <string name="allow_swipe_down_clearall_desc">เปิดใช้งานการปัดลงเพื่อล้างรายการทั้งหมดในหน้าจอภาพรวม</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Hidden apps</string>
+    <string name="trust_apps_manager_name">ซ่อนแอป</string>
     <string name="trust_apps_manager_summary">Hide apps &amp; restrict them via Screen lock etc</string>
     <string name="trust_apps_auth_manager">Unlock to manage the hidden apps</string>
     <string name="trust_apps_loading">Loading\u2026</string>
