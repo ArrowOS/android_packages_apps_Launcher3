@@ -43,7 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="msg_minus_one_on_right">Cuando deslizas a la derecha desde la Pantalla de inicio</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugerencias</string>
-    <string name="suggestion_pref_screen_desc">Para todas las aplicaciones y sugerencias de pantalla de inicio</string>
+    <string name="suggestion_pref_screen_desc">Para todas las aplicaciones &amp; Sugerencias de pantalla de inicio</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">Paquete de íconos</string>
     <string name="icon_pack_default_label">Por defecto</string>

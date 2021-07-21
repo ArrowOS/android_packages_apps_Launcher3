@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">顯示搜尋列</string>
+    <string name="show_searchbar_title">顯示搜尋欄</string>
     <string name="show_searchbar_summary">在主畫面上顯示搜尋列</string>
     <string name="state_loading">套用中\u2026</string>
     <!-- Gestures -->
