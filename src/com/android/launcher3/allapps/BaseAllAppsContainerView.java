@@ -116,6 +116,7 @@ public abstract class BaseAllAppsContainerView<T extends Context & ActivityConte
     private SearchRecyclerView mSearchRecyclerView;
 
     protected FloatingHeaderView mHeader;
+    protected ActivityAllAppsContainerView mSearchView;
     private View mBottomSheetBackground;
     private View mBottomSheetHandleArea;
 
@@ -760,6 +761,7 @@ public abstract class BaseAllAppsContainerView<T extends Context & ActivityConte
         if (headerColor != mHeaderColor || mTabsProtectionAlpha != tabsAlpha) {
             mHeaderColor = headerColor;
             mTabsProtectionAlpha = tabsAlpha;
+            mSearchView.getSearchView().setBackgroundResource(R.drawable.bg_all_apps_searchbox);
             invalidateHeader();
         }
     }
