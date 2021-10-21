@@ -706,11 +706,6 @@ public class AllAppsContainerView extends SpringRelativeLayout implements DragSo
         mHeaderPaint.setColor(mHeaderColor);
         mHeaderPaint.setAlpha((int) (getAlpha() * Color.alpha(mHeaderColor)));
         if (mHeaderPaint.getColor() != mScrimColor && mHeaderPaint.getColor() != 0) {
-            int bottom = mUsingTabs && mHeader.mHeaderCollapsed ? mHeader.getVisibleBottomBound()
-                    : mSearchContainer.getBottom();
-            canvas.drawRect(0, 0, canvas.getWidth(), bottom + getTranslationY(),
-                    mHeaderPaint);
-
             if (FeatureFlags.ENABLE_DEVICE_SEARCH.get() && getTranslationY() == 0) {
                 mSearchUiManager.getEditText().setBackground(null);
             }

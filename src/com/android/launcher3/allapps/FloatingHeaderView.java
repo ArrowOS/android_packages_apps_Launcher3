@@ -306,7 +306,6 @@ public class FloatingHeaderView extends LinearLayout implements
         if (mHeaderCollapsed && !mCollapsed && mTabLayout.getVisibility() == VISIBLE
                 && FeatureFlags.ENABLE_DEVICE_SEARCH.get()) {
             mBGPaint.setColor(mHeaderColor);
-            mBGPaint.setAlpha((int) (255 * mHeaderAnimator.getAnimatedFraction()));
             canvas.drawRect(0, 0, getWidth(), getHeight() + mTranslationY, mBGPaint);
         }
         super.dispatchDraw(canvas);
