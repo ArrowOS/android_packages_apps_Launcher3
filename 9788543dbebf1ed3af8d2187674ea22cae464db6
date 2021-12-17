@@ -16,6 +16,23 @@
       "message": "Comment removed by: Kuber Sharma; Reason: User requested.",
       "revId": "9788543dbebf1ed3af8d2187674ea22cae464db6",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "447cbad3_e1339fe2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 322
+      },
+      "writtenOn": "2021-12-17T08:28:59Z",
+      "side": 1,
+      "message": "Oh no, ignore my comment above. This patch fixed the incorrect tab colors in Launcher3.",
+      "revId": "9788543dbebf1ed3af8d2187674ea22cae464db6",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
