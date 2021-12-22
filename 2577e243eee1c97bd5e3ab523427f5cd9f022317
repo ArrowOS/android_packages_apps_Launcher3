@@ -16,6 +16,23 @@
       "message": "works fine.",
       "revId": "2577e243eee1c97bd5e3ab523427f5cd9f022317",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "220c68b6_d6a13cd1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 231
+      },
+      "writtenOn": "2021-12-22T04:48:42Z",
+      "side": 1,
+      "message": "need rebase, launcher settings crashes",
+      "revId": "2577e243eee1c97bd5e3ab523427f5cd9f022317",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
