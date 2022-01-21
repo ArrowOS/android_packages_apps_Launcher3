@@ -217,4 +217,8 @@
     <icon drawable="@drawable/themed_icon_wall_x" package="com.stresscodes.wallp" />
     <icon drawable="@drawable/themed_icon_dolby" package="com.motorola.dolby.dolbyui" />
     <icon drawable="@drawable/themed_icon_boost" package="com.rubenmayayo.reddit" />
+    <icon drawable="@drawable/themed_icon_clash" package="com.github.kr328.clash" />
+    <icon drawable="@drawable/themed_icon_netease" package="com.netease.cloudmusic" />
+    <icon drawable="@drawable/themed_icon_wechat" package="com.tencent.mm" />
+    <icon drawable="@drawable/themed_icon_taobao" package="com.taobao.taobao" />
 </icons>
