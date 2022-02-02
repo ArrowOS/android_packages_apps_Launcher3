@@ -30,6 +30,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
@@ -44,6 +45,7 @@ import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartFragmentCal
 import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartScreenCallback;
 import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.launcher3.DeviceProfile;
@@ -140,7 +142,8 @@ public class SettingsActivity extends FragmentActivity
     }
 
     @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) { }
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+    }
 
     private boolean startPreference(String fragment, Bundle args, String key) {
         if (Utilities.ATLEAST_P && getSupportFragmentManager().isStateSaved()) {
@@ -194,7 +197,7 @@ public class SettingsActivity extends FragmentActivity
 
         protected static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
 
-        private Preference mShowGoogleAppPref;
+        private Preference mShowGoogleAppPref, mDockSearchPref;
 
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -290,6 +293,16 @@ public class SettingsActivity extends FragmentActivity
                     mShowGoogleAppPref = preference;
                     updateIsGoogleAppEnabled();
                     return true;
+
+                case Utilities.KEY_DOCK_SEARCH:
+                    mDockSearchPref = preference;
+                    ((SwitchPreference) mDockSearchPref).setChecked(Utilities.showQSB(getContext()));
+                    mDockSearchPref.setOnPreferenceChangeListener((pref, newValue) -> {
+                        Toast.makeText(getContext(), R.string.flag_wont_be_applied, Toast.LENGTH_LONG).show();
+                        return true;
+                    });
+                    updateIsGoogleAppEnabled();
+                    return true;
             }
 
             return true;
@@ -322,8 +335,12 @@ public class SettingsActivity extends FragmentActivity
         }
 
         private void updateIsGoogleAppEnabled() {
+            final boolean isGSAEnabled = isGSAEnabled(getContext());
             if (mShowGoogleAppPref != null) {
-                mShowGoogleAppPref.setEnabled(isGSAEnabled(getContext()));
+                mShowGoogleAppPref.setEnabled(isGSAEnabled);
+            }
+            if (mDockSearchPref != null) {
+                mDockSearchPref.setEnabled(isGSAEnabled);
             }
         }
 
@@ -354,7 +371,6 @@ public class SettingsActivity extends FragmentActivity
             if (screen == null) {
                 return null;
             }
-
             RecyclerView list = getListView();
             PreferencePositionCallback callback = (PreferencePositionCallback) list.getAdapter();
             int position = callback.getPreferenceAdapterPosition(mHighLightKey);

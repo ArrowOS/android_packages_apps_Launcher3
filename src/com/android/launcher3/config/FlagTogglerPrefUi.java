@@ -134,7 +134,7 @@ public final class FlagTogglerPrefUi {
 
     public void onStop() {
         if (anyChanged()) {
-            Toast.makeText(mContext, "Flag won't be applied until you restart launcher",
+            Toast.makeText(mContext, R.string.flag_wont_be_applied,
                     Toast.LENGTH_LONG).show();
         }
     }
