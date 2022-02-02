@@ -149,6 +149,7 @@ public final class Utilities {
     public static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
     public static final String LENS_SHARE_ACTIVITY = "com.google.android.apps.search.lens.LensShareEntryPointActivity";
     public static final String LENS_ACTIVITY = "com.google.android.apps.gsa.staticplugins.lens.LensActivity";
+    public static final String KEY_DOCK_SEARCH = "pref_dock_search";
 
     /**
      * Returns true if theme is dark.
@@ -919,5 +920,14 @@ public final class Utilities {
     public static boolean isWorkspaceEditAllowed(Context context) {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
         return !prefs.getBoolean(InvariantDeviceProfile.KEY_WORKSPACE_LOCK, false);
+    }
+
+    public static boolean showDQSB(Context context) {
+        return isGSAEnabled(context) && isQSBEnabled(context);
+    }
+
+    private static boolean isQSBEnabled(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_DOCK_SEARCH, true);
     }
 }
