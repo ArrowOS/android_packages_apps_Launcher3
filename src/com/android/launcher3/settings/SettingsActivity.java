@@ -27,6 +27,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.ResolveInfoFlags;
 import android.content.pm.ResolveInfo;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -65,7 +66,8 @@ import java.util.List;
  * Settings activity for Launcher. Currently implements the following setting: Allow rotation
  */
 public class SettingsActivity extends FragmentActivity
-        implements OnPreferenceStartFragmentCallback, OnPreferenceStartScreenCallback {
+        implements OnPreferenceStartFragmentCallback, OnPreferenceStartScreenCallback,
+        SharedPreferences.OnSharedPreferenceChangeListener {
 
     /** List of fragments that can be hosted by this activity. */
     private static final List<String> VALID_PREFERENCE_FRAGMENTS = Collections.singletonList(
@@ -119,6 +121,7 @@ public class SettingsActivity extends FragmentActivity
             // Display the fragment as the main content.
             fm.beginTransaction().replace(R.id.content_frame, f).commit();
         }
+        Utilities.getPrefs(getApplicationContext()).registerOnSharedPreferenceChangeListener(this);
     }
 
     /**
@@ -139,6 +142,17 @@ public class SettingsActivity extends FragmentActivity
                     "Invalid fragment for this activity: " + preferenceFragment);
         } else {
             return preferenceFragment;
+        }
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        switch (key) {
+            case Utilities.KEY_DOCK_SEARCH:
+                LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                break;
+            default:
+                break;
         }
     }
 
