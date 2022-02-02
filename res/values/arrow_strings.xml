@@ -52,4 +52,8 @@
     <string name="suggestion_pref_screen_title">Suggestions</string>
     <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
 
+    <string name="label_search">Search</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Voice search</string>
+
 </resources>
