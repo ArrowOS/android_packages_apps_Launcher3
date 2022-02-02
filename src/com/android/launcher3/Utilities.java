@@ -152,6 +152,8 @@ public final class Utilities {
     public static final boolean IS_DEBUG_DEVICE =
             Build.TYPE.toLowerCase(Locale.ROOT).equals("eng");
 
+    public static final String KEY_DOCK_SEARCH = "pref_dock_search";
+
     /**
      * Returns true if theme is dark.
      */
@@ -942,5 +944,14 @@ public final class Utilities {
     public static boolean isWorkspaceEditAllowed(Context context) {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
         return !prefs.getBoolean(InvariantDeviceProfile.KEY_WORKSPACE_LOCK, false);
+    }
+
+    public static boolean showQSB(Context context) {
+        return isGSAEnabled(context) && isQSBEnabled(context);
+    }
+
+    private static boolean isQSBEnabled(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_DOCK_SEARCH, true);
     }
 }
