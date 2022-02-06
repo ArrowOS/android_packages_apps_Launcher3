@@ -148,6 +148,7 @@ public final class Utilities {
 
     public static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
     public static final String LENS_SHARE_ACTIVITY = "com.google.android.apps.search.lens.LensShareEntryPointActivity";
+    public static final String LENS_ACTIVITY = "com.google.android.apps.gsa.staticplugins.lens.LensActivity";
 
     /**
      * Returns true if theme is dark.
