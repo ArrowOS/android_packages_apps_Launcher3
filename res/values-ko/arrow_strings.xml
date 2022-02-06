@@ -23,4 +23,7 @@
     <string name="msg_minus_one_on_left">메인 홈 화면에서 왼쪽으로 스와이프할 때</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">메인 홈 화면에서 오른쪽으로 스와이프할 때</string>
+    <!-- Gestures -->
+    <string name="pref_dt_gesture_title">Double tap gesture</string>
+    <string name="pref_dt_gesture_summary">Double tap on empty space for power-off</string>
 </resources>
