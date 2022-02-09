@@ -16,6 +16,23 @@
       "message": "http://review.kaleidoscope.ink/c/android_packages_apps_Launcher3/+/878\nAn improved impl:\n- setAlphaComponent method already exists in ColorUtils, so there is no need to copy it (https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:core/core/src/main/java/androidx/core/graphics/ColorUtils.java;l\u003d376).\n- bg is only used once, so the result of the setAlphaComponent calculation can be use directly into the calculateContrast.",
       "revId": "653167bf4aa95710c2f7b558db48444b6346d6da",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b3a6302f_52598eab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2022-02-09T12:43:05Z",
+      "side": 1,
+      "message": "push changes",
+      "revId": "653167bf4aa95710c2f7b558db48444b6346d6da",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
