@@ -74,6 +74,7 @@
     <icon drawable="@drawable/themed_icon_whatsapp" package="com.gbwhatsapp" />
     <icon drawable="@drawable/themed_icon_whatsapp" package="com.yowhatsapp" />
     <icon drawable="@drawable/themed_icon_telegram" package="org.telegram.messenger" />
+    <icon drawable="@drawable/themed_icon_telegram" package="org.telegram.messenger.beta" />
     <icon drawable="@drawable/themed_icon_instagram" package="com.instagram.android" />
     <icon drawable="@drawable/themed_icon_facebook" package="com.facebook.katana" />
     <icon drawable="@drawable/themed_icon_messenger" package="com.facebook.orca" />
