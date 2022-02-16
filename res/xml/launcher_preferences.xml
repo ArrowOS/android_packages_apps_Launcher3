@@ -96,6 +96,12 @@
             android:defaultValue="true"
             android:persistent="true" />
 
+        <SwitchPreference
+            android:key="pref_show_statusbar"
+            android:title="@string/show_statusbar_title"
+            android:defaultValue="true"
+            android:persistent="true" />
+
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory
