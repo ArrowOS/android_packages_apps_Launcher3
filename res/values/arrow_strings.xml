@@ -114,4 +114,7 @@
     <string name="allow_wallpaper_scrolling">Wallpaper scrolling</string>
     <string name="allow_wallpaper_scrolling_desc">Wallpaper scrolling effect for multiple screens</string>
 
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Show Statusbar</string>
+
 </resources>
