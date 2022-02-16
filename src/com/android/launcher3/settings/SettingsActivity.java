@@ -148,6 +148,7 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
         switch (key) {
             case Utilities.KEY_DOCK_SEARCH:
             case Utilities.KEY_DT_GESTURE:
+            case Utilities.KEY_STATUS_BAR:
                 LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                 break;
             default:
