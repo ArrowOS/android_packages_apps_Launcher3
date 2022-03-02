@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="108.0dip"
+    android:width="108.0dip"
+    android:viewportWidth="192.0"
+    android:viewportHeight="192.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:fillColor="#ff000000"
+        android:pathData="m 32.02 111.98 c -13.26 0 -24 10.74 -24 24 v 4 c 0 13.26 10.74 24 24 24 h 2 c 13.26 0 24 -10.74 24 -24 v -4 c 0 -13.26 -10.74 -24 -24 -24 z m 62 -88 c -13.26 0 -24 10.74 -24 24 v 92 c 0 13.26 10.74 24 24 24 h 2 c 13.26 0 24 -10.74 24 -24 v -92 c 0 -13.26 -10.74 -24 -24 -24 z m 61.98 24.02 c -13.26 0 -24 10.74 -24 24 v 68 c 0 13.26 10.74 24 24 24 h 2 c 13.26 0 24 -10.74 24 -24 v -68 c 0 -13.26 -10.74 -24 -24 -24 z" />
+</vector>
