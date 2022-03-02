@@ -1,27 +1,16 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="120"
-    android:viewportHeight="114"
-    android:width="120dp"
-    android:height="114dp">
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="36.0dip"
+    android:width="36.0dip"
+    android:viewportWidth="36.0"
+    android:viewportHeight="36.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <path
-        android:pathData="M82.5 7L115.5 7L117 8.5L117 40.5L115.5 42L82.5 42L81 40.5L81 8.5L82.5 7ZM87 13L87 37L110 37L111 36L111 13L87 13Z"
-        android:fillColor="#FCFCFC"
-        android:fillAlpha="0.8313725"
-        android:strokeColor="#FCFCFC"
-        android:strokeAlpha="0.8313725"
-        android:strokeWidth="1" />
+        android:fillColor="#ff000000"
+        android:pathData="M8.5,13.7v6.8H13c1,0,1.9-0.4,2.5-1c0.6-0.6,1-1.4,1-2.4c0-0.9-0.4-1.8-1-2.4c-0.6-0.6-1.5-1-2.5-1H8.5 L8.5,13.7z M4,30.2V13.7h4.5V9.5H13c2.1,0,4,0.8,5.5,2.2c1.4,1.4,2.3,3.3,2.3,5.4c0,2.1-0.9,4-2.3,5.4c-1.4,1.4-3.3,2.2-5.5,2.2 H8.5v5.5H4L4,30.2z"
+        android:fillType="evenOdd" />
     <path
-        android:pathData="M94.5 19L103.5 19L105 20.5L105 29.5L103.5 31L94.5 31L93 29.5L93 20.5L94.5 19Z"
-        android:fillColor="#FCFCFC"
-        android:fillAlpha="0.8313725"
-        android:strokeColor="#FCFCFC"
-        android:strokeAlpha="0.8313725"
-        android:strokeWidth="1" />
-    <path
-        android:pathData="M22.5 24L48.5 25Q59 27.5 65 34.5Q72.5 43 70 61.5Q67.4 70.4 61.5 76Q55.1 81.1 45.5 83L22 83L22 104.5L20.5 106L4.5 106L3 104.5L3 40.5L4.5 39L21 39L21 25.5L22.5 24ZM22 40L22 67L44 67L48 65L53 57L53 51L49 43L42 40L22 40Z"
-        android:fillColor="#FCFCFC"
-        android:fillAlpha="0.8313725"
-        android:strokeColor="#FCFCFC"
-        android:strokeAlpha="0.8313725"
-        android:strokeWidth="1" />
+        android:fillColor="#ff000000"
+        android:pathData="M24.7,7.2V13h5.8V7.2H24.7L24.7,7.2z M26.2,8.6h3v3h-3V8.6L26.2,8.6z M23.3,5.8H32v8.7h-8.7V5.8L23.3,5.8z"
+        android:fillType="evenOdd" />
 </vector>
