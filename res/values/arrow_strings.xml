@@ -36,6 +36,7 @@
 
     <!-- Recents -->
     <string name="action_lens">Lens</string>
+    <string name="recents_kill_app">Kill app</string>
 
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Lock layout</string>
