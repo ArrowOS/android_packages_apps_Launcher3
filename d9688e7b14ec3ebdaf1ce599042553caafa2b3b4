@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8779cb43_37c0dba2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2022-03-23T23:32:12Z",
+      "side": 1,
+      "message": "look how partial kanged from https://review.arrowos.net/c/ArrowOS/android_packages_apps_Launcher3/+/15129",
+      "revId": "d9688e7b14ec3ebdaf1ce599042553caafa2b3b4",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
