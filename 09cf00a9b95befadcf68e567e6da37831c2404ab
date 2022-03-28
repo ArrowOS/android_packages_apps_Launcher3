@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8aaf0544_3f50e048",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2022-03-28T22:39:12Z",
+      "side": 1,
+      "message": "Need move strings to arrow_strings.xml for crowdin.",
+      "revId": "09cf00a9b95befadcf68e567e6da37831c2404ab",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
