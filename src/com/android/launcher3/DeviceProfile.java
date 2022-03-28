@@ -430,7 +430,7 @@ public class DeviceProfile {
             workspaceBottomPadding = Math.round(paddingWorkspaceBottom * cellScaleToFit);
             extraHotseatBottomPadding = Math.round(paddingHotseatBottom * cellScaleToFit);
 
-            hotseatBarSizePx += extraHotseatBottomPadding;
+            // hotseatBarSizePx += extraHotseatBottomPadding;
 
             qsbBottomMarginPx = Math.round(qsbBottomMarginOriginalPx * cellScaleToFit);
         } else if (!isVerticalBarLayout() && isPhone && isTallDevice) {
