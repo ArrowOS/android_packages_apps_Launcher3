@@ -107,6 +107,12 @@
             android:defaultValue="true"
             android:persistent="true" />
 
+        <SwitchPreference
+            android:key="pref_allapps_themed_icons"
+            android:title="@string/pref_allapps_themed_icons"
+            android:defaultValue="false"
+            android:persistent="true" />
+
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory

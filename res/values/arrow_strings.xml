@@ -69,4 +69,7 @@
     <string name="icon_pack_add">Install more</string>
     <string name="icon_pack_no_market">There\'s no available app store</string>
 
+    <!-- All apps themed icons -->
+    <string name="pref_allapps_themed_icons">Themed icons in drawer</string>
+
 </resources>
