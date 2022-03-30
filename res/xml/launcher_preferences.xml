@@ -50,6 +50,13 @@
       LAUNCHER_HOME_SCREEN_ROTATION_DISABLED(616)
     -->
     <SwitchPreference
+        android:key="pref_allapps_themed_icons"
+        android:title="@string/pref_themed_icons_title"
+        android:summary="@string/pref_themed_icons_summary"
+        android:defaultValue="false"
+        android:persistent="true" />
+
+    <SwitchPreference
         android:key="pref_allowRotation"
         android:title="@string/allow_rotation_title"
         android:summary="@string/allow_rotation_desc"
