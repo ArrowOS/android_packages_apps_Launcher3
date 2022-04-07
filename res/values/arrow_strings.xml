@@ -50,8 +50,10 @@
     <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
 
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Show icon labels on Home screen</string>
-    <string name="drawer_show_labels">Show icon labels in drawer</string>
+    <string name="title_desktop_labels">Home screen labels</string>
+    <string name="summary_desktop_labels">Show icon labels on home screen</string>
+    <string name="title_drawer_labels">Drawer labels</string>
+    <string name="summary_drawer_labels">Show icon labels in drawer</string>
 
     <!-- Drawer themed icons -->
     <string name="pref_themed_icons_title">Drawer themed icons</string>
