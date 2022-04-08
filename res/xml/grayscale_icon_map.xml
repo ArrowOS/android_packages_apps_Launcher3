@@ -104,6 +104,9 @@
         package="com.google.android.calculator" />
     <icon
         drawable="@drawable/themed_icon_camera"
+        package="app.grapheneos.camera" />
+    <icon
+        drawable="@drawable/themed_icon_camera"
         package="com.google.android.GoogleCamera" />
     <icon
         drawable="@drawable/themed_icon_camera"
@@ -144,6 +147,9 @@
     <icon
         drawable="@drawable/themed_icon_camera"
         package="com.google.android.apps.lens.example.release" />
+    <icon
+        drawable="@drawable/themed_icon_miuicamera"
+        package="com.android.camera" />
     <icon
         drawable="@drawable/themed_icon_canvas"
         package="com.canva.editor" />
