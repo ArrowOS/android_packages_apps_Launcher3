@@ -33,6 +33,11 @@
         launcher:logIdOff="616" />
 
     <SwitchPreference
+        android:key="pref_allow_phone_overview_grid"
+        android:title="@string/pref_allow_phone_overview_grid"
+        android:summary="@string/pref_allow_phone_overview_grid_desc" />
+
+    <SwitchPreference
         android:defaultValue="false"
         android:key="pref_workspace_lock"
         android:persistent="true"

@@ -200,6 +200,16 @@ public class InvariantDeviceProfile implements OnSharedPreferenceChangeListener 
                         onConfigChanged(displayContext);
                     }
                 });
+
+        mContext = context;
+        Utilities.getPrefs(context).registerOnSharedPreferenceChangeListener(this);
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (DeviceProfile.KEY_PHONE_OVERVIEW_GRID.equals(key)) {
+            onConfigChanged(mContext, false);
+        }
     }
 
     /**

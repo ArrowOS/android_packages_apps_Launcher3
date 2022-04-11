@@ -23,6 +23,7 @@ import static com.android.launcher3.folder.ClippedFolderIconLayoutRule.ICON_OVER
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Path;
@@ -47,6 +48,8 @@ import java.io.PrintWriter;
 
 @SuppressLint("NewApi")
 public class DeviceProfile {
+
+    public static final String KEY_PHONE_OVERVIEW_GRID = "pref_allow_phone_overview_grid";
 
     private static final int DEFAULT_DOT_SIZE = 100;
     // Ratio of empty space, qsb should take up to appear visually centered.
@@ -363,7 +366,9 @@ public class DeviceProfile {
                 ? res.getDimensionPixelSize(R.dimen.scalable_grid_qsb_bottom_margin)
                 : 0;
 
-        overviewShowAsGrid = isTablet && FeatureFlags.ENABLE_OVERVIEW_GRID.get();
+        boolean allowPhoneOverviewGrid = prefs.getBoolean(KEY_PHONE_OVERVIEW_GRID, false);
+        overviewShowAsGrid = (isTablet || allowPhoneOverviewGrid) &&
+                FeatureFlags.ENABLE_OVERVIEW_GRID.get();
         overviewTaskMarginPx = overviewShowAsGrid
                 ? res.getDimensionPixelSize(R.dimen.overview_task_margin_focused)
                 : res.getDimensionPixelSize(R.dimen.overview_task_margin);

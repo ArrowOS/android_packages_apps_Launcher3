@@ -40,6 +40,10 @@
     <string name="pref_dt_gesture_title">Double tap gesture</string>
     <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
 
+    <!-- Show grid overview -->
+    <string name="pref_allow_phone_overview_grid">Show grid of recent apps</string>
+    <string name="pref_allow_phone_overview_grid_desc">More recent apps in Overview</string>
+
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Lock layout</string>
     <string name="settings_lock_layout_summary_on">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
