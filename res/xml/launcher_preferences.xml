@@ -83,6 +83,11 @@
             android:persistent="true"/>
 
         <SwitchPreference
+           android:key="pref_allow_phone_taskbar"
+           android:title="@string/pref_allow_phone_taskbar"
+           android:summary="@string/pref_allow_phone_taskbar_desc" />
+
+        <SwitchPreference
             android:key="pref_dark_status_bar"
             android:title="@string/perf_dark_status_bar_title"
             android:summary="@string/perf_dark_status_bar_summary"
