@@ -106,4 +106,8 @@
     <string name="paused_apps_dialog_message">%1$s was directly paused from the DerpLauncher</string>
     <string name="paused_apps_drop_target_label">Pause app</string>
 
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar">Use taskbar</string>
+    <string name="pref_allow_phone_taskbar_desc">For opening and switching apps anywhere</string>
+
 </resources>
