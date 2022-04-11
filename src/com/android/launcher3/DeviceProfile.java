@@ -52,6 +52,8 @@ import java.util.List;
 @SuppressLint("NewApi")
 public class DeviceProfile {
 
+    public static final String KEY_PHONE_TASKBAR = "pref_allow_phone_taskbar";
+
     private static final int DEFAULT_DOT_SIZE = 100;
     // Ratio of empty space, qsb should take up to appear visually centered.
     private final float mQsbCenterFactor;
@@ -295,6 +297,8 @@ public class DeviceProfile {
             }
         }
 
+        boolean allowPhone = Utilities.getPrefs(context).getBoolean(KEY_PHONE_TASKBAR, false);
+        isTaskbarPresent = (isTablet || allowPhone) && ApiWrapper.TASKBAR_DRAWN_IN_PROCESS;
         if (isTaskbarPresent) {
             taskbarSize = res.getDimensionPixelSize(R.dimen.taskbar_size);
             stashedTaskbarSize = res.getDimensionPixelSize(R.dimen.taskbar_stashed_size);
