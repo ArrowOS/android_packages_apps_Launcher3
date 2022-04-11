@@ -113,4 +113,8 @@
     <!-- Homescreen Statusbar -->
     <string name="show_statusbar_title">Show Statusbar</string>
 
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar">Use taskbar</string>
+    <string name="pref_allow_phone_taskbar_desc">For opening and switching apps anywhere</string>
+
 </resources>
