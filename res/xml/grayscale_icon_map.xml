@@ -1678,7 +1678,7 @@
         package="com.truecaller" />
     <icon
         drawable="@drawable/themed_icon_tinkoff"
-        package="com.truecaller" />
+        package="com.idamob.tinkoff.android" />
     <icon
         drawable="@drawable/themed_icon_fitbit"
         package="com.fitbit.FitbitMobile" />
