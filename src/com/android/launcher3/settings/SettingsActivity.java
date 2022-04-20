@@ -331,9 +331,11 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                     ReloadingListPreference icons = (ReloadingListPreference) preference;
                     icons.setValue(IconDatabase.getGlobal(getActivity()));
                     icons.setOnReloadListener(IconPackPrefSetter::new);
+                    icons.setIcon(getPackageIcon(IconDatabase.getGlobal(getActivity())));
                     icons.setOnPreferenceChangeListener((pref, val) -> {
                         IconDatabase.clearAll(getActivity());
                         IconDatabase.setGlobal(getActivity(), (String) val);
+                        ((ReloadingListPreference) pref).setIcon(getPackageIcon((String) val));
                         AppReloader.get(getActivity()).reload();
                         return true;
                     });
@@ -443,6 +445,16 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                     ResolveInfoFlags.of(PackageManager.MATCH_ALL)
                 );
             return !resolvedIntents.isEmpty();
+        }
+
+        private Drawable getPackageIcon(String pkgName) {
+            Drawable icon = getContext().getResources().
+                              getDrawable(com.android.internal.R.drawable.sym_def_app_icon);
+            try {
+                 icon = getContext().getPackageManager().
+                              getApplicationIcon(pkgName);
+            } catch (PackageManager.NameNotFoundException e) {  }
+            return icon;
         }
     }
 
