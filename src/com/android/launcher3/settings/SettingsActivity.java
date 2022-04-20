@@ -29,6 +29,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -218,6 +219,8 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
         private Preference mShowGoogleAppPref;
 
+        private ReloadingListPreference mIconPackPref;
+
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             final Bundle args = getArguments();
@@ -314,12 +317,14 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                     return true;
 
                 case KEY_ICON_PACK:
-                    ReloadingListPreference icons = (ReloadingListPreference) findPreference(KEY_ICON_PACK);
-                    icons.setValue(IconDatabase.getGlobal(getActivity()));
-                    icons.setOnReloadListener(IconPackPrefSetter::new);
-                    icons.setOnPreferenceChangeListener((pref, val) -> {
+                    mIconPackPref = (ReloadingListPreference) preference;
+                    mIconPackPref.setValue(IconDatabase.getGlobal(getActivity()));
+                    mIconPackPref.setOnReloadListener(IconPackPrefSetter::new);
+                    mIconPackPref.setIcon(getPackageIcon(IconDatabase.getGlobal(getActivity())));
+                    mIconPackPref.setOnPreferenceChangeListener((pref, val) -> {
                         IconDatabase.clearAll(getActivity());
                         IconDatabase.setGlobal(getActivity(), (String) val);
+                        mIconPackPref.setIcon(getPackageIcon((String) val));
                         AppReloader.get(getActivity()).reload();
                         return true;
                     });
@@ -349,6 +354,16 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
             if (mShowGoogleAppPref != null) {
                 mShowGoogleAppPref.setEnabled(Utilities.isGSAEnabled(getContext()));
             }
+        }
+
+        private Drawable getPackageIcon(String pkgName) {
+            Drawable icon = getContext().getResources().
+                              getDrawable(R.drawable.ic_launcher_home);
+            try {
+                 icon = getContext().getPackageManager().
+                              getApplicationIcon(pkgName);
+            } catch (PackageManager.NameNotFoundException e) {  }
+            return icon;
         }
 
         @Override
