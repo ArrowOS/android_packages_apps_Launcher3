@@ -65,4 +65,7 @@
     <string name="show_lens_button_title">Show lens button</string>
     <string name="show_lens_button_summary">Replace screenshot button with Google Lens button, if available</string>
 
+    <!-- Show top shadow -->
+    <string name="show_top_shadow">Show top shadow</string>
+
 </resources>
