@@ -103,6 +103,12 @@
         android:summary="@string/dock_search_summary"
         android:defaultValue="true" />
 
+    <SwitchPreference
+        android:key="pref_show_top_shadow"
+        android:title="@string/show_top_shadow"
+        android:defaultValue="true"
+        android:persistent="true" />
+
     <Preference
         android:persistent="false"
         android:title="@string/suggestion_pref_screen_title"
