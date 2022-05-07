@@ -60,4 +60,7 @@
     <string name="dock_theme_title">Dock themed icons</string>
     <string name="dock_theme_summary">Use themed icons for search bar</string>
 
+    <!-- Show top shadow -->
+    <string name="show_top_shadow">Show top shadow</string>
+
 </resources>
