@@ -132,6 +132,12 @@
         android:key="misc_category"
         android:title="@string/category_misc">
 
+        <SwitchPreference
+            android:key="pref_hide_top_shadow"
+            android:title="@string/hide_top_shadow"
+            android:defaultValue="false"
+            android:persistent="true" />
+
         <Preference
             android:key="parallel_space"
             android:title="@string/laboratory_parallel_space_title"
