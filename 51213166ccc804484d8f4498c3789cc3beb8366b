@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9d00703_93947dff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 160
+      },
+      "writtenOn": "2022-05-08T02:12:30Z",
+      "side": 1,
+      "message": "Results in 3 button gesture animation issue\nReproduce: Switch to 3 button gesture, open any apps, click right bar to enter recents and press home button, the overview blinks",
+      "revId": "51213166ccc804484d8f4498c3789cc3beb8366b",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
