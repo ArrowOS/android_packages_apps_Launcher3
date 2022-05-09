@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7aeffc85_3a344faf",
+        "filename": "res/values/arrow_strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 160
+      },
+      "writtenOn": "2022-05-09T15:13:35Z",
+      "side": 1,
+      "message": "This is just simply align with nexus launcher",
+      "revId": "a60d941c5746f150dcbcb3ab55da7c5da807179f",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
