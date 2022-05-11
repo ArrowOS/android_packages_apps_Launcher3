@@ -846,9 +846,6 @@
         drawable="@drawable/themed_icon_espn"
         package="com.espn.score_center" />
     <icon
-        drawable="@drawable/themed_icon_find_my_device"
-        package="com.google.android.apps.adm" />
-    <icon
         drawable="@drawable/themed_icon_fng"
         package="com.fb.fluid" />
     <icon
@@ -1697,6 +1694,21 @@
     <icon
         drawable="@drawable/themed_icon_fitbit"
         package="com.fitbit.FitbitMobile" />
+    <icon
+        drawable="@drawable/themed_icon_admin"
+        package="com.google.android.apps.enterprise.cpanel" />
+    <icon
+        drawable="@drawable/themed_icon_nest"
+        package="com.nest.android" />
+    <icon
+        drawable="@drawable/themed_icon_classroom"
+        package="com.google.android.apps.classroom" />
+    <icon
+        drawable="@drawable/themed_icon_earth"
+        package="com.google.earth" />
+    <icon
+        drawable="@drawable/themed_icon_voice"
+        package="com.google.android.apps.googlevoice" />
     <icon
         drawable="@drawable/themed_icon_fasthub"
         package="com.fastaccess.github.debug" />
