@@ -18,6 +18,12 @@
 -->
 
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Icons</string>
+    <string name="category_dock">Dock</string>
+    <string name="category_recents">Recents</string>
+    <string name="category_misc">Misc</string>
+
     <string name="google_folder_title">Google</string>
 
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
