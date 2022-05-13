@@ -142,13 +142,9 @@ public class SettingsActivity extends FragmentActivity
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (Utilities.KEY_DT_GESTURE.equals(key)) {
+        if (Utilities.KEY_DT_GESTURE.equals(key) || Utilities.KEY_DOCK_SEARCH.equals(key)) {
                 Utilities.restart(this);
-        } else if (Utilities.KEY_DOCK_SEARCH.equals(key)) {
-                Utilities.restart(this);
-        } else if (Utilities.KEY_DOCK_THEME.equals(key)) {
-                Utilities.restart(this);
-        } 
+        }
     }
 
     private boolean startPreference(String fragment, Bundle args, String key) {
