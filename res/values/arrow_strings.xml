@@ -75,4 +75,7 @@
     <string name="show_top_shadow_title">Top shadow</string>
     <string name="show_top_shadow_summary">Show shadow on the top of Home screen</string>
 
+    <string name="perf_dark_status_bar_title">Dark status bar</string>
+    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
+
 </resources>
