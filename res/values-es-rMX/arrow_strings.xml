@@ -17,13 +17,35 @@
 */
 -->
 <resources>
+    <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Mostrar aplicación de Google</string>
+    <string name="title_show_google_app">Desliza para acceder a la aplicación de Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Cuando deslizas a la izquierda desde la Pantalla de inicio</string>
+    <string name="msg_minus_one_on_left">En la pantalla de inicio, desliza a la izquierda para abrir la aplicación de Google</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Cuando deslizas a la derecha desde la Pantalla de inicio</string>
+    <string name="msg_minus_one_on_right">En la pantalla de inicio, desliza a la izquierda para abrir la aplicación de Google</string>
     <!-- Gestures -->
-    <string name="pref_dt_gesture_title">Double tap gesture</string>
-    <string name="pref_dt_gesture_summary">Double tap on empty space for power-off</string>
+    <string name="pref_dt_gesture_title">Doble toque</string>
+    <string name="pref_dt_gesture_summary">Doble toque en un espacio vacío para apagar la pantalla</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Bloquear diseño</string>
+    <string name="settings_lock_layout_summary_on">Los iconos y widgets no pueden ser modificados</string>
+    <string name="settings_lock_layout_summary_off">Los iconos y widgets pueden ser modificados</string>
+    <string name="settings_edit_widgets_error">No es posible añadir widgets a la pantalla de inicio</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Mostrar títulos de aplicaciones en la pantalla de inicio</string>
+    <string name="drawer_show_labels">Mostrar títulos de aplicaciones en el cajón</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Iconos tematizados para todas las aplicaciones</string>
+    <string name="pref_themed_icons_summary">Toque para cambiar entre dock en menú inicio y todos los iconos tematizados</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Sugerencias</string>
+    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="label_search">Buscar</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Búsqueda por voz</string>
+    <string name="dock_search_title">Barra de búsqueda de Google</string>
+    <string name="dock_search_summary">Mostrar barra de búsqueda por debajo del dock</string>
+    <string name="dock_theme_title">Iconos tematizados en el dock</string>
+    <string name="dock_theme_summary">Usar iconos tematizados en barra de búsqueda</string>
 </resources>

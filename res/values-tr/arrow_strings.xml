@@ -17,13 +17,35 @@
 */
 -->
 <resources>
+    <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Google uygulamasını göster</string>
+    <string name="title_show_google_app">Google uygulamasına erişmek için kaydırın</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Ana ekrandan sola kaydırdığınızda</string>
+    <string name="msg_minus_one_on_left">Google uygulamasını açmak için Ana ekrandan sola kaydırın</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Ana ekrandan sağa kaydırdığınızda</string>
+    <string name="msg_minus_one_on_right">Google uygulamasını açmak için Ana ekrandan sağa kaydırın</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Çift dokunma hareketi</string>
     <string name="pref_dt_gesture_summary">Cihazı kapatmak için boş bir alana çift dokunun</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Düzeni kilitle</string>
+    <string name="settings_lock_layout_summary_on">Simgeler ve widget\'lar ana ekrana eklenemez, kaldırılamaz ve taşınamaz</string>
+    <string name="settings_lock_layout_summary_off">Simgeler ve widget\'lar ana ekrana eklenebilir, kaldırılabilir ve taşınabilir</string>
+    <string name="settings_edit_widgets_error">Ana ekrana widget eklemek mümkün değildir</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Ana ekranda simge etiketlerini göster</string>
+    <string name="drawer_show_labels">Çekmecede simge etiketlerini göster</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Bütün uygulamalarda temalı simgeler</string>
+    <string name="pref_themed_icons_summary">Ana ekran yuvası ve bütün uygulamalarda temalı simgeler arasında geçiş yapmak için ayarlayın</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Öneriler</string>
+    <string name="suggestion_pref_screen_desc">Tüm uygulamalar &amp; Ana ekran önerileri için</string>
+    <string name="label_search">Arama</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Sesli arama</string>
+    <string name="dock_search_title">Google arama çubuğu</string>
+    <string name="dock_search_summary">Alt yuvada arama çubuğunu göster</string>
+    <string name="dock_theme_title">Yuvada temalı simgeler</string>
+    <string name="dock_theme_summary">Arama çubuğunda temalı simgeler kullan</string>
 </resources>

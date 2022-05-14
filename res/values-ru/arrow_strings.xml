@@ -17,13 +17,35 @@
 */
 -->
 <resources>
+    <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Показать приложение Google</string>
+    <string name="title_show_google_app">Свайп для доступа к приложению Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">При свайпе влево от главного домашнего экрана</string>
+    <string name="msg_minus_one_on_left">На Домашнем экране свайп влево, чтобы открыть приложение Google </string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">При свайпе вправо от главного домашнего экрана</string>
+    <string name="msg_minus_one_on_right">На Домашнем экране свайп вправо, чтобы открыть приложение Google </string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Жест двойного нажатия</string>
     <string name="pref_dt_gesture_summary">Двойное нажатие по пустому месту для выключения</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Блокировка макета</string>
+    <string name="settings_lock_layout_summary_on">Иконки и виджеты не могут быть добавлены, удалены и перемещены на домашнем экране</string>
+    <string name="settings_lock_layout_summary_off">Иконки и виджеты могут быть добавлены, удалены и перемещены на домашнем экране</string>
+    <string name="settings_edit_widgets_error">Невозможно добавить виджеты на домашний экран</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Отображать подписи иконок на рабочем столе</string>
+    <string name="drawer_show_labels">Отображать подписи иконок в меню приложений</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Тематические значки для меню приложений</string>
+    <string name="pref_themed_icons_summary">Переключение между док-баром на рабочем столе и тематическими значками для меню приложений</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Предложения</string>
+    <string name="suggestion_pref_screen_desc">Для предложений всех приложений &amp; главного экрана</string>
+    <string name="label_search">Поиск</string>
+    <string name="label_lens">Google Объектив</string>
+    <string name="label_voice_search">Голосовой поиск</string>
+    <string name="dock_search_title">Панель поиска Google</string>
+    <string name="dock_search_summary">Показать панель поиска в нижнем док-баре</string>
+    <string name="dock_theme_title">Тематические значки док-бара</string>
+    <string name="dock_theme_summary">Использовать тематические значки для панели поиска</string>
 </resources>

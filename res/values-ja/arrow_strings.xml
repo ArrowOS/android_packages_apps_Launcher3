@@ -17,13 +17,35 @@
 */
 -->
 <resources>
+    <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Google アプリを表示</string>
+    <string name="title_show_google_app">スワイプして Google アプリに移動</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">メインホーム画面から左にスワイプして表示</string>
+    <string name="msg_minus_one_on_left">ホーム画面から左にスワイプして Google アプリを開く</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">メインホーム画面から右にスワイプして表示</string>
+    <string name="msg_minus_one_on_right">ホーム画面から右にスワイプして Google アプリを開く</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">ダブルタップジェスチャー</string>
     <string name="pref_dt_gesture_summary">空白領域をダブルタップしてスリープする</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">レイアウトを固定</string>
+    <string name="settings_lock_layout_summary_on">アイコンやウィジェットの追加、削除、移動を許可しない。</string>
+    <string name="settings_lock_layout_summary_off">アイコンやウィジェットの追加、削除、移動を許可する。</string>
+    <string name="settings_edit_widgets_error">ウィジェットをホーム画面に追加できません</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">デスクトップでアイコンラベルを表示</string>
+    <string name="drawer_show_labels">ドロワーでアイコンラベルを表示</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">全てのアプリのテーマアイコン</string>
+    <string name="pref_themed_icons_summary">ホーム画面と全てのアプリのテーマアイコンの間を切り替える</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">候補</string>
+    <string name="suggestion_pref_screen_desc">全てのアプリとホーム画面の候補</string>
+    <string name="label_search">検索</string>
+    <string name="label_lens">Google レンズ</string>
+    <string name="label_voice_search">音声検索</string>
+    <string name="dock_search_title">Google 検索バー</string>
+    <string name="dock_search_summary">ドックの下部に検索バーを表示する</string>
+    <string name="dock_theme_title">ドックのテーマアイコン</string>
+    <string name="dock_theme_summary">検索バーにアイコンのテーマを使用する</string>
 </resources>

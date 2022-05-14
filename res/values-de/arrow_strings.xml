@@ -17,13 +17,35 @@
 */
 -->
 <resources>
+    <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Google App anzeigen</string>
+    <string name="title_show_google_app">Wischen, um auf die Google-App zuzugreifen</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Wenn Sie vom Hauptstartbildschirm aus nach links wischen</string>
+    <string name="msg_minus_one_on_left">Vom Startbildschirm nach links wischen, um die Google-App zu öffnen</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Wenn Sie vom Hauptstartbildschirm aus nach rechts wischen</string>
+    <string name="msg_minus_one_on_right">Vom Startbildschirm nach rechts wischen, um die Google-App zu öffnen</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Doppeltipp-Geste</string>
     <string name="pref_dt_gesture_summary">Zum Ausschalten auf einen leeren Bereich doppeltippen</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Layout sperren</string>
+    <string name="settings_lock_layout_summary_on">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
+    <string name="settings_lock_layout_summary_off">Icons and widgets can be added, removed and moved on the homescreen</string>
+    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Show icon labels on desktop</string>
+    <string name="drawer_show_labels">Show icon labels in drawer</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">All apps themed icons</string>
+    <string name="pref_themed_icons_summary">Toggle to switch between homescreen dock and all apps themed icons</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Suggestions</string>
+    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="label_search">Suchen</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Sprachsuche</string>
+    <string name="dock_search_title">Google-Suchleiste</string>
+    <string name="dock_search_summary">Zeige die Suchleiste unten an</string>
+    <string name="dock_theme_title">Dock themed icons</string>
+    <string name="dock_theme_summary">Use themed icons for search bar</string>
 </resources>

@@ -17,13 +17,35 @@
 */
 -->
 <resources>
+    <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Mostrar aplicativo do Google</string>
+    <string name="title_show_google_app">Deslize para acessar o aplicativo do Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Quando você desliza para a esquerda na tela inicial principal</string>
+    <string name="msg_minus_one_on_left">A partir da tela inicial padrão, deslize para a esquerda para abrir o Google Discover</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Quando você desliza para a direita na tela inicial principal</string>
+    <string name="msg_minus_one_on_right">A partir da tela inicial padrão, deslize para a esquerda para abrir o Google Discovery</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Gestos de toque duplo</string>
     <string name="pref_dt_gesture_summary">Toque duas vezes no espaço vazio para desligar a tela</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Bloquear layout</string>
+    <string name="settings_lock_layout_summary_on">Não é possível adicionar, remover e mover ícones e widgets na tela inicial</string>
+    <string name="settings_lock_layout_summary_off">Ícones e widgets podem ser adicionados, removidos e movidos na tela inicial</string>
+    <string name="settings_edit_widgets_error">Não é possível adicionar widgets à tela inicial</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Mostrar os rótulos dos ícones na área de trabalho</string>
+    <string name="drawer_show_labels">Ocultar as legendas dos ícones na gaveta</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Todos os aplicativos temáticos de ícones</string>
+    <string name="pref_themed_icons_summary">Alternar entre o dock da tela inicial e todos os ícones dos aplicativos</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Sugestões</string>
+    <string name="suggestion_pref_screen_desc">Para gaveta de apps &amp; sugestões de tela inicial</string>
+    <string name="label_search">Buscar</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Pesquisa por voz</string>
+    <string name="dock_search_title">Barra de pesquisa do Google</string>
+    <string name="dock_search_summary">Mostrar a barra de pesquisa na dock inferior</string>
+    <string name="dock_theme_title">Ícones temáticos da dock</string>
+    <string name="dock_theme_summary">Usar ícones temáticos para a barra de pesquisa</string>
 </resources>

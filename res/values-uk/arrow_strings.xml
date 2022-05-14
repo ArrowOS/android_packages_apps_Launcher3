@@ -17,13 +17,35 @@
 */
 -->
 <resources>
+    <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Показувати додаток Google</string>
+    <string name="title_show_google_app">Проведіть для доступу до програми Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Під час гортання ліворуч від головного екрану</string>
+    <string name="msg_minus_one_on_left">З головного екрану, проведіть ліворуч, щоб відкрити програму Google</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Під час гортання праворуч від головного екрану</string>
+    <string name="msg_minus_one_on_right">З головного екрану, проведіть праворуч, щоб відкрити програму Google</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Жест подвійного натискання</string>
     <string name="pref_dt_gesture_summary">Подвійне натискання на порожнє місце для вимкнення</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Блокування макету</string>
+    <string name="settings_lock_layout_summary_on">Іконки та віджети не можуть бути додані, видалені і переміщені на головний екран</string>
+    <string name="settings_lock_layout_summary_off">Іконки та віджети можуть бути додані, видалені і переміщені на головний екран</string>
+    <string name="settings_edit_widgets_error">Неможливо додати віджети на головний екран</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Відображати підписи значків на робочому столі</string>
+    <string name="drawer_show_labels">Відображати підписи значків в меню</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Тематичні значки для меню програм</string>
+    <string name="pref_themed_icons_summary">Переключення між док-баром на робочому столі та тематичними значками для меню програм</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Підказки</string>
+    <string name="suggestion_pref_screen_desc">Для підказок в меню всіх додатків та на домашньому екрані</string>
+    <string name="label_search">Пошук</string>
+    <string name="label_lens">Google Об\'єктив</string>
+    <string name="label_voice_search">Голосовий пошук</string>
+    <string name="dock_search_title">Панель пошуку Google</string>
+    <string name="dock_search_summary">Показувати панель пошуку в нижній панелі</string>
+    <string name="dock_theme_title">Тематичні значки док-бару</string>
+    <string name="dock_theme_summary">Використовувати тематичні іконки для панелі пошуку</string>
 </resources>

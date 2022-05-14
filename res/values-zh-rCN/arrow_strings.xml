@@ -17,13 +17,35 @@
 */
 -->
 <resources>
+    <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">显示 Google 应用</string>
+    <string name="title_show_google_app">滑动即可访问 Google 应用</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">从主屏幕向左滑动时</string>
+    <string name="msg_minus_one_on_left">从主屏幕中，向左滑动即可打开 Google 应用</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">从主屏幕向右滑动时</string>
+    <string name="msg_minus_one_on_right">从主屏幕中，向右滑动即可打开 Google 应用</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">双击手势</string>
     <string name="pref_dt_gesture_summary">双击空白处以关闭屏幕</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">锁定布局</string>
+    <string name="settings_lock_layout_summary_on">主屏幕上的图标和微件无法被添加，删除和移动</string>
+    <string name="settings_lock_layout_summary_off">主屏幕上的图标和微件可以被添加，删除和移动</string>
+    <string name="settings_edit_widgets_error">无法将微件添加至主屏幕</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">在主屏幕上显示应用图标标签</string>
+    <string name="drawer_show_labels">在抽屉显示图标标签</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">在各处使用带主题的图标</string>
+    <string name="pref_themed_icons_summary">对在仅主屏幕和 Dock 栏上与在各处使用带主题图标进行切换</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">建议</string>
+    <string name="suggestion_pref_screen_desc">所有应用 &amp; 主屏幕建议</string>
+    <string name="label_search">搜索</string>
+    <string name="label_lens">Google 智能镜头</string>
+    <string name="label_voice_search">语音搜索</string>
+    <string name="dock_search_title">Google 搜索栏</string>
+    <string name="dock_search_summary">在底部 Dock 栏处显示搜索栏</string>
+    <string name="dock_theme_title">主题化的 Google 搜索框</string>
+    <string name="dock_theme_summary">使用主题化的 Google 搜索栏</string>
 </resources>
