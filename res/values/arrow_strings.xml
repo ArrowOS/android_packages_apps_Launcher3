@@ -66,6 +66,10 @@
     <string name="dock_search_title">Google search bar</string>
     <string name="dock_search_summary">Show search bar in the bottom dock</string>
 
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Dark status bar</string>
+    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
+
     <!-- Show top shadow -->
     <string name="show_top_shadow_title">Top shadow</string>
     <string name="show_top_shadow_summary">Show shadow on the top of Home screen</string>
