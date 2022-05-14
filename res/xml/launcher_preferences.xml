@@ -48,6 +48,13 @@
         android:persistent="true" />
 
     <SwitchPreference
+        android:key="pref_dark_status_bar"
+        android:title="@string/perf_dark_status_bar_title"
+        android:summary="@string/perf_dark_status_bar_summary"
+        android:defaultValue="false"
+        android:persistent="true" />
+
+    <SwitchPreference
         android:key="pref_dt_gesture"
         android:title="@string/pref_dt_gesture_title"
         android:summary="@string/pref_dt_gesture_summary"
