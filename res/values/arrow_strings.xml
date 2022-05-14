@@ -66,4 +66,7 @@
     <!-- Show top shadow -->
     <string name="show_top_shadow">Show top shadow</string>
 
+    <string name="perf_dark_status_bar_title">Dark status bar</string>
+    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
+
 </resources>
