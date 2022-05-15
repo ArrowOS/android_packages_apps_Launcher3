@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "377a2988_0b670ef3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 71
+      },
+      "writtenOn": "2022-05-15T16:35:50Z",
+      "side": 1,
+      "message": "https://review.arrowos.net/c/ArrowOS/android_packages_apps_Launcher3/+/16979",
+      "revId": "2f1162443e233b13a11fc091b88bc94a858b90fa",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
