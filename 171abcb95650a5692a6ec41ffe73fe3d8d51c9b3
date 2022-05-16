@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0a142f9a_a322b9aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 160
+      },
+      "writtenOn": "2022-05-16T11:12:29Z",
+      "side": 1,
+      "message": "need to check if suggestion being hide without as as expected",
+      "revId": "171abcb95650a5692a6ec41ffe73fe3d8d51c9b3",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
