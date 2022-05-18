@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7654624f_6b86d044",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 160
+      },
+      "writtenOn": "2022-05-18T03:59:27Z",
+      "side": 1,
+      "message": "Hold it on gerrit as it seems that some devices don\u0027t have vibration when scroll originally. Perhaps due to kernel haptics driver/dts set or overlay haptic pattern",
+      "revId": "ef6b39ee1da129194c44a8e2a903c058d8acd28f",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
