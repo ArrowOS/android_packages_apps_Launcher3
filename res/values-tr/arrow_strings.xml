@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Icons</string>
+    <string name="category_dock">Dock</string>
+    <string name="category_misc">Misc</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Google uygulamasına erişmek için kaydırın</string>
@@ -26,26 +31,31 @@
     <string name="msg_minus_one_on_right">Google uygulamasını açmak için Ana ekrandan sağa kaydırın</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Çift dokunma hareketi</string>
-    <string name="pref_dt_gesture_summary">Cihazı kapatmak için boş bir alana çift dokunun</string>
+    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Düzeni kilitle</string>
     <string name="settings_lock_layout_summary_on">Simgeler ve widget\'lar ana ekrana eklenemez, kaldırılamaz ve taşınamaz</string>
     <string name="settings_lock_layout_summary_off">Simgeler ve widget\'lar ana ekrana eklenebilir, kaldırılabilir ve taşınabilir</string>
-    <string name="settings_edit_widgets_error">Ana ekrana widget eklemek mümkün değildir</string>
+    <string name="settings_edit_widgets_error">Ana ekrana widget eklemek mümkün değil</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Ana ekranda simge etiketlerini göster</string>
+    <string name="desktop_show_labels">Show icon labels on Home screen</string>
     <string name="drawer_show_labels">Çekmecede simge etiketlerini göster</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">Bütün uygulamalarda temalı simgeler</string>
-    <string name="pref_themed_icons_summary">Ana ekran yuvası ve bütün uygulamalarda temalı simgeler arasında geçiş yapmak için ayarlayın</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">Drawer themed icons</string>
+    <string name="pref_themed_icons_summary">Apply themed icons in drawer</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Öneriler</string>
-    <string name="suggestion_pref_screen_desc">Tüm uygulamalar &amp; Ana ekran önerileri için</string>
-    <string name="label_search">Arama</string>
+    <string name="suggestion_pref_screen_desc">For All Apps and Home screen suggestions</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Ara</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Sesli arama</string>
     <string name="dock_search_title">Google arama çubuğu</string>
-    <string name="dock_search_summary">Alt yuvada arama çubuğunu göster</string>
-    <string name="dock_theme_title">Yuvada temalı simgeler</string>
-    <string name="dock_theme_summary">Arama çubuğunda temalı simgeler kullan</string>
+    <string name="dock_search_summary">Alt kısımda arama çubuğunu göster</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">Top shadow</string>
+    <string name="show_top_shadow_summary">Show shadow on the top of Home screen</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Dark status bar</string>
+    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
 </resources>

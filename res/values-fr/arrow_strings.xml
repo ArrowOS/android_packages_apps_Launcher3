@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Icons</string>
+    <string name="category_dock">Dock</string>
+    <string name="category_misc">Misc</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Balayer pour accéder à l\'app Google</string>
@@ -26,26 +31,31 @@
     <string name="msg_minus_one_on_right">Depuis l\'écran d\'accueil, balayer à droite pour accéder à l\'app Google</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Gestes par double appui</string>
-    <string name="pref_dt_gesture_summary">Double appui sur un espace vide pour éteindre l\'écran</string>
+    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Verrouiller la disposition</string>
     <string name="settings_lock_layout_summary_on">Les icônes et widgets ne peuvent pas être ajoutés, supprimés ou déplacés sur l\'écran d\'accueil</string>
     <string name="settings_lock_layout_summary_off">Les icônes et widgets peuvent être ajoutés, supprimés ou déplacés sur l\'écran d\'accueil</string>
     <string name="settings_edit_widgets_error">Impossible d\'ajouter des widgets sur l\'écran d\'accueil</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Afficher le libellé des icônes sur le bureau</string>
+    <string name="desktop_show_labels">Show icon labels on Home screen</string>
     <string name="drawer_show_labels">Afficher les libellés des icônes dans le tiroir d\'applications</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">Icônes thématiques de toutes les applications</string>
-    <string name="pref_themed_icons_summary">Basculer entre le dock de l\'écran d\'accueil et toutes les icônes thématiques des applications</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">Drawer themed icons</string>
+    <string name="pref_themed_icons_summary">Apply themed icons in drawer</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">Pour toutes les applications &amp; suggestions d\'écran d\'accueil</string>
+    <string name="suggestion_pref_screen_desc">For All Apps and Home screen suggestions</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">Recherche</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Recherche vocale</string>
     <string name="dock_search_title">Barre de recherche Google</string>
     <string name="dock_search_summary">Afficher la barre de recherche dans le dock inférieur</string>
-    <string name="dock_theme_title">Icônes thématiques du dock</string>
-    <string name="dock_theme_summary">Utiliser les icônes thématiques pour la barre de recherche</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">Top shadow</string>
+    <string name="show_top_shadow_summary">Show shadow on the top of Home screen</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Dark status bar</string>
+    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
 </resources>

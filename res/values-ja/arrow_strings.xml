@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Icons</string>
+    <string name="category_dock">Dock</string>
+    <string name="category_misc">Misc</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">スワイプして Google アプリに移動</string>
@@ -26,26 +31,31 @@
     <string name="msg_minus_one_on_right">ホーム画面から右にスワイプして Google アプリを開く</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">ダブルタップジェスチャー</string>
-    <string name="pref_dt_gesture_summary">空白領域をダブルタップしてスリープする</string>
+    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">レイアウトを固定</string>
     <string name="settings_lock_layout_summary_on">アイコンやウィジェットの追加、削除、移動を許可しない。</string>
     <string name="settings_lock_layout_summary_off">アイコンやウィジェットの追加、削除、移動を許可する。</string>
     <string name="settings_edit_widgets_error">ウィジェットをホーム画面に追加できません</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">デスクトップでアイコンラベルを表示</string>
+    <string name="desktop_show_labels">Show icon labels on Home screen</string>
     <string name="drawer_show_labels">ドロワーでアイコンラベルを表示</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">全てのアプリのテーマアイコン</string>
-    <string name="pref_themed_icons_summary">ホーム画面と全てのアプリのテーマアイコンの間を切り替える</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">Drawer themed icons</string>
+    <string name="pref_themed_icons_summary">Apply themed icons in drawer</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">候補</string>
-    <string name="suggestion_pref_screen_desc">全てのアプリとホーム画面の候補</string>
+    <string name="suggestion_pref_screen_desc">For All Apps and Home screen suggestions</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">検索</string>
     <string name="label_lens">Google レンズ</string>
     <string name="label_voice_search">音声検索</string>
     <string name="dock_search_title">Google 検索バー</string>
     <string name="dock_search_summary">ドックの下部に検索バーを表示する</string>
-    <string name="dock_theme_title">ドックのテーマアイコン</string>
-    <string name="dock_theme_summary">検索バーにアイコンのテーマを使用する</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">Top shadow</string>
+    <string name="show_top_shadow_summary">Show shadow on the top of Home screen</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Dark status bar</string>
+    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
 </resources>

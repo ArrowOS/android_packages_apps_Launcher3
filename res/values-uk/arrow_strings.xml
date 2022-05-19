@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Icons</string>
+    <string name="category_dock">Dock</string>
+    <string name="category_misc">Misc</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Проведіть для доступу до програми Google</string>
@@ -26,26 +31,31 @@
     <string name="msg_minus_one_on_right">З головного екрану, проведіть праворуч, щоб відкрити програму Google</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Жест подвійного натискання</string>
-    <string name="pref_dt_gesture_summary">Подвійне натискання на порожнє місце для вимкнення</string>
+    <string name="pref_dt_gesture_summary">Double tap on empty space for screen-off</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Блокування макету</string>
     <string name="settings_lock_layout_summary_on">Іконки та віджети не можуть бути додані, видалені і переміщені на головний екран</string>
     <string name="settings_lock_layout_summary_off">Іконки та віджети можуть бути додані, видалені і переміщені на головний екран</string>
     <string name="settings_edit_widgets_error">Неможливо додати віджети на головний екран</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Відображати підписи значків на робочому столі</string>
+    <string name="desktop_show_labels">Show icon labels on Home screen</string>
     <string name="drawer_show_labels">Відображати підписи значків в меню</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">Тематичні значки для меню програм</string>
-    <string name="pref_themed_icons_summary">Переключення між док-баром на робочому столі та тематичними значками для меню програм</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">Drawer themed icons</string>
+    <string name="pref_themed_icons_summary">Apply themed icons in drawer</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Підказки</string>
-    <string name="suggestion_pref_screen_desc">Для підказок в меню всіх додатків та на домашньому екрані</string>
+    <string name="suggestion_pref_screen_desc">For All Apps and Home screen suggestions</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">Пошук</string>
     <string name="label_lens">Google Об\'єктив</string>
     <string name="label_voice_search">Голосовий пошук</string>
     <string name="dock_search_title">Панель пошуку Google</string>
     <string name="dock_search_summary">Показувати панель пошуку в нижній панелі</string>
-    <string name="dock_theme_title">Тематичні значки док-бару</string>
-    <string name="dock_theme_summary">Використовувати тематичні іконки для панелі пошуку</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">Top shadow</string>
+    <string name="show_top_shadow_summary">Show shadow on the top of Home screen</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Dark status bar</string>
+    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
 </resources>
