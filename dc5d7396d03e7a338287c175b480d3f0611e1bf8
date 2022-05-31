@@ -16,6 +16,24 @@
       "message": "\"protected apps\" useless. You can open protected app without pin/fp via Recent or Settings-\u003e Apps.",
       "revId": "dc5d7396d03e7a338287c175b480d3f0611e1bf8",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2047f324_2eaabb67",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 53
+      },
+      "writtenOn": "2022-05-31T19:34:43Z",
+      "side": 1,
+      "message": "Good observation Michael. To be honest I\u0027m more intrested in hidding apps from the launcher. If I clean up the code from \"protected apps\" are you intrested into merging it? Also I will try to figure out how to block opening apps from Settings -\u003e Apps when \"locked\". Let me know.",
+      "parentUuid": "4f169957_df7bbdae",
+      "revId": "dc5d7396d03e7a338287c175b480d3f0611e1bf8",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
