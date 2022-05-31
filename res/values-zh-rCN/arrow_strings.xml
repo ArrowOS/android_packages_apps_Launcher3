@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">图标</string>
+    <string name="category_dock">Dock 栏</string>
+    <string name="category_misc">杂项</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">滑动即可访问 Google 应用</string>
@@ -33,19 +38,24 @@
     <string name="settings_lock_layout_summary_off">主屏幕上的图标和微件可以被添加，删除和移动</string>
     <string name="settings_edit_widgets_error">无法将微件添加至主屏幕</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">在主屏幕上显示应用图标标签</string>
-    <string name="drawer_show_labels">在抽屉显示图标标签</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">在各处使用带主题的图标</string>
-    <string name="pref_themed_icons_summary">对在仅主屏幕和 Dock 栏上与在各处使用带主题图标进行切换</string>
+    <string name="desktop_show_labels">在主屏幕上显示图标标签</string>
+    <string name="drawer_show_labels">在抽屉内显示图标标签</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">抽屉内带主题的图标</string>
+    <string name="pref_themed_icons_summary">在抽屉内使用带主题的图标</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">建议</string>
-    <string name="suggestion_pref_screen_desc">所有应用 &amp; 主屏幕建议</string>
+    <string name="suggestion_pref_screen_desc">所有应用和主屏幕建议</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">搜索</string>
     <string name="label_lens">Google 智能镜头</string>
     <string name="label_voice_search">语音搜索</string>
     <string name="dock_search_title">Google 搜索栏</string>
     <string name="dock_search_summary">在底部 Dock 栏处显示搜索栏</string>
-    <string name="dock_theme_title">主题化的 Google 搜索框</string>
-    <string name="dock_theme_summary">使用主题化的 Google 搜索栏</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">顶部阴影</string>
+    <string name="show_top_shadow_summary">在主屏幕顶部显示阴影</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">深色状态栏</string>
+    <string name="perf_dark_status_bar_summary">在主屏幕上使用深色状态栏</string>
 </resources>

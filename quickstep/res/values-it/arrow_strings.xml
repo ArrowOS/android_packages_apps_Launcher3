@@ -18,6 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Kill App recents action shortcut -->
-    <string name="recent_task_option_kill_app">Termina</string>
-    <string name="recents_app_killed">Applicazione terminata</string>
+    <string name="recent_task_option_kill_app">Chiusura forzata</string>
+    <string name="recents_app_killed">App chiusa</string>
 </resources>

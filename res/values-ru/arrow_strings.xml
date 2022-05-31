@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Иконки</string>
+    <string name="category_dock">Док-бар</string>
+    <string name="category_misc">Разное</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Свайп для доступа к приложению Google</string>
@@ -26,26 +31,31 @@
     <string name="msg_minus_one_on_right">На Домашнем экране свайп вправо, чтобы открыть приложение Google </string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Жест двойного нажатия</string>
-    <string name="pref_dt_gesture_summary">Двойное нажатие по пустому месту для выключения</string>
+    <string name="pref_dt_gesture_summary">Двойное нажатие на пустом месте для выключения экрана</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Блокировка макета</string>
     <string name="settings_lock_layout_summary_on">Иконки и виджеты не могут быть добавлены, удалены и перемещены на домашнем экране</string>
     <string name="settings_lock_layout_summary_off">Иконки и виджеты могут быть добавлены, удалены и перемещены на домашнем экране</string>
     <string name="settings_edit_widgets_error">Невозможно добавить виджеты на домашний экран</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Отображать подписи иконок на рабочем столе</string>
+    <string name="desktop_show_labels">Показывать названия приложений на Домашнем экране</string>
     <string name="drawer_show_labels">Отображать подписи иконок в меню приложений</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">Тематические значки для меню приложений</string>
-    <string name="pref_themed_icons_summary">Переключение между док-баром на рабочем столе и тематическими значками для меню приложений</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">Тематические иконки в Меню приложений</string>
+    <string name="pref_themed_icons_summary">Применить тематические иконки в Меню приложений</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Предложения</string>
-    <string name="suggestion_pref_screen_desc">Для предложений всех приложений &amp; главного экрана</string>
+    <string name="suggestion_pref_screen_desc">Рекомендации в Меню приложений и на Домашнем экране</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">Поиск</string>
     <string name="label_lens">Google Объектив</string>
     <string name="label_voice_search">Голосовой поиск</string>
     <string name="dock_search_title">Панель поиска Google</string>
     <string name="dock_search_summary">Показать панель поиска в нижнем док-баре</string>
-    <string name="dock_theme_title">Тематические значки док-бара</string>
-    <string name="dock_theme_summary">Использовать тематические значки для панели поиска</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">Тень сверху</string>
+    <string name="show_top_shadow_summary">Показывать тень в верхней части Домашнего экрана</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Темная строка состояния</string>
+    <string name="perf_dark_status_bar_summary">Использовать темную строку состояния на Домашнем экране</string>
 </resources>

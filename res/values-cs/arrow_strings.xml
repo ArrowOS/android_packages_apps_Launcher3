@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Ikony</string>
+    <string name="category_dock">Dok</string>
+    <string name="category_misc">Různé</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Přejetím přejít do aplikace Google</string>
@@ -26,26 +31,31 @@
     <string name="msg_minus_one_on_right">Na domovské obrazovce otevřete aplikaci Google přejetím prstem doprava</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Gesto dvojím poklepáním</string>
-    <string name="pref_dt_gesture_summary">Dvojím poklepáním do prázdného prostoru uspat zařízení</string>
+    <string name="pref_dt_gesture_summary">Dvojím poklepáním do prázdného prostoru vypnout zařízení</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Uzamknout rozložení</string>
     <string name="settings_lock_layout_summary_on">Ikony a widgety nelze přidat, odebrat a přesunout na domovské obrazovce</string>
     <string name="settings_lock_layout_summary_off">Ikony a widgety lze přidat, odebrat a přesunout na domovské obrazovce</string>
     <string name="settings_edit_widgets_error">Nelze přidat widgety na domovskou obrazovku</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Zobrazit popisky ikon na ploše</string>
+    <string name="desktop_show_labels">Zobrazit popisky ikon na Domovské obrazovce</string>
     <string name="drawer_show_labels">Zobrazit popisky ikon v menu aplikací</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">Ikony motivů všech aplikací</string>
-    <string name="pref_themed_icons_summary">Přepínání mezi dokem na domovské obrazovce a ikonami motivů všech aplikací</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">Ikony motivů v menu aplikací</string>
+    <string name="pref_themed_icons_summary">Použít ikony motivů v menu aplikací</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Návrhy</string>
     <string name="suggestion_pref_screen_desc">Pro všechny aplikace a návrhy na ploše</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">Hledat</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Hlasové vyhledávání</string>
     <string name="dock_search_title">Vyhledávací panel Google</string>
     <string name="dock_search_summary">Zobrazit vyhledávací panel ve spodním doku</string>
-    <string name="dock_theme_title">Ikony motivů v doku</string>
-    <string name="dock_theme_summary">Použít ikony motivů pro vyhledávací panel</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">Horní stín</string>
+    <string name="show_top_shadow_summary">Zobrazit stín v horní části plochy</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Tmavý stavový řádek</string>
+    <string name="perf_dark_status_bar_summary">Použít tmavý stavový řádek na ploše</string>
 </resources>

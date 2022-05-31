@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">圖示</string>
+    <string name="category_dock">在使用中的主頁Dock bar</string>
+    <string name="category_misc">雜項</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">滑動顯示 Google 即時資訊</string>
@@ -33,19 +38,24 @@
     <string name="settings_lock_layout_summary_off">允許在主畫面上新增、移除或移動圖示及小工具</string>
     <string name="settings_edit_widgets_error">無法將小工具新增至主畫面</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">在桌面上顯示圖示標籤</string>
+    <string name="desktop_show_labels">顯示主畫面上的圖示標題文字</string>
     <string name="drawer_show_labels">在應用程式清單裡顯示圖示標籤</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">完整套用圖示</string>
-    <string name="pref_themed_icons_summary">切換是否要將主題色圖示同時套用於主畫面及應用程式清單</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">抽屜主題圖示</string>
+    <string name="pref_themed_icons_summary">套用主題圖示到抽屜</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">建議</string>
     <string name="suggestion_pref_screen_desc">適用於所有應用程式和主畫面的建議</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">搜尋</string>
     <string name="label_lens">智慧鏡頭</string>
     <string name="label_voice_search">語音搜尋</string>
     <string name="dock_search_title">Google 搜尋列</string>
     <string name="dock_search_summary">在底部顯示搜尋列</string>
-    <string name="dock_theme_title">底欄主題色</string>
-    <string name="dock_theme_summary">將主題色套用於搜尋列</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">頂部陰影</string>
+    <string name="show_top_shadow_summary">在主畫面頂部顯示陰影</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">深色狀態欄</string>
+    <string name="perf_dark_status_bar_summary">在主畫面上使用深色狀態欄</string>
 </resources>

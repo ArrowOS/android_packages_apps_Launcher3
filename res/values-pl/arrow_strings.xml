@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Ikony</string>
+    <string name="category_dock">Dock</string>
+    <string name="category_misc">Różne</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Przesuń, aby uzyskać dostęp do aplikacji Google</string>
@@ -26,26 +31,31 @@
     <string name="msg_minus_one_on_right">Z ekranu głównego, przesuń w prawo, aby otworzyć aplikację Google</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Gest dwukrotnego dotknięcia</string>
-    <string name="pref_dt_gesture_summary">Stuknij dwukrotnie w puste miejsce, aby wyłączyć</string>
+    <string name="pref_dt_gesture_summary">Kliknij dwukrotnie w puste miejsce, aby wyłączyć ekran</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Zablokuj układ</string>
     <string name="settings_lock_layout_summary_on">Ikony i widżety nie mogą być dodawane, usuwane ani przenoszone na ekranie głównym</string>
     <string name="settings_lock_layout_summary_off">Ikony i widżety mogą być dodawane, usuwane oraz przenoszone na ekranie głównym</string>
     <string name="settings_edit_widgets_error">Nie można dodać widżetów do ekranu głównego</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Pokaż etykiety aplikacji na pulpicie</string>
+    <string name="desktop_show_labels">Pokaż etykiety ikon na ekranie głównym</string>
     <string name="drawer_show_labels">Pokaż etykiety ikon w szufladzie aplkacji</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">Wszystkie ikony aplikacji z motywem</string>
-    <string name="pref_themed_icons_summary">Przełącz pomiędzy domowym ekranem doku a ikonami wszystkich aplikacji tematycznych</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">Drawer themed icons</string>
+    <string name="pref_themed_icons_summary">Apply themed icons in drawer</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugestie</string>
-    <string name="suggestion_pref_screen_desc">Dla wszystkich aplikacji &amp; Sugestie ekranu głównego</string>
+    <string name="suggestion_pref_screen_desc">For All Apps and Home screen suggestions</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">Szukaj</string>
     <string name="label_lens">Obiektyw Google</string>
     <string name="label_voice_search">Wyszukiwanie głosowe</string>
     <string name="dock_search_title">Wyszukiwarka Google</string>
     <string name="dock_search_summary">Pokaż pasek wyszukiwania w dolnym doku</string>
-    <string name="dock_theme_title">Ikony Dock</string>
-    <string name="dock_theme_summary">Użyj ikon z motywem dla paska wyszukiwania</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">Górny cień</string>
+    <string name="show_top_shadow_summary">Pokaż w górnej części ekranu</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Ciemny pasek stanu</string>
+    <string name="perf_dark_status_bar_summary">Przełącz widoczność pasku statusu na ekranie blokady. Naciśnij na górze, aby pokazać pasek statusu</string>
 </resources>

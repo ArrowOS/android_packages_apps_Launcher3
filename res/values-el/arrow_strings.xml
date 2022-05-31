@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Εικονίδια</string>
+    <string name="category_dock">Μπάρα εφαρμογών</string>
+    <string name="category_misc">Διάφορα</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Σύρετε για πρόσβαση στην εφαρμογή Google</string>
@@ -26,26 +31,31 @@
     <string name="msg_minus_one_on_right">Από την αρχική οθόνη, σύρετε δεξιά για να ανοίξετε την εφαρμογή Google</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Χειρονομία διπλού πατήματος</string>
-    <string name="pref_dt_gesture_summary">Πατήστε δύο φορές στον κενό χώρο για απενεργοποίηση</string>
+    <string name="pref_dt_gesture_summary">Πατήστε δύο φορές σε κενό χώρο για απενεργοποίηση της οθόνης</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Κλείδωμα διάταξης</string>
     <string name="settings_lock_layout_summary_on">Τα εικονίδια και τα widgets δεν μπορούν να προστεθούν, να αφαιρεθούν και να μετακινηθούν στην αρχική οθόνη</string>
     <string name="settings_lock_layout_summary_off">Τα εικονίδια και τα widgets μπορούν να προστεθούν, να αφαιρεθούν και να μετακινηθούν στην αρχική οθόνη</string>
     <string name="settings_edit_widgets_error">Δεν είναι δυνατή η προσθήκη widgets στην αρχική οθόνη</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Εμφάνιση ετικετών εικονιδίων στην επιφάνεια εργασίας</string>
+    <string name="desktop_show_labels">Εμφάνιση ετικετών εικονιδίων στην Αρχική οθόνη</string>
     <string name="drawer_show_labels">Εμφάνιση ετικετών εικονιδίων στο συρτάρι εφαρμογών</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">Όλα τα εικονίδια θεμάτων εφαρμογών</string>
-    <string name="pref_themed_icons_summary">Εναλλαγή μεταξύ της βάσης σύνδεσης αρχικής οθόνης και όλων των θεματικών εικονιδίων εφαρμογών</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">Θεματικά εικονίδια στο συρτάρι εφαρμογών</string>
+    <string name="pref_themed_icons_summary">Εφαρμογή θεματικών εικονιδίων στο συρτάρι εφαρμογών</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Προτάσεις</string>
-    <string name="suggestion_pref_screen_desc">Για όλες τις εφαρμογές&amp; Προτάσεις αρχικής οθόνης</string>
+    <string name="suggestion_pref_screen_desc">Για όλες τις Εφαρμογές και τις προτάσεις Αρχικής οθόνης</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">Αναζήτηση</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Φωνητική αναζήτηση</string>
     <string name="dock_search_title">Γραμμή αναζήτησης Google</string>
     <string name="dock_search_summary">Εμφάνιση γραμμής αναζήτησης στην κάτω μπάρα εφαρμογών</string>
-    <string name="dock_theme_title">Εικονίδια με θέμα βάσης σύνδεσης</string>
-    <string name="dock_theme_summary">Χρήση θεματικών εικονιδίων για γραμμή αναζήτησης</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">Πάνω σκιά</string>
+    <string name="show_top_shadow_summary">Εμφάνιση σκιάς στο επάνω μέρος της αρχικής οθόνης</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Σκοτεινή γραμμή κατάστασης</string>
+    <string name="perf_dark_status_bar_summary">Χρήση σκοτεινής γραμμής κατάστασης στην Αρχική οθόνη</string>
 </resources>

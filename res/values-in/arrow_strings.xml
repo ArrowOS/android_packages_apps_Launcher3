@@ -17,6 +17,11 @@
 */
 -->
 <resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">Ikon</string>
+    <string name="category_dock">Dok</string>
+    <string name="category_misc">Lain-lain</string>
+    <!-- Folder titles -->
     <string name="google_folder_title">Google</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Geser untuk mengakses aplikasi Google</string>
@@ -26,26 +31,31 @@
     <string name="msg_minus_one_on_right">Dari layar beranda, geser ke kiri untuk membuka aplikasi Google</string>
     <!-- Gestures -->
     <string name="pref_dt_gesture_title">Gestur ketuk dua kali</string>
-    <string name="pref_dt_gesture_summary">Ketuk dua kali pada ruang kosong untuk mematikan</string>
+    <string name="pref_dt_gesture_summary">Ketuk dua kali pada ruang kosong untuk mematikan layar</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Kunci tata letak</string>
     <string name="settings_lock_layout_summary_on">Ikon dan widget tidak dapat ditambahkan, dihapus dan dipindahkan pada layar beranda</string>
     <string name="settings_lock_layout_summary_off">Ikon dan widget dapat ditambahkan, dihapus dan dipindahkan pada layar beranda</string>
     <string name="settings_edit_widgets_error">Hal ini tidak mungkin untuk menambahkan widget ke layar beranda</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Tampilkan label ikon pada desktop</string>
+    <string name="desktop_show_labels">Tampilkan label ikon pada layar beranda</string>
     <string name="drawer_show_labels">Tampilkan label ikon di laci</string>
-    <!-- All apps themed icons -->
-    <string name="pref_themed_icons_title">Semua icon aplikasi tema</string>
-    <string name="pref_themed_icons_summary">Pilihan beralih antara kotak layar beranda dan Semua icon aplikasi tema</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">Ikon laci bertema</string>
+    <string name="pref_themed_icons_summary">Terapkan ikon bertema di laci</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Saran</string>
-    <string name="suggestion_pref_screen_desc">Untuk Semua Aplikasi &amp; saran Layar Utama</string>
+    <string name="suggestion_pref_screen_desc">Untuk semua aplikasi dan saran layar beranda</string>
+    <!-- Hotseat searchbar -->
     <string name="label_search">Cari</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Pencarian suara</string>
     <string name="dock_search_title">Bilah pencarian Google</string>
     <string name="dock_search_summary">Tampilkan bilah pencarian di bawah</string>
-    <string name="dock_theme_title">Icon tema</string>
-    <string name="dock_theme_summary">Gunakan ikon bertema untuk bilah pencarian</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">Bayangan atas</string>
+    <string name="show_top_shadow_summary">Tampilkan bayangan di bagian atas layar beranda</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Bilah status gelap</string>
+    <string name="perf_dark_status_bar_summary">Gunakan bilah status gelap di layar beranda</string>
 </resources>
