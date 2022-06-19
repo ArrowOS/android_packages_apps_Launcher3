@@ -18,6 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Kill App recents action shortcut -->
-    <string name="recent_task_option_kill_app">Force close</string>
-    <string name="recents_app_killed">App closed</string>
+    <string name="recent_task_option_kill_app">Forzar cierre</string>
+    <string name="recents_app_killed">Aplicación cerrada</string>
 </resources>

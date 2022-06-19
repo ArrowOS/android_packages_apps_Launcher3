@@ -41,11 +41,11 @@
     <string name="desktop_show_labels">Pokaż etykiety ikon na ekranie głównym</string>
     <string name="drawer_show_labels">Pokaż etykiety ikon w szufladzie aplkacji</string>
     <!-- Drawer themed icons -->
-    <string name="pref_themed_icons_title">Drawer themed icons</string>
-    <string name="pref_themed_icons_summary">Apply themed icons in drawer</string>
+    <string name="pref_themed_icons_title">Ikony tematyczne</string>
+    <string name="pref_themed_icons_summary">Zastosuj ikony tematyczne w szufladzie</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugestie</string>
-    <string name="suggestion_pref_screen_desc">For All Apps and Home screen suggestions</string>
+    <string name="suggestion_pref_screen_desc">Sugestie dla wszystkich aplikacji oraz ekranu głównego</string>
     <!-- Hotseat searchbar -->
     <string name="label_search">Szukaj</string>
     <string name="label_lens">Obiektyw Google</string>

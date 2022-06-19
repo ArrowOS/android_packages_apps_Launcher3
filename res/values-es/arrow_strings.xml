@@ -45,7 +45,7 @@
     <string name="pref_themed_icons_summary">Aplicar iconos temáticos en el cajón</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugerencias</string>
-    <string name="suggestion_pref_screen_desc">For All Apps and Home screen suggestions</string>
+    <string name="suggestion_pref_screen_desc">Sugerencias para todas las aplicaciones y pantalla de inicio</string>
     <!-- Hotseat searchbar -->
     <string name="label_search">Buscar</string>
     <string name="label_lens">Google Lens</string>
@@ -53,9 +53,9 @@
     <string name="dock_search_title">Barra de busqueda de Google</string>
     <string name="dock_search_summary">Mostrar la barra de busqueda debajo del dock</string>
     <!-- Show top shadow -->
-    <string name="show_top_shadow_title">Top shadow</string>
-    <string name="show_top_shadow_summary">Show shadow on the top of Home screen</string>
+    <string name="show_top_shadow_title">Sombra superior</string>
+    <string name="show_top_shadow_summary">Mostrar sombra en la parte superior de la pantalla de inicio</string>
     <!-- Dark Status Bar -->
-    <string name="perf_dark_status_bar_title">Dark status bar</string>
-    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
+    <string name="perf_dark_status_bar_title">Barra de estado oscura</string>
+    <string name="perf_dark_status_bar_summary">Usar barra de estado oscura en la pantalla de inicio</string>
 </resources>
