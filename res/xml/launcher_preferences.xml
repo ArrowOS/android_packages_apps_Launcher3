@@ -64,6 +64,12 @@
             android:summaryOff="@string/settings_lock_layout_summary_off" />
 
         <SwitchPreference
+            android:key="pref_allow_wallpaper_zooming"
+            android:title="@string/allow_wallpaper_zooming"
+            android:summary="@string/allow_wallpaper_zooming_desc"
+            android:defaultValue="true" />
+
+        <SwitchPreference
             android:key="pref_dt_gesture"
             android:title="@string/pref_dt_gesture_title"
             android:summary="@string/pref_dt_gesture_summary"
