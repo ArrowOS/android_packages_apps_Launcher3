@@ -106,4 +106,8 @@
     <string name="paused_apps_dialog_message">%1$s was directly paused from the DerpLauncher</string>
     <string name="paused_apps_drop_target_label">Pause app</string>
 
+    <!-- Wallpaper zooming -->
+    <string name="allow_wallpaper_zooming">Wallpaper zooming</string>
+    <string name="allow_wallpaper_zooming_desc">Zoom in or out the wallpaper when using drawer or recent apps</string>
+
 </resources>
