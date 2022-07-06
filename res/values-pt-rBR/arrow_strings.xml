@@ -38,14 +38,14 @@
     <string name="settings_lock_layout_summary_off">Ícones e widgets podem ser adicionados, removidos e movidos na tela inicial</string>
     <string name="settings_edit_widgets_error">Não é possível adicionar widgets à tela inicial</string>
     <!-- Hide labels -->
-    <string name="desktop_show_labels">Show icon labels on Home screen</string>
+    <string name="desktop_show_labels">Mostrar rótulos de ícone na tela inicial</string>
     <string name="drawer_show_labels">Ocultar as legendas dos ícones na gaveta</string>
     <!-- Drawer themed icons -->
-    <string name="pref_themed_icons_title">Drawer themed icons</string>
-    <string name="pref_themed_icons_summary">Apply themed icons in drawer</string>
+    <string name="pref_themed_icons_title">Tema de ícones da gaveta de “apps”</string>
+    <string name="pref_themed_icons_summary">Aplique tema de ícones na gaveta de “apps”</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugestões</string>
-    <string name="suggestion_pref_screen_desc">For All Apps and Home screen suggestions</string>
+    <string name="suggestion_pref_screen_desc">Para todos os aplicativos e sugestões da tela inicial</string>
     <!-- Hotseat searchbar -->
     <string name="label_search">Buscar</string>
     <string name="label_lens">Google Lens</string>
@@ -53,9 +53,9 @@
     <string name="dock_search_title">Barra de pesquisa do Google</string>
     <string name="dock_search_summary">Mostrar a barra de pesquisa na dock inferior</string>
     <!-- Show top shadow -->
-    <string name="show_top_shadow_title">Top shadow</string>
-    <string name="show_top_shadow_summary">Show shadow on the top of Home screen</string>
+    <string name="show_top_shadow_title">Sombra superior</string>
+    <string name="show_top_shadow_summary">Mostrar sombra na parte superior da tela inicial</string>
     <!-- Dark Status Bar -->
-    <string name="perf_dark_status_bar_title">Dark status bar</string>
-    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
+    <string name="perf_dark_status_bar_title">Barra de status escura</string>
+    <string name="perf_dark_status_bar_summary">Use a barra de status escura na tela inicial</string>
 </resources>

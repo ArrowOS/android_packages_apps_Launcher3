@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2016 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<resources>
+    <!-- Settings Categories -->
+    <string name="category_icon">نمادها</string>
+    <string name="category_dock">پیشخوان</string>
+    <string name="category_misc">متفرقه</string>
+    <!-- Folder titles -->
+    <string name="google_folder_title">گوگل</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">برای دسترسی به برنامه های گوگل انگشت خود را بکشید</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">از صفحه اصلی،انگشت خود را به چپ بکشید تا برنامه گوگل باز شود</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">از صفحه اصلی،انگشت خود را به راست بکشید تا برنامه گوگل باز شود</string>
+    <!-- Gestures -->
+    <string name="pref_dt_gesture_title">ژست حرکتی دوبار ضربه زدن</string>
+    <string name="pref_dt_gesture_summary">برای خاموش کردن صفحه نمایش روی فضای خالی دوبار ضربه بزنید</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">طرح صفحه قفل</string>
+    <string name="settings_lock_layout_summary_on">نمادها و ابزارک ها نمی توانند اضافه شوند ، برداشته شوند و در صفحه اصلی منتقل شوند</string>
+    <string name="settings_lock_layout_summary_off">نمادها و ابزارک ها را می توان اضافه ، حذف و بر روی صفحه اصلی منتقل کرد</string>
+    <string name="settings_edit_widgets_error">افزودن ابزارک به صفحه اصلی امکان پذیر نیست</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">نشان دادن نام نمادها در صفحه اصلی</string>
+    <string name="drawer_show_labels">نشان دادن نام نمادها در کشوی برنامه</string>
+    <!-- Drawer themed icons -->
+    <string name="pref_themed_icons_title">تم نمادها در کشو برنامه‌ها</string>
+    <string name="pref_themed_icons_summary">اعمال تم نمادها در کشو برنامه‌ها</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">پیشنهادات</string>
+    <string name="suggestion_pref_screen_desc">برای همه برنامه‌ها و پیشنهادات صفحه اصلی</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">جستجو</string>
+    <string name="label_lens">گوگل لنز</string>
+    <string name="label_voice_search">جستجو صوتی</string>
+    <string name="dock_search_title">نوار جست‌وجوی گوگل</string>
+    <string name="dock_search_summary">نمایش نوار جستجو در پایین پیشخوان</string>
+    <!-- Show top shadow -->
+    <string name="show_top_shadow_title">سایه بالا</string>
+    <string name="show_top_shadow_summary">نمایش سایه در بالای صفحه اصلی</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">نوار وضعیت تاریک</string>
+    <string name="perf_dark_status_bar_summary">استفاده از نوار وضعیت تاریک در صفحه اصلی</string>
+</resources>
