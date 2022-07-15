@@ -143,4 +143,7 @@
     <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
     <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
 
+    <!-- Background opacity -->
+    <string name="drawer_background_opacity_title">Drawer background opacity</string>
+    <string name="recents_background_opacity_title">Recents background opacity</string>
 </resources>
