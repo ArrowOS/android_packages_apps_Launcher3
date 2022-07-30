@@ -119,6 +119,8 @@ android_library {
         "iconloader_base",
         "libGoogleFeed",
         "monet",
+        "bcsmartspace-google",
+        "SystemUIPluginLib",
     ],
     manifest: "AndroidManifest-common.xml",
     sdk_version: "current",
