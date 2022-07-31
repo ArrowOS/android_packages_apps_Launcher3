@@ -126,6 +126,12 @@
             android:title="@string/title_show_google_app"/>
 
         <SwitchPreference
+            android:key="pref_smartspace"
+            android:title="@string/smartspace_pref_title"
+            android:summary="@string/smartspace_pref_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreference
             android:key="pref_dock_search"
             android:title="@string/dock_search_title"
             android:summary="@string/dock_search_summary"
