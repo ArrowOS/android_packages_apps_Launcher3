@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "228a96bc_340e9580",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 353
+      },
+      "writtenOn": "2022-08-31T00:59:02Z",
+      "side": 1,
+      "message": "Better to Squash other Themed icons commits as it was done in Arrow-12.1",
+      "revId": "201a35da2a1afd771ba166fb473d61e6c5d2ffa5",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
