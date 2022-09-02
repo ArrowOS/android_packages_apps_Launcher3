@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector android:height="@dimen/theme_icon_size" android:width="@dimen/theme_icon_size" android:viewportWidth="36.0" android:viewportHeight="36.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="@android:color/white" android:pathData="M19.08 18.0005L6.27 5.19054C6.03 4.95054 5.625 5.11554 5.625 5.46054V30.5555C5.625 30.8855 6.03 31.0505 6.27 30.8255L19.08 18.0005Z" />
-    <path android:fillColor="@android:color/white" android:pathData="M20.6706 16.4102L24.7056 12.3752L8.44559 3.06018H8.43059C8.02559 2.83518 7.63559 3.37518 7.96559 3.69018L20.6706 16.4102Z" />
-    <path android:fillColor="@android:color/white" android:pathData="M7.96503 32.3105C7.65003 32.6255 8.02503 33.1805 8.43003 32.9555H8.44503L24.705 23.6405L20.67 19.6055L7.96503 32.3105Z" />
-    <path android:fillColor="@android:color/white" android:pathData="M31.6804 16.3653L26.7304 13.5303L22.2754 18.0003L26.7454 22.4703L31.6954 19.6353C32.9404 18.9153 32.9404 17.0853 31.6804 16.3653Z" />
+    <path android:fillColor="#ffffffff" android:pathData="M48.355,48.604C47.794,48.041 46.881,48.041 46.321,48.604C44.85,50.078 35.627,59.326 34.385,60.562C35.826,62.098 38.436,62.47 40.265,61.354L53.509,53.764C52.287,52.546 49.594,49.847 48.355,48.604Z" />
+    <path android:fillColor="#ffffffff" android:pathData="M46.321,42.5C46.882,43.063 47.794,43.063 48.355,42.5L51.448,39.4L51.445,39.398L53.55,37.295L40.317,29.675C38.451,28.507 35.763,28.907 34.316,30.473C35.529,31.679 44.875,41.053 46.321,42.5Z" />
+    <path android:fillColor="#ffffffff" android:pathData="M44.292,46.571C44.854,46.007 44.854,45.095 44.292,44.531L36.008,36.224L33.033,33.253C33.012,33.427 32.997,33.616 33,33.8L33.002,57.249C33.009,57.469 33.041,57.725 33.075,57.946C35.034,56.028 42.244,48.658 44.292,46.571Z" />
+    <path android:fillColor="#ffffffff" android:pathData="M60.532,41.315L56.13,38.78C54.84,40.06 51.703,43.214 50.385,44.533C49.822,45.097 49.822,46.009 50.385,46.573C51.711,47.893 54.794,50.999 56.092,52.286L60.491,49.766C63.817,48.116 63.842,42.994 60.532,41.315Z" />
 </vector>
