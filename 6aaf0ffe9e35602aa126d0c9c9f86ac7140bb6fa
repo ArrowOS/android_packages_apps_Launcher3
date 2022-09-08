@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0196db9_a3baae22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-09-08T05:44:32Z",
+      "side": 1,
+      "message": "Branch was reset, this is not present on current merged HEAD. ",
+      "revId": "6aaf0ffe9e35602aa126d0c9c9f86ac7140bb6fa",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
