@@ -18,6 +18,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:launcher="http://schemas.android.com/apk/res-auto">
 
+    <com.android.launcher3.settings.NotificationDotsPreference
+        android:key="pref_icon_badging"
+        android:title="@string/notification_dots_title"
+        android:persistent="false"
+        android:widgetLayout="@layout/notification_pref_warning" />
+
     <SwitchPreference
         android:defaultValue="false"
         android:key="pref_workspace_lock"
@@ -25,12 +31,6 @@
         android:title="@string/settings_lock_layout_title"
         android:summaryOn="@string/settings_lock_layout_summary_on"
         android:summaryOff="@string/settings_lock_layout_summary_off" />
-
-    <com.android.launcher3.settings.NotificationDotsPreference
-        android:key="pref_icon_badging"
-        android:title="@string/notification_dots_title"
-        android:persistent="false"
-        android:widgetLayout="@layout/notification_pref_warning" />
 
     <!--
       LAUNCHER_ADD_NEW_APPS_TO_HOME_SCREEN_ENABLED(613)
@@ -50,13 +50,6 @@
       LAUNCHER_HOME_SCREEN_ROTATION_DISABLED(616)
     -->
     <SwitchPreference
-        android:key="pref_allapps_themed_icons"
-        android:title="@string/pref_themed_icons_title"
-        android:summary="@string/pref_themed_icons_summary"
-        android:defaultValue="false"
-        android:persistent="true" />
-
-    <SwitchPreference
         android:key="pref_allowRotation"
         android:title="@string/allow_rotation_title"
         android:summary="@string/allow_rotation_desc"
@@ -64,6 +57,13 @@
         android:persistent="true"
         launcher:logIdOn="615"
         launcher:logIdOff="616" />
+
+    <SwitchPreference
+        android:key="pref_allapps_themed_icons"
+        android:title="@string/pref_themed_icons_title"
+        android:summary="@string/pref_themed_icons_summary"
+        android:defaultValue="false"
+        android:persistent="true" />
 
     <SwitchPreference
         android:defaultValue="true"
@@ -78,12 +78,6 @@
         android:defaultValue="true"
         android:persistent="true"/>
 
-    <androidx.preference.PreferenceScreen
-        android:key="pref_developer_options"
-        android:persistent="false"
-        android:title="@string/developer_options_title"
-        android:fragment="com.android.launcher3.settings.DeveloperOptionsFragment"/>
-
     <SwitchPreference
         android:key="pref_desktop_show_labels"
         android:title="@string/desktop_show_labels"
@@ -95,5 +89,11 @@
         android:title="@string/drawer_show_labels"
         android:defaultValue="true"
         android:persistent="true" />
+
+    <androidx.preference.PreferenceScreen
+        android:key="pref_developer_options"
+        android:persistent="false"
+        android:title="@string/developer_options_title"
+        android:fragment="com.android.launcher3.settings.DeveloperOptionsFragment"/>
 
 </androidx.preference.PreferenceScreen>
