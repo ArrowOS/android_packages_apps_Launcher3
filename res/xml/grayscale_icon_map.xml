@@ -147,6 +147,9 @@
     <icon
         drawable="@drawable/themed_icon_camera"
         package="com.google.android.apps.lens.example.release" />
+     <icon
+        drawable="@drawable/themed_icon_camera"
+        package="com.shamim.cam" />
     <icon
         drawable="@drawable/themed_icon_miuicamera"
         package="com.android.camera" />
