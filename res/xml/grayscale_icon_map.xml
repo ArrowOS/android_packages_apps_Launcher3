@@ -699,6 +699,9 @@
         drawable="@drawable/themed_icon_uber_motorista"
         package="com.ubercab.driver" />
     <icon
+        drawable="@drawable/themed_icon_unacademy"
+        package="com.unacademyapp" />
+    <icon
         drawable="@drawable/themed_icon_vanced_manager"
         package="com.vanced.manager" />
     <icon
