@@ -140,7 +140,7 @@ public abstract class AbsSwipeUpHandler<T extends StatefulActivity<S>,
         RecentsAnimationCallbacks.RecentsAnimationListener {
     private static final String TAG = "AbsSwipeUpHandler";
 
-    private static final String[] STATE_NAMES = DEBUG_STATES ? new String[17] : null;
+    private static final String[] STATE_NAMES = DEBUG_STATES ? new String[18] : null;
 
     protected final BaseActivityInterface<S, T> mActivityInterface;
     protected final InputConsumerProxy mInputConsumerProxy;
