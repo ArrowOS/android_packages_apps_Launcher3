@@ -178,5 +178,6 @@
     
     <!-- Memory info -->
     <string name="meminfo_text">%1$s | %2$s</string>
+    <string name="show_meminfo_title">Show Memory info</string>
 
 </resources>
