@@ -133,8 +133,6 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
             lens.setOnClickListener(this);
             lens.setVisibility(VISIBLE);
             findViewById(R.id.lens_space).setVisibility(VISIBLE);
-            findViewById(R.id.action_screenshot).setVisibility(GONE);
-            findViewById(R.id.screenshot_space).setVisibility(GONE);
         }
     }
 
