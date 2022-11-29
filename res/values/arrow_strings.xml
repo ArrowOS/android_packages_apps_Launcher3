@@ -54,6 +54,6 @@
     <!-- Recents Lens -->
     <string name="action_lens">Lens</string>
     <string name="show_lens_button_title">Show lens button</string>
-    <string name="show_lens_button_summary">Replace screenshot button with Google Lens button, if available</string>
+    <string name="show_lens_button_summary">Show Google Lens button in recents overview, if available</string>
 
 </resources>
