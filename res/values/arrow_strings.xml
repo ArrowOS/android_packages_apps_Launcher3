@@ -173,4 +173,7 @@
     <string name="icon_pack_add">Install more</string>
     <string name="icon_pack_no_market">There\'s no available app store</string>
 
+    <!-- App drawer searchbar -->
+    <string name="drawer_searchbar_title">Enable app drawer searchbar</string>
+
 </resources>
