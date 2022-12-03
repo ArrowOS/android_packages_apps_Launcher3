@@ -59,10 +59,6 @@
     <string name="pref_themed_icons_title">Drawer themed icons</string>
     <string name="pref_themed_icons_summary">Apply themed icons in drawer</string>
 
-    <!-- Suggestions -->
-    <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps and Home screen suggestions</string>
-
     <!-- Recents Lens -->
     <string name="action_lens">Lens</string>
     <string name="show_lens_button_title">Show lens button</string>
