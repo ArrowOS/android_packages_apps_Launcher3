@@ -24,10 +24,8 @@ import static com.android.launcher3.OverlayCallbackImpl.KEY_ENABLE_MINUS_ONE;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.ResolveInfoFlags;
-import android.content.pm.ResolveInfo;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -69,7 +67,7 @@ import java.util.List;
  */
 public class SettingsActivity extends CollapsingToolbarBaseActivity
         implements OnPreferenceStartFragmentCallback, OnPreferenceStartScreenCallback,
-        SharedPreferences.OnSharedPreferenceChangeListener {
+        SharedPreferences.OnSharedPreferenceChangeListener{
 
     /** List of fragments that can be hosted by this activity. */
     private static final List<String> VALID_PREFERENCE_FRAGMENTS = Collections.singletonList(
@@ -89,9 +87,6 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
     static final String EXTRA_FRAGMENT = ":settings:fragment";
     @VisibleForTesting
     static final String EXTRA_FRAGMENT_ARGS = ":settings:fragment_args";
-
-    private static final String KEY_SUGGESTIONS = "pref_suggestions";
-    private static final Intent SUGGESTIONS_INTENT = new Intent("android.settings.ACTION_CONTENT_SUGGESTIONS_SETTINGS");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -303,8 +298,6 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                     mShowGoogleAppPref = preference;
                     updateIsGoogleAppEnabled();
                     return true;
-                case KEY_SUGGESTIONS:
-                    return areSuggestionsAvailable();
             }
 
             return true;
@@ -383,15 +376,6 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                             .performAccessibilityAction(ACTION_ACCESSIBILITY_FOCUS, null);
                 }
             });
-        }
-
-        private boolean areSuggestionsAvailable() {
-            final List<ResolveInfo> resolvedIntents = requireContext().getPackageManager()
-                .queryIntentActivities(
-                    SUGGESTIONS_INTENT,
-                    ResolveInfoFlags.of(PackageManager.MATCH_ALL)
-                );
-            return !resolvedIntents.isEmpty();
         }
     }
 }
