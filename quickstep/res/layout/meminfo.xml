@@ -3,4 +3,8 @@
     android:id="@+id/meminfo"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:background="@drawable/meminfo_bg"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="2dp"
+    android:gravity="center_vertical"
     android:visibility="gone"/>
