@@ -60,7 +60,6 @@ import java.util.Locale;
 public class DeviceProfile {
 
     public static final String KEY_ROW_HEIGHT = "pref_row_height";
-    public static final String KEY_PHONE_TASKBAR = "pref_allow_phone_taskbar";
 
     private static final int DEFAULT_DOT_SIZE = 100;
     private static final float ALL_APPS_TABLET_MAX_ROWS = 5.5f;
@@ -285,8 +284,7 @@ public class DeviceProfile {
         isTablet = info.isTablet(windowBounds);
         isPhone = !isTablet;
         isTwoPanels = isTablet && useTwoPanels;
-        boolean allowTaskbar = prefs.getBoolean(KEY_PHONE_TASKBAR, isTablet);
-        isTaskbarPresent = allowTaskbar && ApiWrapper.TASKBAR_DRAWN_IN_PROCESS;
+        isTaskbarPresent = isTablet && ApiWrapper.TASKBAR_DRAWN_IN_PROCESS;
 
         // Some more constants.
         context = getContext(context, info, isVerticalBarLayout() || (isTablet && isLandscape)
@@ -416,7 +414,7 @@ public class DeviceProfile {
         numShownAllAppsColumns =
                 isTwoPanels ? inv.numDatabaseAllAppsColumns : inv.numAllAppsColumns;
 
-        int hotseatBarBottomSpace = showQsb || isTaskbarPresent ? pxFromDp(
+        int hotseatBarBottomSpace = showQsb ? pxFromDp(
                 inv.hotseatBarBottomSpace[mTypeIndex], mMetrics) : 0;
         int minQsbMargin = res.getDimensionPixelSize(R.dimen.min_qsb_margin);
         hotseatQsbSpace = showQsb ? pxFromDp(inv.hotseatQsbSpace[mTypeIndex], mMetrics) : 0;

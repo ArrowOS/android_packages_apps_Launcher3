@@ -105,7 +105,7 @@ public class TaskbarAllAppsSlideInView extends AbstractSlideInView<TaskbarAllApp
 
     @Override
     protected int getScrimColor(Context context) {
-        return context.getColor(R.color.taskbar_all_apps_bg);
+        return context.getColor(R.color.widgets_picker_scrim);
     }
 
     @Override

@@ -25,8 +25,6 @@ import static com.android.launcher3.util.DisplayController.CHANGE_NAVIGATION_MOD
 import android.content.ComponentCallbacks;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.hardware.display.DisplayManager;
@@ -42,7 +40,6 @@ import androidx.annotation.VisibleForTesting;
 
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.LauncherAppState;
-import com.android.launcher3.Utilities;
 import com.android.launcher3.anim.AnimatorPlaybackController;
 import com.android.launcher3.statemanager.StatefulActivity;
 import com.android.launcher3.taskbar.unfold.NonDestroyableScopedUnfoldTransitionProgressProvider;
@@ -57,14 +54,12 @@ import com.android.quickstep.TouchInteractionService;
 import com.android.systemui.unfold.UnfoldTransitionProgressProvider;
 import com.android.systemui.unfold.util.ScopedUnfoldTransitionProgressProvider;
 
-import android.provider.Settings;
-
 import java.io.PrintWriter;
 
 /**
  * Class to manage taskbar lifecycle
  */
-public class TaskbarManager implements OnSharedPreferenceChangeListener {
+public class TaskbarManager {
 
     public static final boolean FLAG_HIDE_NAVBAR_WINDOW =
             SystemProperties.getBoolean("persist.wm.debug.hide_navbar_window", false);
@@ -125,7 +120,6 @@ public class TaskbarManager implements OnSharedPreferenceChangeListener {
                 SystemUiProxy.INSTANCE.get(mContext), new Handler());
         mUserSetupCompleteListener = isUserSetupComplete -> recreateTaskbar();
         mNavBarKidsModeListener = isNavBarKidsMode -> recreateTaskbar();
-
         // TODO(b/227669780): Consolidate this w/ DisplayController callbacks
         mComponentCallbacks = new ComponentCallbacks() {
             private Configuration mOldConfig = mContext.getResources().getConfiguration();
@@ -194,19 +188,6 @@ public class TaskbarManager implements OnSharedPreferenceChangeListener {
         recreateTaskbar();
     }
 
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
-        switch (key) {
-            case DeviceProfile.KEY_PHONE_TASKBAR:
-                boolean enabled = Utilities.getPrefs(mContext).getBoolean(DeviceProfile.KEY_PHONE_TASKBAR, false);
-                SystemUiProxy.INSTANCE.get(mContext).setTaskbarEnabled(enabled);
-
-                Settings.System.putInt(mContext.getContentResolver(),
-                        Settings.System.ENABLE_TASKBAR, enabled ? 1 : 0);
-                break;
-        }
-    }
-
     private void destroyExistingTaskbar() {
         if (mTaskbarActivityContext != null) {
             mTaskbarActivityContext.onDestroy();
@@ -232,8 +213,6 @@ public class TaskbarManager implements OnSharedPreferenceChangeListener {
      */
     public void onUserUnlocked() {
         mUserUnlocked = true;
-        SharedPreferences prefs = Utilities.getPrefs(mContext);
-        prefs.registerOnSharedPreferenceChangeListener(this);
         recreateTaskbar();
     }
 
@@ -308,11 +287,9 @@ public class TaskbarManager implements OnSharedPreferenceChangeListener {
         destroyExistingTaskbar();
 
         boolean isTaskBarEnabled = dp != null && isTaskbarPresent(dp);
-
-        SystemUiProxy sysui = SystemUiProxy.INSTANCE.get(mContext);
-        sysui.setTaskbarEnabled(isTaskBarEnabled);
         if (!isTaskBarEnabled) {
-            sysui.notifyTaskbarStatus(/* visible */ false, /* stashed */ false);
+            SystemUiProxy.INSTANCE.get(mContext)
+                    .notifyTaskbarStatus(/* visible */ false, /* stashed */ false);
             return;
         }
 

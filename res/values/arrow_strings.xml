@@ -146,10 +146,6 @@
     <!-- Background opacity -->
     <string name="background_opacity_title">Background opacity</string>
 
-    <!-- Taskbar -->
-    <string name="pref_allow_phone_taskbar_title">Use taskbar</string>
-    <string name="pref_allow_phone_taskbar_summary">For opening and switching apps anywhere</string>
-
     <!-- Recents icons -->
     <string name="recents_screenshot_title">Screenshot</string>
     <string name="recents_clear_all_title">Clear all</string>
@@ -195,4 +191,6 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Restart</string>
     <string name="pref_restart_summary">Restart the launcher</string>
+=======
+>>>>>>> parent of d4a60d17dd (ArrowLauncher: Add taskbar switch under misc settings)
 </resources>
