@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ebdb12b_d565c238",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 657
+      },
+      "writtenOn": "2023-03-27T23:59:55Z",
+      "side": 1,
+      "message": "Works without causing any bugs on realme pad",
+      "revId": "8b861e7da0e71a31ebd54850b514a6da35d6b803",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
