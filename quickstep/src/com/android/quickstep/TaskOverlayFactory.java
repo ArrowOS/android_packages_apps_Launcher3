@@ -176,7 +176,7 @@ public class TaskOverlayFactory implements ResourceBasedOverride {
          */
         public void endLiveTileMode(@NonNull Runnable callback) {
             RecentsView recentsView = mThumbnailView.getTaskView().getRecentsView();
-            if (recentsView != null) {
+            if (recentsView == null) {
                 return;
             }
             recentsView.switchToScreenshot(
