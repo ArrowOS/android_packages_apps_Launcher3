@@ -361,7 +361,7 @@ public final class FeatureFlags {
             "Enables haptics opening/closing All apps");
 
     public static final BooleanFlag ENABLE_FORCED_MONO_ICON = getDebugFlag(270396209,
-            "ENABLE_FORCED_MONO_ICON", false,
+            "ENABLE_FORCED_MONO_ICON", true,
             "Enable the ability to generate monochromatic icons, if it is not provided by the app"
     );
 
