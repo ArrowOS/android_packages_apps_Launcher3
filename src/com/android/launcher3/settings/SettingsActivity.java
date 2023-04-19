@@ -25,6 +25,8 @@ import static com.android.launcher3.Utilities.KEY_ICON_PACK;
 import static com.android.launcher3.config.FeatureFlags.IS_STUDIO_BUILD;
 import static com.android.launcher3.states.RotationHelper.ALLOW_ROTATION_PREFERENCE_KEY;
 
+import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -58,6 +60,7 @@ import com.android.launcher3.LauncherFiles;
 import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
+import com.android.launcher3.icons.pack.IconPackSettingsActivity;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.customization.IconDatabase;
 import com.android.launcher3.model.WidgetsModel;
@@ -206,7 +209,7 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
         private String mHighLightKey;
         private boolean mPreferenceHighlighted = false;
-        private Preference mDeveloperOptionPref, mShowGoogleAppPref, mHotseatQsbPref;;
+        private Preference mDeveloperOptionPref, mShowGoogleAppPref, mHotseatQsbPref, mIconPackPref;
 
         private boolean mPendingRestart = false;
 
@@ -328,17 +331,12 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                     return true;
 
                 case KEY_ICON_PACK:
-                    ReloadingListPreference icons = (ReloadingListPreference) preference;
-                    icons.setValue(IconDatabase.getGlobal(getActivity()));
-                    icons.setOnReloadListener(IconPackPrefSetter::new);
-                    icons.setIcon(getPackageIcon(IconDatabase.getGlobal(getActivity())));
-                    icons.setOnPreferenceChangeListener((pref, val) -> {
-                        IconDatabase.clearAll(getActivity());
-                        IconDatabase.setGlobal(getActivity(), (String) val);
-                        ((ReloadingListPreference) pref).setIcon(getPackageIcon((String) val));
-                        AppReloader.get(getActivity()).reload();
+                    mIconPackPref = preference;
+                    preference.setOnPreferenceClickListener(p -> {
+                        startActivity(new Intent(getActivity(), IconPackSettingsActivity.class));
                         return true;
                     });
+                    updateIconPackOption();
                     return true;
             }
 
@@ -361,6 +359,12 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                 }
             }
             return showPreference;
+        }
+
+        private void updateIconPackOption() {
+            if (mIconPackPref != null) {
+                mIconPackPref.setSummary(IconDatabase.getGlobalLabel(getActivity()));
+            }
         }
 
         public static boolean isGSAEnabled(Context context) {
@@ -390,6 +394,7 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
             updateDeveloperOption();
             updateIsGoogleAppEnabled();
             updateIsQsbAvailable();
+            updateIconPackOption();
 
             if (isAdded() && !mPreferenceHighlighted) {
                 PreferenceHighlighter highlighter = createHighlighter();
@@ -445,16 +450,6 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                     ResolveInfoFlags.of(PackageManager.MATCH_ALL)
                 );
             return !resolvedIntents.isEmpty();
-        }
-
-        private Drawable getPackageIcon(String pkgName) {
-            Drawable icon = getContext().getResources().
-                              getDrawable(com.android.internal.R.drawable.sym_def_app_icon);
-            try {
-                 icon = getContext().getPackageManager().
-                              getApplicationIcon(pkgName);
-            } catch (PackageManager.NameNotFoundException e) {  }
-            return icon;
         }
     }
 
