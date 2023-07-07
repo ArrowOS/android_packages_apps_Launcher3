@@ -61,4 +61,8 @@
     <string name="laboratory_parallel_space_title">Parallel space</string>
     <string name="laboratory_parallel_space_summary">Allow running multiple instances of the same application in parallel</string>
 
+    <!-- Hotseat QSB -->
+    <string name="hotseat_qsb_pref_title">Show search bar</string>
+    <string name="hotseat_qsb_pref_summary">In the bottom dock</string>
+
 </resources>
