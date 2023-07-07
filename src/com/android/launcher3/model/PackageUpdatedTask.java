@@ -35,6 +35,7 @@ import com.android.launcher3.Launcher;
 import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherSettings;
 import com.android.launcher3.LauncherSettings.Favorites;
+import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.icons.BitmapInfo;
 import com.android.launcher3.icons.IconCache;
@@ -112,10 +113,13 @@ public class PackageUpdatedTask extends BaseModelUpdateTask {
         final HashSet<ComponentName> removedComponents = new HashSet<>();
         final HashMap<String, List<LauncherActivityInfo>> activitiesLists = new HashMap<>();
 
+        boolean needsRestart = false;
+
         switch (mOp) {
             case OP_ADD: {
                 for (int i = 0; i < N; i++) {
                     if (DEBUG) Log.d(TAG, "mAllAppsList.addPackage " + packages[i]);
+                    needsRestart = isQsbPackage(context, packages[i]);
                     iconCache.updateIconsForPkg(packages[i], mUser);
                     if (FeatureFlags.PROMISE_APPS_IN_ALL_APPS.get()) {
                         appsList.removePackage(packages[i], mUser);
@@ -131,6 +135,7 @@ public class PackageUpdatedTask extends BaseModelUpdateTask {
                              appsList.trackRemoves(a -> removedComponents.add(a.componentName))) {
                     for (int i = 0; i < N; i++) {
                         if (DEBUG) Log.d(TAG, "mAllAppsList.updatePackage " + packages[i]);
+                        needsRestart = isQsbPackage(context, packages[i]);
                         iconCache.updateIconsForPkg(packages[i], mUser);
                         activitiesLists.put(
                                 packages[i], appsList.updatePackage(context, packages[i], mUser));
@@ -157,6 +162,7 @@ public class PackageUpdatedTask extends BaseModelUpdateTask {
             case OP_UNAVAILABLE:
                 for (int i = 0; i < N; i++) {
                     if (DEBUG) Log.d(TAG, "mAllAppsList.removePackage " + packages[i]);
+                    needsRestart = isQsbPackage(context, packages[i]);
                     appsList.removePackage(packages[i], mUser);
                 }
                 flagOp = FlagOp.NO_OP.addFlag(WorkspaceItemInfo.FLAG_DISABLED_NOT_AVAILABLE);
@@ -167,6 +173,7 @@ public class PackageUpdatedTask extends BaseModelUpdateTask {
                         WorkspaceItemInfo.FLAG_DISABLED_SUSPENDED, mOp == OP_SUSPEND);
                 if (DEBUG) Log.d(TAG, "mAllAppsList.(un)suspend " + N);
                 appsList.updateDisabledFlags(matcher, flagOp);
+                needsRestart = Arrays.stream(packages).anyMatch(p -> isQsbPackage(context, p));
                 break;
             case OP_USER_AVAILABILITY_CHANGE: {
                 UserManagerState ums = new UserManagerState();
@@ -329,6 +336,10 @@ public class PackageUpdatedTask extends BaseModelUpdateTask {
             if (!widgets.isEmpty()) {
                 scheduleCallbackTask(c -> c.bindWidgetsRestored(widgets));
             }
+
+            if (needsRestart) {
+                Utilities.restart();
+            }
         }
 
         final HashSet<String> removedPackages = new HashSet<>();
@@ -394,5 +405,15 @@ public class PackageUpdatedTask extends BaseModelUpdateTask {
             return true;
         }
         return false;
+    }
+
+    private static boolean isQsbPackage(Context context, String packageName) {
+        Launcher launcher = Launcher.ACTIVITY_TRACKER.getCreatedActivity();
+        if (launcher == null) {
+            return false;
+        }
+        String qsbPackage = launcher.getHotseat().getQsbPackageName();
+        return qsbPackage != null && packageName.equals(qsbPackage)
+                && Utilities.isHotseatQsbEnabledByUser(context);
     }
 }
