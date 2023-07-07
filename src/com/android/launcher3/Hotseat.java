@@ -27,6 +27,8 @@ import android.view.ViewDebug;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
+import com.android.launcher3.qsb.QsbContainerView;
+
 /**
  * View class that represents the bottom row of the home screen.
  */
@@ -39,6 +41,7 @@ public class Hotseat extends CellLayout implements Insettable {
     private boolean mHasVerticalHotseat;
     private Workspace<?> mWorkspace;
     private boolean mSendTouchToWorkspace;
+    private String mQsbPackageName;
 
     private final View mQsb;
 
@@ -54,7 +57,11 @@ public class Hotseat extends CellLayout implements Insettable {
         super(context, attrs, defStyle);
 
         mQsb = LayoutInflater.from(context).inflate(R.layout.search_container_hotseat, this, false);
-        addView(mQsb);
+        mQsbPackageName = QsbContainerView.getSearchWidgetPackageName(context);
+
+        if (Utilities.isHotseatQsbEnabled(context)) {
+            addView(mQsb);
+        }
     }
 
     /**
@@ -197,6 +204,10 @@ public class Hotseat extends CellLayout implements Insettable {
      */
     public View getQsb() {
         return mQsb;
+    }
+
+    public String getQsbPackageName() {
+        return mQsbPackageName;
     }
 
 }

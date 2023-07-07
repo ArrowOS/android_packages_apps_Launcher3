@@ -191,6 +191,7 @@ public class DeviceProfile {
     public final int hotseatQsbHeight;
     public final int hotseatQsbVisualHeight;
     private final int hotseatQsbShadowHeight;
+    private final int hotseatQsbExcessMargin;
     public int hotseatBorderSpace;
     private final int mMinHotseatIconSpacePx;
     private final int mMinHotseatQsbWidthPx;
@@ -451,9 +452,12 @@ public class DeviceProfile {
 
         workspaceCellPaddingXPx = res.getDimensionPixelSize(R.dimen.dynamic_grid_cell_padding_x);
 
-        hotseatQsbHeight = res.getDimensionPixelSize(R.dimen.qsb_widget_height);
+        boolean isQsbEnabled = Utilities.isHotseatQsbEnabled(context);
+        hotseatQsbHeight = isQsbEnabled ? res.getDimensionPixelSize(R.dimen.qsb_widget_height) : 0;
         hotseatQsbShadowHeight = res.getDimensionPixelSize(R.dimen.qsb_shadow_height);
         hotseatQsbVisualHeight = hotseatQsbHeight - 2 * hotseatQsbShadowHeight;
+        hotseatQsbExcessMargin = res.getDimensionPixelSize(
+                R.dimen.hotseat_qsb_excess_horizontal_margin);
 
         // Whether QSB might be inline in appropriate orientation (e.g. landscape).
         boolean canQsbInline = (isTwoPanels ? inv.inlineQsb[INDEX_TWO_PANEL_PORTRAIT]
@@ -472,6 +476,12 @@ public class DeviceProfile {
         int hotseatBarBottomSpace = pxFromDp(inv.hotseatBarBottomSpace[mTypeIndex], mMetrics);
         int minQsbMargin = res.getDimensionPixelSize(R.dimen.min_qsb_margin);
         hotseatQsbSpace = pxFromDp(inv.hotseatQsbSpace[mTypeIndex], mMetrics);
+
+        if (!isQsbEnabled) {
+            hotseatBarBottomSpace += minQsbMargin + hotseatQsbSpace;
+            hotseatQsbSpace = 0;
+        }
+
         // Have a little space between the inset and the QSB
         if (mInsets.bottom + minQsbMargin > hotseatBarBottomSpace) {
             int availableSpace = hotseatQsbSpace - (mInsets.bottom - hotseatBarBottomSpace);
@@ -663,12 +673,10 @@ public class DeviceProfile {
      * necessary.
      */
     public void recalculateHotseatWidthAndBorderSpace() {
-        if (!isScalableGrid) return;
-
         int columns = inv.hotseatColumnSpan[mTypeIndex];
         float hotseatWidthPx = getIconToIconWidthForColumns(columns);
         hotseatBorderSpace = calculateHotseatBorderSpace(hotseatWidthPx, /* numExtraBorder= */ 0);
-        hotseatQsbWidth = calculateQsbWidth(hotseatBorderSpace);
+        hotseatQsbWidth = calculateQsbWidth(hotseatBorderSpace) + hotseatQsbExcessMargin;
         // Spaces should be correct when the nav buttons are not inline
         if (!areNavButtonsInline) {
             return;
@@ -1376,7 +1384,7 @@ public class DeviceProfile {
             // workspace cell vs a hotseat cell.
             float workspaceCellWidth = (float) widthPx / inv.numColumns;
             float hotseatCellWidth = (float) widthPx / numShownHotseatIcons;
-            int hotseatAdjustment = Math.round((workspaceCellWidth - hotseatCellWidth) / 2);
+            int hotseatAdjustment = hotseatBorderSpace / 2;
             hotseatBarPadding.set(
                     hotseatAdjustment + workspacePadding.left + cellLayoutPaddingPx.left
                             + mInsets.left,
