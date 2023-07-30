@@ -18,11 +18,10 @@ package com.android.launcher3.settings;
 
 import static androidx.core.view.accessibility.AccessibilityNodeInfoCompat.ACTION_ACCESSIBILITY_FOCUS;
 
-import static com.android.launcher3.OverlayCallbackImpl.KEY_ENABLE_MINUS_ONE;
-import static com.android.launcher3.Utilities.GSA_PACKAGE;
-import static com.android.launcher3.Utilities.KEY_HOTSEAT_QSB;
 import static com.android.launcher3.config.FeatureFlags.IS_STUDIO_BUILD;
 import static com.android.launcher3.states.RotationHelper.ALLOW_ROTATION_PREFERENCE_KEY;
+
+import static com.android.launcher3.OverlayCallbackImpl.KEY_ENABLE_MINUS_ONE;
 
 import android.content.Context;
 import android.content.Intent;
@@ -200,9 +199,11 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
         private String mHighLightKey;
         private boolean mPreferenceHighlighted = false;
-        private Preference mDeveloperOptionPref, mShowGoogleAppPref, mHotseatQsbPref;;
+        private Preference mDeveloperOptionPref;
 
-        private boolean mPendingRestart = false;
+        protected static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
+
+        private Preference mShowGoogleAppPref;
 
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -243,16 +244,6 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                 }
                 getActivity().setTitle(getPreferenceScreen().getTitle());
             }
-
-            LauncherPrefs.getPrefs(getContext()).registerOnSharedPreferenceChangeListener(
-                (sharedPrefs, key) -> {
-                    switch (key) {
-                        case KEY_HOTSEAT_QSB:
-                            mPendingRestart = true;
-                            break;
-                    }
-                }
-            );
         }
 
         @Override
@@ -315,11 +306,6 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
                 case KEY_SUGGESTIONS:
                     return areSuggestionsAvailable();
-
-                case KEY_HOTSEAT_QSB:
-                    mHotseatQsbPref = preference;
-                    updateIsQsbAvailable();
-                    return true;
             }
 
             return true;
@@ -357,19 +343,11 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
             }
         }
 
-        private void updateIsQsbAvailable() {
-            if (mHotseatQsbPref != null) {
-                mHotseatQsbPref.setEnabled(Utilities.isQsbAvailable(getContext()));
-            }
-        }
-
         @Override
         public void onResume() {
             super.onResume();
 
             updateDeveloperOption();
-            updateIsGoogleAppEnabled();
-            updateIsQsbAvailable();
 
             if (isAdded() && !mPreferenceHighlighted) {
                 PreferenceHighlighter highlighter = createHighlighter();
@@ -380,15 +358,7 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                     requestAccessibilityFocus(getListView());
                 }
             }
-        }
-
-        @Override
-        public void onPause() {
-            super.onPause();
-
-            if (mPendingRestart) {
-                Utilities.restart();
-            }
+            updateIsGoogleAppEnabled();
         }
 
         private PreferenceHighlighter createHighlighter() {
