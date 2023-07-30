@@ -33,6 +33,24 @@
       "message": "We can fix this, Can you send a full log of the crash",
       "revId": "d5fa9bce580243cdc5e622bd4be8d6efe8dbdd26",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9ed287d_39bbd5ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 384
+      },
+      "writtenOn": "2023-07-30T05:59:22Z",
+      "side": 1,
+      "message": "https://pastebin.com/raw/4zf2YLNr",
+      "parentUuid": "d769406e_5a5ed975",
+      "revId": "d5fa9bce580243cdc5e622bd4be8d6efe8dbdd26",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
