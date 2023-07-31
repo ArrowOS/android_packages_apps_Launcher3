@@ -16,6 +16,24 @@
       "message": "The launcher sizes i get on 16/10 mipad4 screen : https://postimg.cc/gallery/2BP6xs2/befb962b\n\n1200x1920 : launcher size is wrong\n1080x1920 : launcher size is wrong, both width and height\n\nMaybe i should open an issue somewhere else about this as it is not _directly_ related to this issue... where ?",
       "revId": "7a84f4f3e0ee6bd9f2812710844005007a8e9e23",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ca7ec98_74c7c244",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 384
+      },
+      "writtenOn": "2023-07-31T07:29:26Z",
+      "side": 1,
+      "message": "FIX, SORRY : \n\nThe launcher sizes i get on 16/10 mipad4 screen : https://postimg.cc/gallery/2BP6xs2/befb962b\n\n1200x1920 : launcher size is wrong, both width and height\n1080x1920 : launcher size is good\n\nMaybe i should open an issue somewhere else about this as it is not directly related to this issue... where ?",
+      "parentUuid": "a9ec5cc2_b94e750f",
+      "revId": "7a84f4f3e0ee6bd9f2812710844005007a8e9e23",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
