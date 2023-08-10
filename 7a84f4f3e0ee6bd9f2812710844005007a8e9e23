@@ -51,6 +51,23 @@
       "message": "Same issue on MiPad 5(nabu), MiPad 5 Pro(elish)",
       "revId": "7a84f4f3e0ee6bd9f2812710844005007a8e9e23",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed8c94e0_4188f3ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2023-08-10T09:34:45Z",
+      "side": 1,
+      "message": "the tablets we support is badly effected",
+      "revId": "7a84f4f3e0ee6bd9f2812710844005007a8e9e23",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
