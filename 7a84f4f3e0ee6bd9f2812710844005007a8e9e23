@@ -68,6 +68,24 @@
       "message": "the tablets we support is badly effected",
       "revId": "7a84f4f3e0ee6bd9f2812710844005007a8e9e23",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "70e8821b_30912832",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 384
+      },
+      "writtenOn": "2023-08-13T06:55:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1ca7ec98_74c7c244",
+      "revId": "7a84f4f3e0ee6bd9f2812710844005007a8e9e23",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
