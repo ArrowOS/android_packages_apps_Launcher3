@@ -16,6 +16,24 @@
       "message": "can you check if this works on your tab",
       "revId": "b111b75579002f23427d6787fb8c94ff78bae3f3",
       "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6feccffe_2f8613e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 384
+      },
+      "writtenOn": "2023-08-25T17:39:44Z",
+      "side": 1,
+      "message": "Nope, it still fails... https://pastebin.com/sxiBchVn\n\nIf i set a 1080x1920 resolution instead of 1200x1920, it\u0027s ok, and launcher drawer size is fine (you can see screenshots in my revert gerrit change with both resolutions).",
+      "parentUuid": "2c0b228e_ce25ff77",
+      "revId": "b111b75579002f23427d6787fb8c94ff78bae3f3",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
     }
   ]
 }
