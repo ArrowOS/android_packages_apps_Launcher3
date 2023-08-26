@@ -159,7 +159,9 @@ public class TaskbarView extends FrameLayout implements FolderIcon.FolderIconPar
         }
 
         // TODO: Disable touch events on QSB otherwise it can crash.
-        mQsb = LayoutInflater.from(context).inflate(R.layout.search_container_hotseat, this, false);
+        // TODO: Revisit this because we can't use QsbContainerView as the QSB fragment requires
+        // an activity while taskbar is inflated from a window context (not activity).
+        mQsb = LayoutInflater.from(context).inflate(R.layout.empty_view, this, false);
     }
 
     @Override
