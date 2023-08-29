@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2823dcaf_b8bdf862",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 384
+      },
+      "writtenOn": "2023-08-29T16:52:43Z",
+      "side": 1,
+      "message": "Build with this change boots fine on clover.\n\nBut bottom icons have bad padding : https://postimg.cc/gallery/9rGYnHY/d1d6128a",
+      "revId": "6b244dc210db22a6b5afb54791475e4eb906d855",
+      "serverId": "66da7299-18b4-411a-8fa2-12a880778196"
+    }
+  ]
+}
