@@ -576,7 +576,7 @@ public class DeviceProfile {
         mMaxHotseatIconSpacePx = areNavButtonsInline
                 ? res.getDimensionPixelSize(R.dimen.max_hotseat_icon_space) : Integer.MAX_VALUE;
         // Hotseat and QSB width depends on updated cellSize and workspace padding
-        recalculateHotseatWidthAndBorderSpace();
+        recalculateHotseatWidthAndBorderSpace(context);
 
         // AllApps height calculation depends on updated cellSize
         if (isTablet) {
@@ -672,7 +672,11 @@ public class DeviceProfile {
      * Calculates the width of the hotseat, changing spaces between the icons and removing icons if
      * necessary.
      */
-    public void recalculateHotseatWidthAndBorderSpace() {
+    public void recalculateHotseatWidthAndBorderSpace(Context context) {
+        if (!isScalableGrid && !Utilities.isHotseatQsbEnabled(context)) {
+            return;
+        }
+
         int columns = inv.hotseatColumnSpan[mTypeIndex];
         float hotseatWidthPx = getIconToIconWidthForColumns(columns);
         hotseatBorderSpace = calculateHotseatBorderSpace(hotseatWidthPx, /* numExtraBorder= */ 0);
