@@ -54,6 +54,7 @@
     <!-- Settings Categories -->
     <string name="category_icon">Icons</string>
     <string name="category_misc">Misc</string>
+    <string name="category_gesture">Gestures</string>
 
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Parallel space</string>
@@ -72,5 +73,9 @@
     <!-- All apps themed icons -->
     <string name="pref_allapps_themed_icons">Themed icons in drawer</string>
     <string name="themed_icons_disabled_summary">Themed icons are turned off in Wallpaper &amp; style</string>
+
+    <!-- Faster statusbar expansion -->
+    <string name="faster_sb_expansion_title">Faster status bar expansion</string>
+    <string name="faster_sb_expansion_summary">Swipe down on the right side of home screen to expand quick settings</string>
 
 </resources>
