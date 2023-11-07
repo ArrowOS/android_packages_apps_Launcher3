@@ -71,5 +71,6 @@
 
     <!-- All apps themed icons -->
     <string name="pref_allapps_themed_icons">Themed icons in drawer</string>
+    <string name="themed_icons_disabled_summary">Themed icons are turned off in Wallpaper &amp; style</string>
 
 </resources>

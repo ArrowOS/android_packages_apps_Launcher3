@@ -24,6 +24,7 @@ import static com.android.launcher3.Utilities.KEY_HOTSEAT_QSB;
 import static com.android.launcher3.Utilities.KEY_ICON_PACK;
 import static com.android.launcher3.config.FeatureFlags.IS_STUDIO_BUILD;
 import static com.android.launcher3.states.RotationHelper.ALLOW_ROTATION_PREFERENCE_KEY;
+import static com.android.launcher3.util.Themes.isThemedIconEnabled;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -209,7 +210,7 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
         private String mHighLightKey;
         private boolean mPreferenceHighlighted = false;
-        private Preference mDeveloperOptionPref, mShowGoogleAppPref, mHotseatQsbPref, mIconPackPref;
+        private Preference mDeveloperOptionPref, mShowGoogleAppPref, mHotseatQsbPref, mIconPackPref, mThemeAllAppsIconsPref;
 
         private boolean mPendingRestart = false;
 
@@ -338,6 +339,11 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                     });
                     updateIconPackOption();
                     return true;
+
+                case InvariantDeviceProfile.KEY_ALLAPPS_THEMED_ICONS:
+                    mThemeAllAppsIconsPref = preference;
+                    updateThemeAllAppsIconsPref();
+                    return true;
             }
 
             return true;
@@ -365,6 +371,16 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
             if (mIconPackPref != null) {
                 mIconPackPref.setSummary(IconDatabase.getGlobalLabel(getActivity()));
             }
+        }
+
+        private void updateThemeAllAppsIconsPref() {
+            if (mThemeAllAppsIconsPref == null) {
+                return;
+            }
+            boolean enabled = isThemedIconEnabled(getContext());
+            mThemeAllAppsIconsPref.setEnabled(enabled);
+            mThemeAllAppsIconsPref.setSummary(enabled ? null : getContext().getString(
+                    R.string.themed_icons_disabled_summary));
         }
 
         public static boolean isGSAEnabled(Context context) {
@@ -395,6 +411,7 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
             updateIsGoogleAppEnabled();
             updateIsQsbAvailable();
             updateIconPackOption();
+            updateThemeAllAppsIconsPref();
 
             if (isAdded() && !mPreferenceHighlighted) {
                 PreferenceHighlighter highlighter = createHighlighter();
