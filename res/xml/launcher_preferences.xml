@@ -129,12 +129,12 @@
                 android:targetClass="ink.kscope.parallelspace.MainActivity" />
         </Preference>
 
-        <Preference
-            android:key="pref_developer_options"
-            android:persistent="false"
-            android:title="Developer Options"
-            android:fragment="com.android.launcher3.uioverrides.flags.DeveloperOptionsFragment"/>
-
     </androidx.preference.PreferenceCategory>
+
+    <Preference
+        android:key="pref_developer_options"
+        android:persistent="false"
+        android:title="Developer Options"
+        android:fragment="com.android.launcher3.uioverrides.flags.DeveloperOptionsFragment"/>
 
 </androidx.preference.PreferenceScreen>
